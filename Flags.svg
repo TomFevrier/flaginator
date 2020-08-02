@@ -1,0 +1,1166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0 (6e3e5246a0, 2020-05-07)"
+   sodipodi:docname="Flags.svg">
+  <defs
+     id="defs2">
+    <rect
+       id="rect912"
+       height="63.674477"
+       width="73.441115"
+       y="311.0502"
+       x="35.26259" />
+    <clipPath
+       id="c1">
+      <path
+         id="path1017"
+         d="M0,0H6V3H0z" />
+    </clipPath>
+    <clipPath
+       id="c2">
+      <path
+         id="path1020"
+         d="M0,0V1.5H6V3H6zM6,0H3V3H0V3z" />
+    </clipPath>
+    <path
+       d="M0,-360 69.421398,-144.155019 281.459334,-224.456329 155.988466,-35.603349 350.974048,80.107536 125.093037,99.758368 156.198146,324.348792 0,160 -156.198146,324.348792 -125.093037,99.758368 -350.974048,80.107536 -155.988466,-35.603349 -281.459334,-224.456329 -69.421398,-144.155019z"
+       id="Star7" />
+    <path
+       d="M0,-210 54.859957,-75.508253 199.721868,-64.893569 88.765275,28.841586 123.434903,169.893569 0,93.333333 -123.434903,169.893569 -88.765275,28.841586 -199.721868,-64.893569 -54.859957,-75.508253z"
+       id="Star5" />
+    <use
+       transform="scale(2.1)"
+       xlink:href="#Star7"
+       id="Cstar" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="1841.0269"
+     inkscape:cy="579.37032"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1">
+    <sodipodi:guide
+       id="guide964"
+       orientation="0,-1"
+       position="390.07564,-58.70407" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       y="233.09741"
+       x="116.24976"
+       height="60"
+       width="90"
+       id="rect1245"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/layouts/rect1245.png"
+       inkscape:export-xdpi="165"
+       inkscape:export-ydpi="165" />
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1243"
+       width="90"
+       height="60"
+       x="13.649955"
+       y="235.19695" />
+    <rect
+       y="163.80981"
+       x="116.46667"
+       height="60"
+       width="90"
+       id="rect1241"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/layouts/rect1241.png"
+       inkscape:export-xdpi="165"
+       inkscape:export-ydpi="165" />
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1239"
+       width="90"
+       height="60"
+       x="12.750372"
+       y="163.80197" />
+    <rect
+       inkscape:export-ydpi="165"
+       inkscape:export-xdpi="165"
+       inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/layout/plain.png"
+       y="85.897469"
+       x="112.76517"
+       height="60"
+       width="90"
+       id="rect1237"
+       style="opacity:1;fill:#ded8d4;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1235"
+       width="90"
+       height="60"
+       x="10.620643"
+       y="85.187248" />
+    <rect
+       y="7.6259065"
+       x="111.53596"
+       height="60"
+       width="90"
+       id="rect1233"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1231"
+       width="90"
+       height="60"
+       x="9.66395"
+       y="7.2838845" />
+    <g
+       id="g847"
+       inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/layouts/verticalBars.png"
+       inkscape:export-xdpi="165.65218"
+       inkscape:export-ydpi="165.65218">
+      <rect
+         y="47.283882"
+         x="9.66395"
+         height="20"
+         width="90"
+         id="rect839"
+         style="opacity:1;fill:#ded8d4;fill-opacity:1;stroke:#ded8d4;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="7.2838845"
+         x="9.66395"
+         height="60"
+         width="90"
+         id="rect833"
+         style="opacity:1;fill:none;stroke:#c8beb7;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         style="opacity:1;fill:#c8bdb7;stroke:#c8beb7;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;fill-opacity:1"
+         id="rect837"
+         width="90"
+         height="20"
+         x="9.66395"
+         y="7.2838845" />
+    </g>
+    <g
+       id="g857"
+       transform="translate(101.87201,0.34202185)"
+       inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/layouts/horizontalBars.png"
+       inkscape:export-xdpi="165.65218"
+       inkscape:export-ydpi="165.65218">
+      <g
+         id="g871">
+        <rect
+           style="opacity:1;fill:#ded8d4;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;fill-opacity:1"
+           id="rect865"
+           width="30"
+           height="60"
+           x="69.663948"
+           y="7.2838845" />
+        <rect
+           y="7.2838845"
+           x="9.66395"
+           height="60"
+           width="90"
+           id="rect849"
+           style="opacity:1;fill:none;stroke:#c8beb7;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <rect
+           style="opacity:1;fill:#c8bdb7;stroke:#c8beb7;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;fill-opacity:1"
+           id="rect861"
+           width="30"
+           height="60"
+           x="9.66395"
+           y="7.2838845" />
+      </g>
+    </g>
+    <g
+       id="g918"
+       transform="translate(3.0864238,156.51808)"
+       inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/layouts/diagonal.png"
+       inkscape:export-xdpi="165.65218"
+       inkscape:export-ydpi="165.65218">
+      <rect
+         style="opacity:1;fill:none;stroke:#c8beb7;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect910"
+         width="90"
+         height="60"
+         x="9.66395"
+         y="7.2838845" />
+      <path
+         style="fill:#c8bdb7;stroke:#c8beb7;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1"
+         d="M 9.6639498,55.283879 87.663947,7.2838827 H 99.663946 V 19.283882 L 21.66395,67.283878 H 9.6639498 Z"
+         id="path924" />
+    </g>
+    <g
+       id="g1074"
+       transform="matrix(0.03359788,0,0,0.03359788,211.31535,-242.07552)">
+      <g
+         id="g1038"
+         transform="scale(840)">
+        <g
+           id="g1081">
+          <rect
+             style="fill:#7a685c;fill-opacity:1;stroke-width:0.999997"
+             y="0"
+             x="0"
+             width="6"
+             height="3"
+             fill="#012169"
+             id="rect1028" />
+          <path
+             d="M 0,0 6,3 M 6,0 0,3"
+             stroke="#ffffff"
+             stroke-width="0.6"
+             clip-path="url(#c1)"
+             id="path1030" />
+          <path
+             style="stroke:#c8beb7;stroke-opacity:1"
+             d="M 0,0 6,3 M 6,0 0,3"
+             stroke="#e4002b"
+             stroke-width="0.4"
+             clip-path="url(#c2)"
+             id="path1032" />
+          <path
+             d="M 3,0 V 3 M 0,1.5 h 6"
+             stroke="#ffffff"
+             id="path1034" />
+          <path
+             style="fill:#c8beb7;fill-opacity:1;stroke:#c8beb7;stroke-opacity:1"
+             d="M 3,0 V 2.9999999 M 0,1.5 h 6"
+             stroke="#e4002b"
+             stroke-width="0.6"
+             id="path1036" />
+        </g>
+      </g>
+    </g>
+    <g
+       id="g900"
+       transform="translate(0.95668999,77.903364)"
+       inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/layouts/triangle.png"
+       inkscape:export-xdpi="165.65218"
+       inkscape:export-ydpi="165.65218">
+      <rect
+         style="opacity:1;fill:none;stroke:#c8beb7;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect873"
+         width="90"
+         height="60"
+         x="9.66395"
+         y="7.2838845" />
+      <path
+         style="fill:#c7bdb8;stroke:#c8beb7;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;fill-opacity:1"
+         d="M 9.6639497,7.2838842 43.121924,37.202186 9.6639497,67.28388 Z"
+         id="path883"
+         sodipodi:nodetypes="cccc" />
+    </g>
+    <rect
+       style="fill:none;stroke:#c8beb7;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect896"
+       width="90"
+       height="60"
+       x="112.76517"
+       y="85.897476"
+       inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/layout/plain.png"
+       inkscape:export-xdpi="165.65218"
+       inkscape:export-ydpi="165.65218" />
+    <rect
+       y="163.80981"
+       x="116.46668"
+       height="60"
+       width="90"
+       id="rect1092"
+       style="fill:none;stroke:#c8beb7;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/layouts/unionJack.png"
+       inkscape:export-xdpi="165.65218"
+       inkscape:export-ydpi="165.65218" />
+    <g
+       transform="matrix(0.00851412,0,0,0.01135215,117.47023,164.78505)"
+       id="g1124">
+      <g
+         transform="scale(840)"
+         id="g1122">
+        <g
+           id="g1120"
+           style="fill:#d3cbc5;fill-opacity:1"
+           transform="translate(0.56052293,-0.30453964)">
+          <g
+             id="g1199"
+             transform="translate(-0.56258616,0.3056237)">
+            <rect
+               style="fill:#c8beb7;fill-opacity:1;stroke-width:0.999997"
+               y="0"
+               x="1.7763568e-15"
+               width="6"
+               height="3"
+               fill="#012169"
+               id="rect1110" />
+            <path
+               style="fill:#d3cbc5;fill-opacity:1"
+               d="M 0,0 6,3 M 6,0 0,3"
+               stroke="#ffffff"
+               stroke-width="0.6"
+               clip-path="url(#c1)"
+               id="path1112" />
+            <path
+               style="fill:#d3cbc5;fill-opacity:1;stroke:#ded8d4;stroke-opacity:1"
+               d="M 0,0 6,3 M 6,0 0,3"
+               stroke="#e4002b"
+               stroke-width="0.4"
+               clip-path="url(#c2)"
+               id="path1114" />
+            <path
+               style="fill:#d3cbc5;fill-opacity:1"
+               d="M 3,0 V 3 M 0,1.5 h 6"
+               stroke="#ffffff"
+               id="path1116" />
+            <path
+               style="fill:#d3cbc5;fill-opacity:1;stroke:#ded8d4;stroke-opacity:1"
+               d="M 3,0 V 2.9999999 M 0,1.5 h 6"
+               stroke="#e4002b"
+               stroke-width="0.6"
+               id="path1118" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g1150"
+       transform="translate(3.9860092,227.89807)"
+       inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/layouts/stripes.png"
+       inkscape:export-xdpi="165.65218"
+       inkscape:export-ydpi="165.65218">
+      <rect
+         style="opacity:1;fill:none;stroke:#c8beb7;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1142"
+         width="90"
+         height="60"
+         x="9.66395"
+         y="7.2838845" />
+      <rect
+         style="opacity:1;fill:none;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1152"
+         width="90"
+         height="6"
+         x="9.66395"
+         y="13.283884" />
+      <rect
+         style="opacity:1;fill:none;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1156"
+         width="90"
+         height="6"
+         x="9.66395"
+         y="25.283884" />
+      <rect
+         style="opacity:1;fill:none;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1160"
+         width="90"
+         height="6"
+         x="9.66395"
+         y="37.283882" />
+      <rect
+         y="7.2838845"
+         x="9.66395"
+         height="6.6700001"
+         width="90"
+         id="rect1162"
+         style="opacity:1;fill:#c8beb7;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         style="opacity:1;fill:none;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1164"
+         width="90"
+         height="6"
+         x="9.66395"
+         y="49.283882" />
+      <rect
+         style="opacity:1;fill:none;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1168"
+         width="90"
+         height="6"
+         x="9.66395"
+         y="61.283882" />
+      <rect
+         y="20.623884"
+         x="9.66395"
+         height="6.6700001"
+         width="90"
+         id="rect1180"
+         style="opacity:1;fill:#c8beb7;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="33.963882"
+         x="9.66395"
+         height="6.6700001"
+         width="90"
+         id="rect1184"
+         style="opacity:1;fill:#c8beb7;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="47.303879"
+         x="9.66395"
+         height="6.6700001"
+         width="90"
+         id="rect1188"
+         style="opacity:1;fill:#c8beb7;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="60.643875"
+         x="9.66395"
+         height="6.6700001"
+         width="90"
+         id="rect1192"
+         style="opacity:1;fill:#c8beb7;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <rect
+       y="233.09741"
+       x="116.24975"
+       height="60"
+       width="90"
+       id="rect1205"
+       style="fill:none;stroke:#c8beb7;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/layouts/cross.png"
+       inkscape:export-xdpi="165.65218"
+       inkscape:export-ydpi="165.65218" />
+    <rect
+       style="fill:#c8bdb7;fill-opacity:1;stroke:#c8beb7;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1207"
+       width="10"
+       height="60"
+       x="145.43268"
+       y="233.09741" />
+    <rect
+       y="258.09741"
+       x="116.24975"
+       height="10"
+       width="90"
+       id="rect1209"
+       style="fill:#c8bdb7;fill-opacity:1;stroke:#c8beb7;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <rect
+       inkscape:export-ydpi="165"
+       inkscape:export-xdpi="165"
+       inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/figures/crescent.png"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect902"
+       width="90"
+       height="60"
+       x="238.5724"
+       y="8.5079231" />
+    <rect
+       inkscape:export-ydpi="165.65218"
+       inkscape:export-xdpi="165.65218"
+       inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/layout/misc.png"
+       style="fill:none;stroke:#c8beb7;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect904"
+       width="90"
+       height="60"
+       x="19.467043"
+       y="325.21194" />
+    <text
+       inkscape:export-ydpi="165"
+       inkscape:export-xdpi="165"
+       inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/layout/misc.png"
+       y="0"
+       x="6.3147264"
+       transform="translate(-7.3690312,23.541564)"
+       style="font-style:normal;font-weight:normal;font-size:35.2778px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect912);fill:#c8bdb7;fill-opacity:1;stroke:none;"
+       id="text910"
+       xml:space="preserve"><tspan
+         x="64.851069"
+         y="343.94706"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:35.2778px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;text-align:center;text-anchor:middle;fill:#c8bdb7;fill-opacity:1">?</tspan></tspan></text>
+    <path
+       inkscape:export-ydpi="165"
+       inkscape:export-xdpi="165"
+       inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/figures/crescent.png"
+       d="m 290.11946,18.545492 a 19.96241,19.96241 0 0 0 -19.96243,19.96243 19.96241,19.96241 0 0 0 19.96243,19.962429 19.96241,19.96241 0 0 0 6.86831,-1.21851 A 18.756332,18.756332 0 0 1 278.91479,38.507922 18.756332,18.756332 0 0 1 296.98652,19.764 19.96241,19.96241 0 0 0 290.11946,18.545492 Z"
+       style="opacity:1;fill:#c8bdb7;fill-opacity:1;stroke-width:0.389134;stroke-linecap:round;stroke-linejoin:round"
+       id="path916" />
+    <circle
+       style="opacity:1;fill:#0000ff;fill-opacity:0.98144;stroke-width:0.487333;stroke-linecap:round;stroke-linejoin:round"
+       id="circle931"
+       cx="428.08978"
+       cy="146.41759"
+       r="25" />
+    <circle
+       r="23.489563"
+       cy="146.41759"
+       cx="437.54694"
+       id="circle933"
+       style="opacity:1;fill:#ff00ff;fill-opacity:0.98144;stroke-width:0.457889;stroke-linecap:round;stroke-linejoin:round" />
+    <rect
+       y="85.716965"
+       x="238.5724"
+       height="60"
+       width="90"
+       id="rect938"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/figures/star.png"
+       inkscape:export-xdpi="165"
+       inkscape:export-ydpi="165" />
+    <path
+       inkscape:export-ydpi="165"
+       inkscape:export-xdpi="165"
+       inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/figures/star.png"
+       inkscape:transform-center-y="-1.2839885e-06"
+       inkscape:transform-center-x="3.3435295e-06"
+       d="m 296.46765,134.01313 -13.02073,-9.56736 -13.29036,9.18913 5.07548,-15.33992 -12.84634,-9.80028 16.15755,0.0868 5.35088,-15.246041 4.91044,15.393551 16.15336,0.3777 -13.12272,9.42698 z"
+       inkscape:randomized="0"
+       inkscape:rounded="-3.46945e-18"
+       inkscape:flatsided="false"
+       sodipodi:arg2="1.5851703"
+       sodipodi:arg1="0.9568518"
+       sodipodi:r2="8.7297049"
+       sodipodi:r1="22.383858"
+       sodipodi:cy="115.71696"
+       sodipodi:cx="283.5724"
+       sodipodi:sides="5"
+       id="path942"
+       style="opacity:1;fill:#c8bdb7;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       sodipodi:type="star" />
+    <rect
+       inkscape:export-ydpi="165"
+       inkscape:export-xdpi="165"
+       inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/figures/sun.png"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect944"
+       width="90"
+       height="60"
+       x="238.5724"
+       y="159.45151" />
+    <path
+       inkscape:export-ydpi="165"
+       inkscape:export-xdpi="165"
+       inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/figures/sun.png"
+       sodipodi:type="star"
+       style="opacity:1;fill:#c8bdb7;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       id="path946"
+       sodipodi:sides="12"
+       sodipodi:cx="283.57239"
+       sodipodi:cy="189.45151"
+       sodipodi:r1="22.383858"
+       sodipodi:r2="8.7297049"
+       sodipodi:arg1="0.9568518"
+       sodipodi:arg2="1.2186512"
+       inkscape:flatsided="false"
+       inkscape:rounded="-3.46945e-18"
+       inkscape:randomized="0"
+       d="m 296.46764,207.74767 -9.88427,-10.10216 -0.99145,14.09856 -3.50895,-13.69085 -7.9079,11.71399 3.80659,-13.61111 -12.70543,6.19066 10.10215,-9.88427 -14.09856,-0.99145 13.69086,-3.50895 -11.71399,-7.9079 13.61111,3.80659 -6.19067,-12.70543 9.88428,10.10215 0.99144,-14.09856 3.50896,13.69086 7.90789,-11.71399 -3.80658,13.61111 12.70543,-6.19067 -10.10216,9.88428 14.09857,0.99144 -13.69086,3.50895 11.71399,7.9079 -13.61111,-3.80659 z"
+       inkscape:transform-center-x="3.3435295e-06"
+       inkscape:transform-center-y="-1.2839885e-06" />
+    <image
+       id="image958"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABQAAAANVCAMAAAAQqaO7AAAAM1BMVEXuHCX2iIzwNz/5pKhbicHz WV/47fALTqL///9WPXj6v8L519oxVJvByuCXqc6xKUeGbpiQ1HenAAAZRklEQVR42uzdbU/bOgCA 0TrGGXKA//9zb0Abgt1tcUhcbOecr2PQVsojp37J7RHgom4+AkAAAQQQQAABBBBAAAEEEEAAAQQQ QAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBAQQAABBBBA AAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAAB BBBAAAEEEEBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEE EEAAAQQQQAABBBBAAAEEEEAAAQQQEEAfASCAAAIIIIAAAggggAACCCCAAAIIIIAAAggggAACCCCA AAIIIIAAAggggAACCCCAAAIIIIAAAggggAACCCCAAAIIIIAAAggIIIAAAggggAACCCCAAAIIIIAA AggggAACCCCAAAIIIIAAAggggAACCCCAAAIIIIAAAggggAACCCCAAAIIIIAAAggggAACCCAggAAC CCCAAAIIIIAAAggggAACCCCAAAIIIIAAAggggAACCCCAAAIIIIAAAggggAACCCCAAAIIIIAAAggg gAACCCCAAAIICKCPABBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAAB BBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAL9F Tpxidp0ggN2JN06RXScIYHeCdAkgXDWASbrOEV0nCKAAXlVwnSCA3ZmkSwBBADkkuU4QwP7eGwII Fw3grFwnmVwnCGBvFuUSQBBADnKdIIC9ycIlgHDVANoJd5rFhYIAdsZOOAEEAcRmYBDA75xI3bMq e/3Z1NQqbpuBEcDeNLUV+G032ZxzjiGElNLvQZxez91b/ymuP/J2/J4AggCOEsC9S+naWsVtMzAC 2Ju2tgLvPFU5CyAI4DAB3DmP0NYMjs3ACGB3b63nQVQSQBDAYQKYLvTiQQC/W2OHweybBVl6fvEg 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 "
+       preserveAspectRatio="none"
+       height="225.68959"
+       width="338.66666"
+       x="465.10529"
+       y="297.72284" />
+    <path
+       sodipodi:nodetypes="ccscsc"
+       id="path962"
+       d="m 405.01565,242.6517 h 86.70531 c 0,0 6.58954,60.86143 -4.17447,78.0293 -16.99644,27.10817 -38.93751,35.02307 -38.93751,35.02307 0,0 -25.32246,-10.93274 -38.79406,-34.55369 -11.19333,-19.62626 -4.79927,-78.49868 -4.79927,-78.49868 z"
+       style="fill:#c8bdb7;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <rect
+       y="242.13054"
+       x="237.30859"
+       height="60"
+       width="90"
+       id="rect966"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/figures/emblem.png"
+       inkscape:export-xdpi="165"
+       inkscape:export-ydpi="165" />
+    <path
+       inkscape:export-ydpi="165"
+       inkscape:export-xdpi="165"
+       inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/figures/emblem.png"
+       style="fill:#c8bdb7;fill-opacity:1;stroke:none;stroke-width:0.0878529px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 267.88405,253.36143 h 28.78989 c 0,0 2.18801,20.2086 -1.38611,25.90907 -5.64354,9.00107 -12.92892,11.62917 -12.92892,11.62917 0,0 -8.40814,-3.63014 -12.88129,-11.47332 -3.71666,-6.51674 -1.59357,-26.06492 -1.59357,-26.06492 z"
+       id="path970"
+       sodipodi:nodetypes="ccscsc" />
+    <rect
+       inkscape:export-ydpi="165"
+       inkscape:export-xdpi="165"
+       inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/figures/disk.png"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect972"
+       width="90"
+       height="60"
+       x="383.54288"
+       y="9.435214" />
+    <circle
+       inkscape:export-ydpi="165"
+       inkscape:export-xdpi="165"
+       inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/figures/disk.png"
+       style="opacity:1;fill:#c8bdb7;fill-opacity:1;stroke-width:0.366908;stroke-linecap:round;stroke-linejoin:round"
+       id="circle976"
+       cx="428.54288"
+       cy="39.435211"
+       r="18.822277" />
+    <rect
+       y="7.3093767"
+       x="-123.08249"
+       height="60"
+       width="90"
+       id="rect917"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/nbBars/barsVertical2.png"
+       inkscape:export-xdpi="165.65218"
+       inkscape:export-ydpi="165.65218" />
+    <g
+       inkscape:export-ydpi="165.65218"
+       inkscape:export-xdpi="165.65218"
+       inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/nbBars/barsVertical2.png"
+       id="g925"
+       transform="translate(-132.74644,0.02549217)">
+      <rect
+         style="opacity:1;fill:none;stroke:#c8beb7;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect921"
+         width="90"
+         height="60"
+         x="9.66395"
+         y="7.2838845" />
+      <rect
+         y="7.2838845"
+         x="9.66395"
+         height="30"
+         width="90"
+         id="rect923"
+         style="opacity:1;fill:#c8bdb7;fill-opacity:1;stroke:#c8beb7;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect927"
+       width="90"
+       height="60"
+       x="-123.28365"
+       y="-67.989235"
+       inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/nbBars/barsHorizontal2.png"
+       inkscape:export-xdpi="165.65216"
+       inkscape:export-ydpi="165.65216" />
+    <g
+       inkscape:export-ydpi="165.65218"
+       inkscape:export-xdpi="165.65218"
+       inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/layouts/horizontalBars.png"
+       transform="translate(-132.9476,-75.273117)"
+       id="g937">
+      <g
+         id="g935">
+        <rect
+           style="opacity:1;fill:none;stroke:#c8beb7;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect931"
+           width="90"
+           height="60"
+           x="9.66395"
+           y="7.2838845"
+           inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/nbBars/barsHorizontal2.png"
+           inkscape:export-xdpi="165.65216"
+           inkscape:export-ydpi="165.65216" />
+        <rect
+           y="7.2838845"
+           x="9.66395"
+           height="60"
+           width="45"
+           id="rect933"
+           style="opacity:1;fill:#c8bdb7;fill-opacity:1;stroke:#c8beb7;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/nbBars/barsHorizontal2.png"
+           inkscape:export-xdpi="165.65216"
+           inkscape:export-ydpi="165.65216" />
+      </g>
+    </g>
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect939"
+       width="90"
+       height="60"
+       x="107.44577"
+       y="-79.34687" />
+    <rect
+       y="-79.688889"
+       x="5.5737605"
+       height="60"
+       width="90"
+       id="rect941"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/nbBars/barsVertical4.png"
+       inkscape:export-xdpi="165"
+       inkscape:export-ydpi="165" />
+    <g
+       inkscape:export-ydpi="165.65218"
+       inkscape:export-xdpi="165.65218"
+       inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/nbBars/barsVertical4.png"
+       id="g949"
+       transform="translate(-4.0901896,-86.972774)">
+      <rect
+         y="37.283882"
+         x="9.66395"
+         height="15"
+         width="90"
+         id="rect961"
+         style="opacity:1;fill:#d3cbc5;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         style="opacity:1;fill:#ded8d4;fill-opacity:1;stroke:#ded8d4;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect943"
+         width="90"
+         height="15"
+         x="9.66395"
+         y="52.283882" />
+      <rect
+         style="opacity:1;fill:none;stroke:#c8beb7;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect945"
+         width="90"
+         height="60"
+         x="9.66395"
+         y="7.2838845" />
+      <rect
+         y="7.2838845"
+         x="9.66395"
+         height="15"
+         width="90"
+         id="rect947"
+         style="opacity:1;fill:#c8bdb7;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       inkscape:export-ydpi="165.65218"
+       inkscape:export-xdpi="165.65218"
+       inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/layouts/horizontalBars.png"
+       transform="translate(97.78182,-86.630752)"
+       id="g959">
+      <g
+         id="g957">
+        <rect
+           y="7.2838845"
+           x="69.663948"
+           height="60"
+           width="30"
+           id="rect951"
+           style="opacity:1;fill:#ded8d4;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <rect
+           style="opacity:1;fill:none;stroke:#c8beb7;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect953"
+           width="90"
+           height="60"
+           x="9.66395"
+           y="7.2838845" />
+        <rect
+           y="7.2838845"
+           x="9.66395"
+           height="60"
+           width="22.5"
+           id="rect955"
+           style="opacity:1;fill:#c8bdb7;fill-opacity:1;stroke:#c8beb7;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      </g>
+    </g>
+    <rect
+       inkscape:export-ydpi="169.33334"
+       inkscape:export-xdpi="169.33334"
+       inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/nbStars/star2.png"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect963"
+       width="90"
+       height="60"
+       x="553.72015"
+       y="75.187912" />
+    <g
+       id="g975" />
+    <g
+       id="g985"
+       transform="translate(-0.93906593,2.2496328)"
+       inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/nbStars/star2.png"
+       inkscape:export-xdpi="169.33334"
+       inkscape:export-ydpi="169.33334">
+      <path
+         sodipodi:type="star"
+         style="opacity:1;fill:#c8bdb7;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         id="path965"
+         sodipodi:sides="5"
+         sodipodi:cx="598.72015"
+         sodipodi:cy="105.1879"
+         sodipodi:r1="22.383858"
+         sodipodi:r2="8.7297049"
+         sodipodi:arg1="0.9568518"
+         sodipodi:arg2="1.5851703"
+         inkscape:flatsided="false"
+         inkscape:rounded="-3.46945e-18"
+         inkscape:randomized="0"
+         d="m 611.61541,123.48406 -13.02073,-9.56736 -13.29036,9.18914 5.07547,-15.33993 -12.84633,-9.800279 16.15754,0.08676 5.35089,-15.246043 4.91044,15.393549 16.15336,0.377707 -13.12273,9.426973 z"
+         inkscape:transform-center-x="0.034647016"
+         inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/figures/star.png"
+         inkscape:export-xdpi="165"
+         inkscape:export-ydpi="165"
+         transform="matrix(0.49322807,-0.0071093,0.00710934,0.49323075,291.94554,46.321594)"
+         inkscape:transform-center-y="-0.046020668" />
+      <path
+         inkscape:transform-center-y="-0.046020668"
+         transform="matrix(0.49322807,-0.0071093,0.00710934,0.49323075,315.26636,46.321594)"
+         inkscape:export-ydpi="165"
+         inkscape:export-xdpi="165"
+         inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/figures/star.png"
+         inkscape:transform-center-x="0.034647016"
+         d="m 611.61541,123.48406 -13.02073,-9.56736 -13.29036,9.18914 5.07547,-15.33993 -12.84633,-9.800279 16.15754,0.08676 5.35089,-15.246043 4.91044,15.393549 16.15336,0.377707 -13.12273,9.426973 z"
+         inkscape:randomized="0"
+         inkscape:rounded="-3.46945e-18"
+         inkscape:flatsided="false"
+         sodipodi:arg2="1.5851703"
+         sodipodi:arg1="0.9568518"
+         sodipodi:r2="8.7297049"
+         sodipodi:r1="22.383858"
+         sodipodi:cy="105.1879"
+         sodipodi:cx="598.72015"
+         sodipodi:sides="5"
+         id="path971"
+         style="opacity:1;fill:#c8bdb7;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         sodipodi:type="star" />
+      <path
+         sodipodi:type="star"
+         style="opacity:1;fill:#c8bdb7;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         id="path977"
+         sodipodi:sides="5"
+         sodipodi:cx="598.72015"
+         sodipodi:cy="105.1879"
+         sodipodi:r1="22.383858"
+         sodipodi:r2="8.7297049"
+         sodipodi:arg1="0.9568518"
+         sodipodi:arg2="1.5851703"
+         inkscape:flatsided="false"
+         inkscape:rounded="-3.46945e-18"
+         inkscape:randomized="0"
+         d="m 611.61541,123.48406 -13.02073,-9.56736 -13.29036,9.18914 5.07547,-15.33993 -12.84633,-9.800279 16.15754,0.08676 5.35089,-15.246043 4.91044,15.393549 16.15336,0.377707 -13.12273,9.426973 z"
+         inkscape:transform-center-x="0.034647016"
+         inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/figures/star.png"
+         inkscape:export-xdpi="165"
+         inkscape:export-ydpi="165"
+         transform="matrix(0.49322807,-0.0071093,0.00710934,0.49323075,303.60596,66.412614)"
+         inkscape:transform-center-y="-0.046020668" />
+    </g>
+    <rect
+       y="-82.184074"
+       x="383.75345"
+       height="60"
+       width="90"
+       id="rect1107"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/figures/cross.png"
+       inkscape:export-xdpi="169.33334"
+       inkscape:export-ydpi="169.33334" />
+    <g
+       inkscape:export-ydpi="169.33334"
+       inkscape:export-xdpi="169.33334"
+       inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/figures/cross.png"
+       transform="translate(-17.698212,4.4234161)"
+       id="g1117">
+      <rect
+         style="fill:#c8bdb7;stroke-width:1;stroke-linecap:round;stroke-linejoin:round"
+         id="rect1111"
+         width="12"
+         height="36"
+         x="440.45166"
+         y="-74.607491" />
+      <rect
+         y="-464.45166"
+         x="-62.607491"
+         height="36"
+         width="12"
+         id="rect1113"
+         style="fill:#c8bdb7;stroke-width:1;stroke-linecap:round;stroke-linejoin:round"
+         transform="rotate(90)" />
+    </g>
+    <rect
+       inkscape:export-ydpi="169.33334"
+       inkscape:export-xdpi="169.33334"
+       inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/figures/bird.png"
+       style="opacity:0.99600006;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1119"
+       width="90"
+       height="60"
+       x="501.17743"
+       y="-83.413727" />
+    <g
+       inkscape:export-ydpi="169.33334"
+       inkscape:export-xdpi="169.33334"
+       inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/figures/bird.png"
+       style="fill:#c8bdb7;fill-opacity:1;stroke:none;opacity:0.99600006"
+       transform="matrix(0.1236872,0,0,0.1236872,523.90854,-75.682432)"
+       id="g1377">
+      <path
+         style="fill:#c8bdb7;fill-opacity:1;stroke:none"
+         d="m 358.839,130.772 c -0.666,-0.618 -1.432,-0.931 -2.278,-0.931 -3.092,0 -6.364,4.36 -9.251,8.208 -1.091,1.454 -2.527,3.368 -3.262,4.005 -0.086,-1.467 1.019,-5.633 1.85,-8.764 2.099,-7.914 4.27,-16.096 0.735,-18 -0.368,-0.198 -0.757,-0.299 -1.157,-0.299 -2.545,0 -4.492,3.814 -7.458,10.037 -2.322,4.871 -5.211,10.934 -7.597,10.934 -0.152,0 -0.302,-0.026 -0.456,-0.081 -0.42,-0.75 -0.383,-4.184 -0.355,-6.71 0.072,-6.618 0.153,-14.118 -4.047,-14.678 -0.125,-0.017 -0.25,-0.025 -0.374,-0.025 -3.63,0 -5.748,6.793 -7.99,13.986 -1.092,3.504 -2.743,8.8 -3.677,9.158 -1.255,-0.251 -3.792,-4.038 -5.83,-7.081 -3.343,-4.99 -6.533,-9.684 -9.487,-9.441 -3.081,0.257 -3.033,4.63 -2.983,9.261 0.041,3.803 0.093,8.537 -1.81,9.561 -0.184,0.099 -0.384,0.147 -0.61,0.147 -2.116,0 -5.594,-3.792 -8.389,-6.839 -3.259,-3.552 -5.348,-5.73 -7.152,-5.73 -0.446,0 -0.866,0.138 -1.214,0.399 -1.985,1.489 -1.873,5.99 -1.754,10.755 0.06,2.402 0.15,5.988 -0.344,6.747 -0.916,-0.125 -3.528,-1.861 -5.844,-3.398 -5.123,-3.402 -11.498,-7.637 -16.64,-7.637 -0.846,0 -1.641,0.118 -2.363,0.351 -5.578,1.796 -6.648,4.437 -7.356,6.185 -0.371,0.916 -0.557,1.33 -1.071,1.55 -0.643,0.274 -1.683,0.166 -2.827,-0.007 -0.757,-0.115 -1.541,-0.233 -2.374,-0.233 -1.837,0 -3.357,0.627 -4.649,1.919 -1.313,1.313 -2.487,2.87 -3.623,4.375 -1.689,2.24 -3.286,4.356 -4.824,4.933 -0.813,0.305 -2.441,2.006 -7.028,6.88 -10.088,10.717 -31.079,33.019 -41.837,33.02 -2.013,0 -3.517,-0.806 -4.597,-2.464 -1.786,-2.741 -4.461,-7.761 -7.848,-14.118 C 150.373,156.676 134.21,126.343 120.46,119.239 84.014,100.41 52.865,70.21 36.131,53.986 27.005,45.138 23.763,42.078 22.073,42.078 c -0.479,0 -0.899,0.218 -1.154,0.599 -0.489,0.729 -0.313,1.869 0.648,4.208 2.911,7.082 9.584,16.8 14.947,24.608 3.098,4.511 6.55,9.539 7.476,11.644 C 41.47,81.971 36.622,76.848 32.64,72.64 25.625,65.23 21.154,60.73 18.201,60.73 c -0.564,0 -1.063,0.162 -1.48,0.479 -2.261,1.718 0.989,6.297 6.928,14.243 2.367,3.167 5.852,7.83 6.29,9.438 -1.261,-0.268 -4.061,-2.483 -6.338,-4.285 -3.86,-3.054 -7.853,-6.212 -10.77,-6.212 -0.56,0 -1.073,0.115 -1.526,0.341 -0.667,0.333 -1.102,0.876 -1.26,1.571 -0.481,2.12 1.733,5.176 5.167,9.597 1.496,1.925 3.712,4.779 3.886,5.796 -0.138,0.028 -0.29,0.042 -0.453,0.042 -1.562,0 -3.849,-1.215 -6.061,-2.391 -2.423,-1.288 -4.712,-2.504 -6.602,-2.504 -0.645,0 -1.22,0.144 -1.709,0.427 -2.151,1.245 -0.206,5.114 1.854,9.209 0.563,1.121 1.296,2.578 1.563,3.347 -0.509,0.071 -1.345,0.072 -1.95,0.073 -1.945,0.003 -3.957,0.006 -5.05,1.119 -0.46,0.467 -0.697,1.086 -0.687,1.79 0.042,2.656 42.16,92.95 91.761,127.749 6.636,4.656 9.21,12.982 11.699,21.034 0.909,2.94 1.767,5.717 2.806,8.239 0.374,0.909 0.379,1.669 0.017,2.394 -1.564,3.123 -9.652,5.201 -18.215,7.4 -4.941,1.27 -10.049,2.582 -15.005,4.292 -61.734,7.598 -61.731,11.024 -61.731,12.672 0,3.317 2.206,4.9 3.817,6.056 1.625,1.166 1.86,1.497 1.573,2.215 -0.376,0.941 -1.279,1.909 -2.234,2.934 -2.065,2.217 -4.636,4.975 -3.093,9.09 0.558,1.487 2.389,2.21 5.597,2.21 5.546,0 14.548,-2.09 21.165,-3.857 -14.858,8.494 -14.859,10.045 -14.859,10.603 0,0.755 0,2.162 8.549,2.162 8.537,0 22.06,-1.545 32.073,-5.898 3.096,-1.346 5.734,-2.64 8.285,-3.89 2.409,-1.181 4.688,-2.298 6.98,-3.265 26.126,1.41 66.339,3.05 94.063,3.05 15.604,0 25.431,-0.522 29.205,-1.551 5.059,-1.38 10.855,-3.62 16.993,-5.991 11.324,-4.375 23.033,-8.9 32.104,-8.9 1.857,0 3.552,0.198 5.037,0.589 13.288,3.496 18.372,14.022 18.422,14.128 l 0.201,0.427 0.456,0.117 c 0.079,0.02 0.506,0.121 1.167,0.121 0,0 0,0 0,0 1.913,0 6.598,-0.903 8.793,-9.264 1.29,-4.914 -1.226,-8.538 -2.162,-9.672 0.235,-2.671 0.776,-15.885 -10.323,-24.661 -6.735,-5.326 -13.414,-7.774 -17.833,-9.395 -2.089,-0.766 -4.951,-1.815 -4.901,-2.371 0.454,-2.894 28.565,-60.374 68.724,-73.151 31.045,-9.878 38.504,-29.301 40.27,-37.192 1.081,-4.845 0.85,-9.148 -0.565,-10.462 z"
+         id="path1322" />
+      <g
+         style="fill:#c8bdb7;fill-opacity:1;stroke:none"
+         id="g1324">
+</g>
+      <g
+         style="fill:#c8bdb7;fill-opacity:1;stroke:none"
+         id="g1326">
+</g>
+      <g
+         style="fill:#c8bdb7;fill-opacity:1;stroke:none"
+         id="g1328">
+</g>
+      <g
+         style="fill:#c8bdb7;fill-opacity:1;stroke:none"
+         id="g1330">
+</g>
+      <g
+         style="fill:#c8bdb7;fill-opacity:1;stroke:none"
+         id="g1332">
+</g>
+      <g
+         style="fill:#c8bdb7;fill-opacity:1;stroke:none"
+         id="g1334">
+</g>
+      <g
+         style="fill:#c8bdb7;fill-opacity:1;stroke:none"
+         id="g1336">
+</g>
+      <g
+         style="fill:#c8bdb7;fill-opacity:1;stroke:none"
+         id="g1338">
+</g>
+      <g
+         style="fill:#c8bdb7;fill-opacity:1;stroke:none"
+         id="g1340">
+</g>
+      <g
+         style="fill:#c8bdb7;fill-opacity:1;stroke:none"
+         id="g1342">
+</g>
+      <g
+         style="fill:#c8bdb7;fill-opacity:1;stroke:none"
+         id="g1344">
+</g>
+      <g
+         style="fill:#c8bdb7;fill-opacity:1;stroke:none"
+         id="g1346">
+</g>
+      <g
+         style="fill:#c8bdb7;fill-opacity:1;stroke:none"
+         id="g1348">
+</g>
+      <g
+         style="fill:#c8bdb7;fill-opacity:1;stroke:none"
+         id="g1350">
+</g>
+      <g
+         style="fill:#c8bdb7;fill-opacity:1;stroke:none"
+         id="g1352">
+</g>
+    </g>
+    <rect
+       y="-11.297743"
+       x="610.93237"
+       height="60"
+       width="90"
+       id="rect1538"
+       style="opacity:0.99400008;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/figures/nature.png"
+       inkscape:export-xdpi="169.33334"
+       inkscape:export-ydpi="169.33334" />
+    <g
+       inkscape:export-ydpi="169.33334"
+       inkscape:export-xdpi="169.33334"
+       inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/figures/nature.png"
+       style="stroke:none;fill:#c8bdb7;fill-opacity:1;opacity:0.99400008"
+       transform="matrix(0.06496306,0,0,0.06496306,638.0224,0.79223289)"
+       id="g1437">
+      <g
+         style="stroke:none;fill:#c8bdb7;fill-opacity:1"
+         id="g1381">
+	<path
+   style="stroke:none;fill:#c8bdb7;fill-opacity:1"
+   d="m 413.695,0 c 0,0 -45.366,44.014 -94.43,61.759 -363.333,131.419 -210.1,387.518 -205.101,388.362 0,0 20.374,-35.48 47.896,-55.717 C 336.704,266.015 372.2,118.233 372.2,118.233 c 0,0 -39.19,177.829 -194.562,288.479 -34.316,24.426 -57.552,84.568 -67.388,144.679 0,0 24.325,-9.828 34.785,-12.49 4.079,-26.618 12.607,-52.106 27.025,-74.875 C 389.211,489.88 460.332,314.903 469.623,253.89 491.552,109.79 413.695,0 413.695,0 Z"
+   id="path1379" />
+
+</g>
+      <g
+         style="stroke:none;fill:#c8bdb7;fill-opacity:1"
+         id="g1383">
+</g>
+      <g
+         style="stroke:none;fill:#c8bdb7;fill-opacity:1"
+         id="g1385">
+</g>
+      <g
+         style="stroke:none;fill:#c8bdb7;fill-opacity:1"
+         id="g1387">
+</g>
+      <g
+         style="stroke:none;fill:#c8bdb7;fill-opacity:1"
+         id="g1389">
+</g>
+      <g
+         style="stroke:none;fill:#c8bdb7;fill-opacity:1"
+         id="g1391">
+</g>
+      <g
+         style="stroke:none;fill:#c8bdb7;fill-opacity:1"
+         id="g1393">
+</g>
+      <g
+         style="stroke:none;fill:#c8bdb7;fill-opacity:1"
+         id="g1395">
+</g>
+      <g
+         style="stroke:none;fill:#c8bdb7;fill-opacity:1"
+         id="g1397">
+</g>
+      <g
+         style="stroke:none;fill:#c8bdb7;fill-opacity:1"
+         id="g1399">
+</g>
+      <g
+         style="stroke:none;fill:#c8bdb7;fill-opacity:1"
+         id="g1401">
+</g>
+      <g
+         style="stroke:none;fill:#c8bdb7;fill-opacity:1"
+         id="g1403">
+</g>
+      <g
+         style="stroke:none;fill:#c8bdb7;fill-opacity:1"
+         id="g1405">
+</g>
+      <g
+         style="stroke:none;fill:#c8bdb7;fill-opacity:1"
+         id="g1407">
+</g>
+      <g
+         style="stroke:none;fill:#c8bdb7;fill-opacity:1"
+         id="g1409">
+</g>
+      <g
+         style="stroke:none;fill:#c8bdb7;fill-opacity:1"
+         id="g1411">
+</g>
+    </g>
+    <rect
+       inkscape:export-ydpi="169.33334"
+       inkscape:export-xdpi="169.33334"
+       inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/figures/weapon.png"
+       style="opacity:0.994;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1574"
+       width="90"
+       height="60"
+       x="643.72015"
+       y="135.18791" />
+    <g
+       inkscape:export-ydpi="169.33334"
+       inkscape:export-xdpi="169.33334"
+       inkscape:export-filename="/media/tomfevrier/Stockage/Documents/2019-2020/Projects/flaginator/public/assets/figures/weapon.png"
+       style="stroke:none;fill:#c8bdb7;fill-opacity:1"
+       transform="matrix(0.07829369,0,0,0.07829369,668.67697,145.14475)"
+       id="g1500">
+      <g
+         style="stroke:none;fill:#c8bdb7;fill-opacity:1"
+         id="g1443">
+	<g
+   style="stroke:none;fill:#c8bdb7;fill-opacity:1"
+   id="g1441">
+		<path
+   style="stroke:none;fill:#c8bdb7;fill-opacity:1"
+   d="m 512,10.697 c 0,-5.385 -4.021,-9.926 -9.354,-10.583 -5.854,-0.812 -10.354,2.781 -11.667,8 -6.333,25.373 -86.917,60.725 -142.125,77.714 -4.458,1.385 -7.521,5.521 -7.521,10.197 0,53.985 -108.432,164.502 -205.259,246.393 C 131.075,332.404 128,321.276 128,309.346 128,303.451 123.229,298.68 117.333,298.68 H 74.667 c -5.896,0 -10.667,4.77 -10.667,10.666 0,28.086 8.452,54.21 22.865,76.072 l -48.66,41.706 C 16.802,429.391 0,447.335 0,469.336 0,492.866 19.146,512 42.667,512 64.353,512 82.12,495.676 84.792,474.698 l 51.168,-43.859 c 19.807,10.919 42.536,17.166 66.707,17.166 5.896,0 10.667,-4.771 10.667,-10.666 v -42.664 c 0,-5.895 -4.771,-10.666 -10.667,-10.666 -2.555,0 -4.971,-0.503 -7.461,-0.754 C 508.137,199.618 512,18.492 512,10.697 Z"
+   id="path1439" />
+
+	</g>
+
+</g>
+      <g
+         style="stroke:none;fill:#c8bdb7;fill-opacity:1"
+         id="g1445">
+</g>
+      <g
+         style="stroke:none;fill:#c8bdb7;fill-opacity:1"
+         id="g1447">
+</g>
+      <g
+         style="stroke:none;fill:#c8bdb7;fill-opacity:1"
+         id="g1449">
+</g>
+      <g
+         style="stroke:none;fill:#c8bdb7;fill-opacity:1"
+         id="g1451">
+</g>
+      <g
+         style="stroke:none;fill:#c8bdb7;fill-opacity:1"
+         id="g1453">
+</g>
+      <g
+         style="stroke:none;fill:#c8bdb7;fill-opacity:1"
+         id="g1455">
+</g>
+      <g
+         style="stroke:none;fill:#c8bdb7;fill-opacity:1"
+         id="g1457">
+</g>
+      <g
+         style="stroke:none;fill:#c8bdb7;fill-opacity:1"
+         id="g1459">
+</g>
+      <g
+         style="stroke:none;fill:#c8bdb7;fill-opacity:1"
+         id="g1461">
+</g>
+      <g
+         style="stroke:none;fill:#c8bdb7;fill-opacity:1"
+         id="g1463">
+</g>
+      <g
+         style="stroke:none;fill:#c8bdb7;fill-opacity:1"
+         id="g1465">
+</g>
+      <g
+         style="stroke:none;fill:#c8bdb7;fill-opacity:1"
+         id="g1467">
+</g>
+      <g
+         style="stroke:none;fill:#c8bdb7;fill-opacity:1"
+         id="g1469">
+</g>
+      <g
+         style="stroke:none;fill:#c8bdb7;fill-opacity:1"
+         id="g1471">
+</g>
+      <g
+         style="stroke:none;fill:#c8bdb7;fill-opacity:1"
+         id="g1473">
+</g>
+    </g>
+  </g>
+</svg>

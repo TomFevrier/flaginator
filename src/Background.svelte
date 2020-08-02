@@ -1,0 +1,101 @@
+<script>
+	export let flags;
+
+	$: flags.sort(() => Math.random() >= 0.5);
+
+	const NB_FLAGS = 30;
+</script>
+
+<div class='wrapper'>
+	{#each new Array(2) as _}
+		<div>
+			<div class='row'>
+				{#each flags.slice(0, NB_FLAGS) as flag}
+					<img
+						src='assets/flags/{flag.code.toLowerCase()}.png'
+						style='width: calc(200vw / {NB_FLAGS});'
+					/>
+				{/each}
+				{#each flags.slice(0, NB_FLAGS * 0.5) as flag}
+					<img
+						src='assets/flags/{flag.code.toLowerCase()}.png'
+						style='width: calc(200vw / {NB_FLAGS});'
+					/>
+				{/each}
+			</div>
+			<div class='row'>
+				{#each flags.slice(NB_FLAGS, NB_FLAGS * 2) as flag}
+					<img
+						src='assets/flags/{flag.code.toLowerCase()}.png'
+						style='width: calc(200vw / {NB_FLAGS});'
+					/>
+				{/each}
+				{#each flags.slice(NB_FLAGS, NB_FLAGS * 1.5) as flag}
+					<img
+						src='assets/flags/{flag.code.toLowerCase()}.png'
+						style='width: calc(200vw / {NB_FLAGS});'
+					/>
+				{/each}
+			</div>
+			<div class='row'>
+				{#each flags.slice(NB_FLAGS * 2, NB_FLAGS * 3) as flag}
+					<img
+						src='assets/flags/{flag.code.toLowerCase()}.png'
+						style='width: calc(200vw / {NB_FLAGS});'
+					/>
+				{/each}
+				{#each flags.slice(NB_FLAGS * 2, NB_FLAGS * 2.5) as flag}
+					<img
+						src='assets/flags/{flag.code.toLowerCase()}.png'
+						style='width: calc(200vw / {NB_FLAGS});'
+					/>
+				{/each}
+			</div>
+		</div>
+	{/each}
+	<!-- <div class='row'>
+		{#each flags.slice(100, 150) as flag}
+			<img src='assets/flags/{flag.code.toLowerCase()}.png' />
+		{/each}
+		{#each flags.slice(100, 125) as flag}
+			<img src='assets/flags/{flag.code.toLowerCase()}.png' />
+		{/each}
+	</div> -->
+</div>
+
+<style lang='scss'>
+	.wrapper {
+		width: 300vw;
+		height: 100%;
+		opacity: 0.5;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		animation: marquee 60s linear infinite;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		.row {
+			width: 100%;
+			display: flex;
+			align-items: center;
+
+			@keyframes marquee {
+				to {
+					left: -200vw;
+				}
+			}
+
+			img {
+				margin: 1rem;
+			}
+		}
+	}
+
+
+
+
+
+</style>
