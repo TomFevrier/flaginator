@@ -9,9 +9,12 @@
 	export let filtered;
 	export let selected;
 
+	const dispatch = createEventDispatcher();
+
 	if (property === 'nbBars') {
-		options = options.filter(option => filtered[0].layout.some(e => option.startsWith(e)));
+		options = options.filter(option => filtered.some(e => option.startsWith(e.layout)));
 		console.log(options)
+		if (options.length === 1) dispatch('skip');
 	}
 
 	const clickHandler = (value) => {
@@ -25,7 +28,6 @@
 		}
 	}
 
-	const dispatch = createEventDispatcher();
 	const submit = () => {
 		dispatch('submit');
 	}
