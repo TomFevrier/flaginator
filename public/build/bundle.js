@@ -136,6 +136,9 @@ var app = (function () {
     function set_style(node, key, value, important) {
         node.style.setProperty(key, value, important ? 'important' : '');
     }
+    function toggle_class(element, name, toggle) {
+        element.classList[toggle ? 'add' : 'remove'](name);
+    }
     function custom_event(type, detail) {
         const e = document.createEvent('CustomEvent');
         e.initCustomEvent(type, false, false, detail);
@@ -819,12 +822,14 @@ var app = (function () {
     function create_each_block_6(ctx) {
     	let img;
     	let img_src_value;
+    	let img_alt_value;
 
     	const block = {
     		c: function create() {
     			img = element("img");
-    			if (img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + ".png")) attr_dev(img, "src", img_src_value);
+    			if (img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + "_small.png")) attr_dev(img, "src", img_src_value);
     			set_style(img, "width", "calc(200vw / " + NB_FLAGS + ")");
+    			attr_dev(img, "alt", img_alt_value = /*flag*/ ctx[4].name);
     			attr_dev(img, "class", "svelte-19j8i1r");
     			add_location(img, file, 13, 5, 235);
     		},
@@ -832,8 +837,12 @@ var app = (function () {
     			insert_dev(target, img, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*flags*/ 1 && img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + ".png")) {
+    			if (dirty & /*flags*/ 1 && img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + "_small.png")) {
     				attr_dev(img, "src", img_src_value);
+    			}
+
+    			if (dirty & /*flags*/ 1 && img_alt_value !== (img_alt_value = /*flag*/ ctx[4].name)) {
+    				attr_dev(img, "alt", img_alt_value);
     			}
     		},
     		d: function destroy(detaching) {
@@ -852,25 +861,31 @@ var app = (function () {
     	return block;
     }
 
-    // (19:4) {#each flags.slice(0, NB_FLAGS * 0.5) as flag}
+    // (20:4) {#each flags.slice(0, NB_FLAGS * 0.5) as flag}
     function create_each_block_5(ctx) {
     	let img;
     	let img_src_value;
+    	let img_alt_value;
 
     	const block = {
     		c: function create() {
     			img = element("img");
-    			if (img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + ".png")) attr_dev(img, "src", img_src_value);
+    			if (img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + "_small.png")) attr_dev(img, "src", img_src_value);
     			set_style(img, "width", "calc(200vw / " + NB_FLAGS + ")");
+    			attr_dev(img, "alt", img_alt_value = /*flag*/ ctx[4].name);
     			attr_dev(img, "class", "svelte-19j8i1r");
-    			add_location(img, file, 19, 5, 418);
+    			add_location(img, file, 20, 5, 446);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*flags*/ 1 && img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + ".png")) {
+    			if (dirty & /*flags*/ 1 && img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + "_small.png")) {
     				attr_dev(img, "src", img_src_value);
+    			}
+
+    			if (dirty & /*flags*/ 1 && img_alt_value !== (img_alt_value = /*flag*/ ctx[4].name)) {
+    				attr_dev(img, "alt", img_alt_value);
     			}
     		},
     		d: function destroy(detaching) {
@@ -882,32 +897,38 @@ var app = (function () {
     		block,
     		id: create_each_block_5.name,
     		type: "each",
-    		source: "(19:4) {#each flags.slice(0, NB_FLAGS * 0.5) as flag}",
+    		source: "(20:4) {#each flags.slice(0, NB_FLAGS * 0.5) as flag}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (27:4) {#each flags.slice(NB_FLAGS, NB_FLAGS * 2) as flag}
+    // (29:4) {#each flags.slice(NB_FLAGS, NB_FLAGS * 2) as flag}
     function create_each_block_4(ctx) {
     	let img;
     	let img_src_value;
+    	let img_alt_value;
 
     	const block = {
     		c: function create() {
     			img = element("img");
-    			if (img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + ".png")) attr_dev(img, "src", img_src_value);
+    			if (img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + "_small.png")) attr_dev(img, "src", img_src_value);
     			set_style(img, "width", "calc(200vw / " + NB_FLAGS + ")");
+    			attr_dev(img, "alt", img_alt_value = /*flag*/ ctx[4].name);
     			attr_dev(img, "class", "svelte-19j8i1r");
-    			add_location(img, file, 27, 5, 637);
+    			add_location(img, file, 29, 5, 693);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*flags*/ 1 && img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + ".png")) {
+    			if (dirty & /*flags*/ 1 && img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + "_small.png")) {
     				attr_dev(img, "src", img_src_value);
+    			}
+
+    			if (dirty & /*flags*/ 1 && img_alt_value !== (img_alt_value = /*flag*/ ctx[4].name)) {
+    				attr_dev(img, "alt", img_alt_value);
     			}
     		},
     		d: function destroy(detaching) {
@@ -919,32 +940,38 @@ var app = (function () {
     		block,
     		id: create_each_block_4.name,
     		type: "each",
-    		source: "(27:4) {#each flags.slice(NB_FLAGS, NB_FLAGS * 2) as flag}",
+    		source: "(29:4) {#each flags.slice(NB_FLAGS, NB_FLAGS * 2) as flag}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (33:4) {#each flags.slice(NB_FLAGS, NB_FLAGS * 1.5) as flag}
+    // (36:4) {#each flags.slice(NB_FLAGS, NB_FLAGS * 1.5) as flag}
     function create_each_block_3(ctx) {
     	let img;
     	let img_src_value;
+    	let img_alt_value;
 
     	const block = {
     		c: function create() {
     			img = element("img");
-    			if (img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + ".png")) attr_dev(img, "src", img_src_value);
+    			if (img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + "_small.png")) attr_dev(img, "src", img_src_value);
     			set_style(img, "width", "calc(200vw / " + NB_FLAGS + ")");
+    			attr_dev(img, "alt", img_alt_value = /*flag*/ ctx[4].name);
     			attr_dev(img, "class", "svelte-19j8i1r");
-    			add_location(img, file, 33, 5, 827);
+    			add_location(img, file, 36, 5, 911);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*flags*/ 1 && img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + ".png")) {
+    			if (dirty & /*flags*/ 1 && img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + "_small.png")) {
     				attr_dev(img, "src", img_src_value);
+    			}
+
+    			if (dirty & /*flags*/ 1 && img_alt_value !== (img_alt_value = /*flag*/ ctx[4].name)) {
+    				attr_dev(img, "alt", img_alt_value);
     			}
     		},
     		d: function destroy(detaching) {
@@ -956,32 +983,38 @@ var app = (function () {
     		block,
     		id: create_each_block_3.name,
     		type: "each",
-    		source: "(33:4) {#each flags.slice(NB_FLAGS, NB_FLAGS * 1.5) as flag}",
+    		source: "(36:4) {#each flags.slice(NB_FLAGS, NB_FLAGS * 1.5) as flag}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (41:4) {#each flags.slice(NB_FLAGS * 2, NB_FLAGS * 3) as flag}
+    // (45:4) {#each flags.slice(NB_FLAGS * 2, NB_FLAGS * 3) as flag}
     function create_each_block_2(ctx) {
     	let img;
     	let img_src_value;
+    	let img_alt_value;
 
     	const block = {
     		c: function create() {
     			img = element("img");
-    			if (img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + ".png")) attr_dev(img, "src", img_src_value);
+    			if (img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + "_small.png")) attr_dev(img, "src", img_src_value);
     			set_style(img, "width", "calc(200vw / " + NB_FLAGS + ")");
+    			attr_dev(img, "alt", img_alt_value = /*flag*/ ctx[4].name);
     			attr_dev(img, "class", "svelte-19j8i1r");
-    			add_location(img, file, 41, 5, 1050);
+    			add_location(img, file, 45, 5, 1162);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*flags*/ 1 && img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + ".png")) {
+    			if (dirty & /*flags*/ 1 && img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + "_small.png")) {
     				attr_dev(img, "src", img_src_value);
+    			}
+
+    			if (dirty & /*flags*/ 1 && img_alt_value !== (img_alt_value = /*flag*/ ctx[4].name)) {
+    				attr_dev(img, "alt", img_alt_value);
     			}
     		},
     		d: function destroy(detaching) {
@@ -993,32 +1026,38 @@ var app = (function () {
     		block,
     		id: create_each_block_2.name,
     		type: "each",
-    		source: "(41:4) {#each flags.slice(NB_FLAGS * 2, NB_FLAGS * 3) as flag}",
+    		source: "(45:4) {#each flags.slice(NB_FLAGS * 2, NB_FLAGS * 3) as flag}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (47:4) {#each flags.slice(NB_FLAGS * 2, NB_FLAGS * 2.5) as flag}
+    // (52:4) {#each flags.slice(NB_FLAGS * 2, NB_FLAGS * 2.5) as flag}
     function create_each_block_1(ctx) {
     	let img;
     	let img_src_value;
+    	let img_alt_value;
 
     	const block = {
     		c: function create() {
     			img = element("img");
-    			if (img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + ".png")) attr_dev(img, "src", img_src_value);
+    			if (img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + "_small.png")) attr_dev(img, "src", img_src_value);
     			set_style(img, "width", "calc(200vw / " + NB_FLAGS + ")");
+    			attr_dev(img, "alt", img_alt_value = /*flag*/ ctx[4].name);
     			attr_dev(img, "class", "svelte-19j8i1r");
-    			add_location(img, file, 47, 5, 1244);
+    			add_location(img, file, 52, 5, 1384);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*flags*/ 1 && img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + ".png")) {
+    			if (dirty & /*flags*/ 1 && img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + "_small.png")) {
     				attr_dev(img, "src", img_src_value);
+    			}
+
+    			if (dirty & /*flags*/ 1 && img_alt_value !== (img_alt_value = /*flag*/ ctx[4].name)) {
+    				attr_dev(img, "alt", img_alt_value);
     			}
     		},
     		d: function destroy(detaching) {
@@ -1030,7 +1069,7 @@ var app = (function () {
     		block,
     		id: create_each_block_1.name,
     		type: "each",
-    		source: "(47:4) {#each flags.slice(NB_FLAGS * 2, NB_FLAGS * 2.5) as flag}",
+    		source: "(52:4) {#each flags.slice(NB_FLAGS * 2, NB_FLAGS * 2.5) as flag}",
     		ctx
     	});
 
@@ -1136,9 +1175,9 @@ var app = (function () {
     			attr_dev(div0, "class", "row svelte-19j8i1r");
     			add_location(div0, file, 11, 3, 167);
     			attr_dev(div1, "class", "row svelte-19j8i1r");
-    			add_location(div1, file, 25, 3, 558);
+    			add_location(div1, file, 27, 3, 614);
     			attr_dev(div2, "class", "row svelte-19j8i1r");
-    			add_location(div2, file, 39, 3, 967);
+    			add_location(div2, file, 43, 3, 1079);
     			add_location(div3, file, 10, 2, 158);
     		},
     		m: function mount(target, anchor) {
@@ -1598,65 +1637,76 @@ var app = (function () {
     }
 
     /* src/Question.svelte generated by Svelte v3.17.2 */
-
-    const { console: console_1 } = globals;
     const file$2 = "src/Question.svelte";
 
     function get_each_context$1(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[11] = list[i];
+    	child_ctx[10] = list[i];
     	return child_ctx;
     }
 
-    // (50:3) {:else}
+    // (49:4) {:else}
     function create_else_block(ctx) {
     	let div;
     	let img;
     	let img_src_value;
-    	let t;
-    	let div_class_value;
+    	let img_alt_value;
+    	let t0;
+    	let p;
+    	let t1_value = /*option*/ ctx[10].label + "";
+    	let t1;
     	let dispose;
 
     	function click_handler_1(...args) {
-    		return /*click_handler_1*/ ctx[10](/*option*/ ctx[11], ...args);
+    		return /*click_handler_1*/ ctx[9](/*option*/ ctx[10], ...args);
     	}
 
     	const block = {
     		c: function create() {
     			div = element("div");
     			img = element("img");
-    			t = space();
-    			if (img.src !== (img_src_value = "/assets/" + /*property*/ ctx[2] + "/" + /*option*/ ctx[11] + ".png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "class", "svelte-10ham1r");
-    			add_location(img, file$2, 54, 5, 1222);
-
-    			attr_dev(div, "class", div_class_value = "option " + (/*selected*/ ctx[1].includes(/*option*/ ctx[11])
-    			? "selected"
-    			: "") + " svelte-10ham1r");
-
-    			add_location(div, file$2, 50, 4, 1097);
+    			t0 = space();
+    			p = element("p");
+    			t1 = text(t1_value);
+    			if (img.src !== (img_src_value = "/assets/" + /*property*/ ctx[2] + "/" + /*option*/ ctx[10].value + ".png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", img_alt_value = /*option*/ ctx[10].label);
+    			attr_dev(img, "class", "svelte-lhik8k");
+    			add_location(img, file$2, 54, 7, 1294);
+    			attr_dev(div, "class", "option-image svelte-lhik8k");
+    			toggle_class(div, "selected", /*selected*/ ctx[1].includes(/*option*/ ctx[10].value));
+    			add_location(div, file$2, 49, 6, 1139);
+    			attr_dev(p, "class", "svelte-lhik8k");
+    			add_location(p, file$2, 56, 6, 1384);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
     			append_dev(div, img);
-    			append_dev(div, t);
+    			insert_dev(target, t0, anchor);
+    			insert_dev(target, p, anchor);
+    			append_dev(p, t1);
     			dispose = listen_dev(div, "click", click_handler_1, false, false, false);
     		},
     		p: function update(new_ctx, dirty) {
     			ctx = new_ctx;
 
-    			if (dirty & /*property, options*/ 5 && img.src !== (img_src_value = "/assets/" + /*property*/ ctx[2] + "/" + /*option*/ ctx[11] + ".png")) {
+    			if (dirty & /*property, propertyOptions*/ 5 && img.src !== (img_src_value = "/assets/" + /*property*/ ctx[2] + "/" + /*option*/ ctx[10].value + ".png")) {
     				attr_dev(img, "src", img_src_value);
     			}
 
-    			if (dirty & /*selected, options*/ 3 && div_class_value !== (div_class_value = "option " + (/*selected*/ ctx[1].includes(/*option*/ ctx[11])
-    			? "selected"
-    			: "") + " svelte-10ham1r")) {
-    				attr_dev(div, "class", div_class_value);
+    			if (dirty & /*propertyOptions*/ 1 && img_alt_value !== (img_alt_value = /*option*/ ctx[10].label)) {
+    				attr_dev(img, "alt", img_alt_value);
     			}
+
+    			if (dirty & /*selected, propertyOptions*/ 3) {
+    				toggle_class(div, "selected", /*selected*/ ctx[1].includes(/*option*/ ctx[10].value));
+    			}
+
+    			if (dirty & /*propertyOptions*/ 1 && t1_value !== (t1_value = /*option*/ ctx[10].label + "")) set_data_dev(t1, t1_value);
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(div);
+    			if (detaching) detach_dev(t0);
+    			if (detaching) detach_dev(p);
     			dispose();
     		}
     	};
@@ -1665,34 +1715,30 @@ var app = (function () {
     		block,
     		id: create_else_block.name,
     		type: "else",
-    		source: "(50:3) {:else}",
+    		source: "(49:4) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (44:3) {#if property === 'colors'}
+    // (42:4) {#if property === 'colors'}
     function create_if_block(ctx) {
     	let div;
-    	let div_class_value;
     	let dispose;
 
     	function click_handler(...args) {
-    		return /*click_handler*/ ctx[9](/*option*/ ctx[11], ...args);
+    		return /*click_handler*/ ctx[8](/*option*/ ctx[10], ...args);
     	}
 
     	const block = {
     		c: function create() {
     			div = element("div");
-
-    			attr_dev(div, "class", div_class_value = "option " + (/*selected*/ ctx[1].includes(/*option*/ ctx[11])
-    			? "selected"
-    			: "") + " svelte-10ham1r");
-
-    			set_style(div, "background-color", /*option*/ ctx[11]);
+    			attr_dev(div, "class", "option-image svelte-lhik8k");
+    			set_style(div, "background-color", /*option*/ ctx[10].value);
     			set_style(div, "padding-top", "calc(100% * 2/3)");
-    			add_location(div, file$2, 44, 4, 884);
+    			toggle_class(div, "selected", /*selected*/ ctx[1].includes(/*option*/ ctx[10].value));
+    			add_location(div, file$2, 42, 5, 892);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -1701,14 +1747,12 @@ var app = (function () {
     		p: function update(new_ctx, dirty) {
     			ctx = new_ctx;
 
-    			if (dirty & /*selected, options*/ 3 && div_class_value !== (div_class_value = "option " + (/*selected*/ ctx[1].includes(/*option*/ ctx[11])
-    			? "selected"
-    			: "") + " svelte-10ham1r")) {
-    				attr_dev(div, "class", div_class_value);
+    			if (dirty & /*propertyOptions*/ 1) {
+    				set_style(div, "background-color", /*option*/ ctx[10].value);
     			}
 
-    			if (dirty & /*options*/ 1) {
-    				set_style(div, "background-color", /*option*/ ctx[11]);
+    			if (dirty & /*selected, propertyOptions*/ 3) {
+    				toggle_class(div, "selected", /*selected*/ ctx[1].includes(/*option*/ ctx[10].value));
     			}
     		},
     		d: function destroy(detaching) {
@@ -1721,16 +1765,17 @@ var app = (function () {
     		block,
     		id: create_if_block.name,
     		type: "if",
-    		source: "(44:3) {#if property === 'colors'}",
+    		source: "(42:4) {#if property === 'colors'}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (43:2) {#each options as option}
+    // (40:2) {#each propertyOptions.options as option}
     function create_each_block$1(ctx) {
-    	let if_block_anchor;
+    	let div;
+    	let t;
 
     	function select_block_type(ctx, dirty) {
     		if (/*property*/ ctx[2] === "colors") return create_if_block;
@@ -1742,12 +1787,16 @@ var app = (function () {
 
     	const block = {
     		c: function create() {
+    			div = element("div");
     			if_block.c();
-    			if_block_anchor = empty();
+    			t = space();
+    			attr_dev(div, "class", "option svelte-lhik8k");
+    			add_location(div, file$2, 40, 3, 834);
     		},
     		m: function mount(target, anchor) {
-    			if_block.m(target, anchor);
-    			insert_dev(target, if_block_anchor, anchor);
+    			insert_dev(target, div, anchor);
+    			if_block.m(div, null);
+    			append_dev(div, t);
     		},
     		p: function update(ctx, dirty) {
     			if (current_block_type === (current_block_type = select_block_type(ctx)) && if_block) {
@@ -1758,13 +1807,13 @@ var app = (function () {
 
     				if (if_block) {
     					if_block.c();
-    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    					if_block.m(div, t);
     				}
     			}
     		},
     		d: function destroy(detaching) {
-    			if_block.d(detaching);
-    			if (detaching) detach_dev(if_block_anchor);
+    			if (detaching) detach_dev(div);
+    			if_block.d();
     		}
     	};
 
@@ -1772,17 +1821,17 @@ var app = (function () {
     		block,
     		id: create_each_block$1.name,
     		type: "each",
-    		source: "(43:2) {#each options as option}",
+    		source: "(40:2) {#each propertyOptions.options as option}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (40:0) <Card>
+    // (37:0) <Card>
     function create_default_slot(ctx) {
     	let h3;
-    	let t0_value = /*property*/ ctx[2].toUpperCase() + "";
+    	let t0_value = /*propertyOptions*/ ctx[0].question + "";
     	let t0;
     	let t1;
     	let div0;
@@ -1794,7 +1843,7 @@ var app = (function () {
     	let t5;
     	let button1_disabled_value;
     	let dispose;
-    	let each_value = /*options*/ ctx[0];
+    	let each_value = /*propertyOptions*/ ctx[0].options;
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value.length; i += 1) {
@@ -1819,15 +1868,15 @@ var app = (function () {
     			t4 = space();
     			button1 = element("button");
     			t5 = text("Next");
-    			add_location(h3, file$2, 40, 1, 767);
-    			attr_dev(div0, "class", "grid svelte-10ham1r");
-    			add_location(div0, file$2, 41, 1, 802);
-    			attr_dev(button0, "class", "skip svelte-10ham1r");
-    			add_location(button0, file$2, 60, 2, 1315);
+    			add_location(h3, file$2, 37, 1, 731);
+    			attr_dev(div0, "class", "grid svelte-lhik8k");
+    			add_location(div0, file$2, 38, 1, 768);
+    			attr_dev(button0, "class", "skip svelte-lhik8k");
+    			add_location(button0, file$2, 62, 2, 1453);
     			button1.disabled = button1_disabled_value = /*selected*/ ctx[1].length == 0;
-    			attr_dev(button1, "class", "svelte-10ham1r");
-    			add_location(button1, file$2, 63, 2, 1375);
-    			add_location(div1, file$2, 59, 1, 1307);
+    			attr_dev(button1, "class", "svelte-lhik8k");
+    			add_location(button1, file$2, 65, 2, 1513);
+    			add_location(div1, file$2, 61, 1, 1445);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h3, anchor);
@@ -1852,10 +1901,10 @@ var app = (function () {
     			];
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*property*/ 4 && t0_value !== (t0_value = /*property*/ ctx[2].toUpperCase() + "")) set_data_dev(t0, t0_value);
+    			if (dirty & /*propertyOptions*/ 1 && t0_value !== (t0_value = /*propertyOptions*/ ctx[0].question + "")) set_data_dev(t0, t0_value);
 
-    			if (dirty & /*property, selected, options, clickHandler*/ 15) {
-    				each_value = /*options*/ ctx[0];
+    			if (dirty & /*property, propertyOptions, selected, clickHandler*/ 15) {
+    				each_value = /*propertyOptions*/ ctx[0].options;
     				let i;
 
     				for (i = 0; i < each_value.length; i += 1) {
@@ -1896,7 +1945,7 @@ var app = (function () {
     		block,
     		id: create_default_slot.name,
     		type: "slot",
-    		source: "(40:0) <Card>",
+    		source: "(37:0) <Card>",
     		ctx
     	});
 
@@ -1928,7 +1977,7 @@ var app = (function () {
     		p: function update(ctx, [dirty]) {
     			const card_changes = {};
 
-    			if (dirty & /*$$scope, selected, options, property*/ 16391) {
+    			if (dirty & /*$$scope, selected, propertyOptions, property*/ 8199) {
     				card_changes.$$scope = { dirty, ctx };
     			}
 
@@ -1961,20 +2010,17 @@ var app = (function () {
 
     function instance$2($$self, $$props, $$invalidate) {
     	let { property } = $$props;
-    	let { options } = $$props;
-    	let { multiple = false } = $$props;
+    	let { propertyOptions } = $$props;
     	let { filtered } = $$props;
     	let { selected } = $$props;
     	const dispatch = createEventDispatcher();
 
-    	if (property === "nbBars") {
-    		options = options.filter(option => filtered.some(e => option.startsWith(e.layout)));
-    		console.log(options);
-    		if (options.length === 1) dispatch("skip");
+    	if (property === "nbBands") {
+    		propertyOptions.options = propertyOptions.options.filter(option => filtered.some(e => option.value.startsWith(e.layout)));
     	}
 
     	const clickHandler = value => {
-    		if (multiple) {
+    		if (propertyOptions.multiple) {
     			$$invalidate(1, selected = selected.includes(value)
     			? selected.filter(e => e !== value)
     			: [...selected, value]);
@@ -1991,28 +2037,26 @@ var app = (function () {
     		dispatch("skip");
     	};
 
-    	const writable_props = ["property", "options", "multiple", "filtered", "selected"];
+    	const writable_props = ["property", "propertyOptions", "filtered", "selected"];
 
     	Object.keys($$props).forEach(key => {
-    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console_1.warn(`<Question> was created with unknown prop '${key}'`);
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<Question> was created with unknown prop '${key}'`);
     	});
 
-    	const click_handler = option => clickHandler(option);
-    	const click_handler_1 = option => clickHandler(option);
+    	const click_handler = option => clickHandler(option.value);
+    	const click_handler_1 = option => clickHandler(option.value);
 
     	$$self.$set = $$props => {
     		if ("property" in $$props) $$invalidate(2, property = $$props.property);
-    		if ("options" in $$props) $$invalidate(0, options = $$props.options);
-    		if ("multiple" in $$props) $$invalidate(6, multiple = $$props.multiple);
-    		if ("filtered" in $$props) $$invalidate(7, filtered = $$props.filtered);
+    		if ("propertyOptions" in $$props) $$invalidate(0, propertyOptions = $$props.propertyOptions);
+    		if ("filtered" in $$props) $$invalidate(6, filtered = $$props.filtered);
     		if ("selected" in $$props) $$invalidate(1, selected = $$props.selected);
     	};
 
     	$$self.$capture_state = () => {
     		return {
     			property,
-    			options,
-    			multiple,
+    			propertyOptions,
     			filtered,
     			selected
     		};
@@ -2020,20 +2064,18 @@ var app = (function () {
 
     	$$self.$inject_state = $$props => {
     		if ("property" in $$props) $$invalidate(2, property = $$props.property);
-    		if ("options" in $$props) $$invalidate(0, options = $$props.options);
-    		if ("multiple" in $$props) $$invalidate(6, multiple = $$props.multiple);
-    		if ("filtered" in $$props) $$invalidate(7, filtered = $$props.filtered);
+    		if ("propertyOptions" in $$props) $$invalidate(0, propertyOptions = $$props.propertyOptions);
+    		if ("filtered" in $$props) $$invalidate(6, filtered = $$props.filtered);
     		if ("selected" in $$props) $$invalidate(1, selected = $$props.selected);
     	};
 
     	return [
-    		options,
+    		propertyOptions,
     		selected,
     		property,
     		clickHandler,
     		submit,
     		skip,
-    		multiple,
     		filtered,
     		dispatch,
     		click_handler,
@@ -2047,9 +2089,8 @@ var app = (function () {
 
     		init(this, options, instance$2, create_fragment$2, safe_not_equal, {
     			property: 2,
-    			options: 0,
-    			multiple: 6,
-    			filtered: 7,
+    			propertyOptions: 0,
+    			filtered: 6,
     			selected: 1
     		});
 
@@ -2064,19 +2105,19 @@ var app = (function () {
     		const props = options.props || {};
 
     		if (/*property*/ ctx[2] === undefined && !("property" in props)) {
-    			console_1.warn("<Question> was created without expected prop 'property'");
+    			console.warn("<Question> was created without expected prop 'property'");
     		}
 
-    		if (/*options*/ ctx[0] === undefined && !("options" in props)) {
-    			console_1.warn("<Question> was created without expected prop 'options'");
+    		if (/*propertyOptions*/ ctx[0] === undefined && !("propertyOptions" in props)) {
+    			console.warn("<Question> was created without expected prop 'propertyOptions'");
     		}
 
-    		if (/*filtered*/ ctx[7] === undefined && !("filtered" in props)) {
-    			console_1.warn("<Question> was created without expected prop 'filtered'");
+    		if (/*filtered*/ ctx[6] === undefined && !("filtered" in props)) {
+    			console.warn("<Question> was created without expected prop 'filtered'");
     		}
 
     		if (/*selected*/ ctx[1] === undefined && !("selected" in props)) {
-    			console_1.warn("<Question> was created without expected prop 'selected'");
+    			console.warn("<Question> was created without expected prop 'selected'");
     		}
     	}
 
@@ -2088,19 +2129,11 @@ var app = (function () {
     		throw new Error("<Question>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
     	}
 
-    	get options() {
+    	get propertyOptions() {
     		throw new Error("<Question>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
     	}
 
-    	set options(value) {
-    		throw new Error("<Question>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
-    	}
-
-    	get multiple() {
-    		throw new Error("<Question>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
-    	}
-
-    	set multiple(value) {
+    	set propertyOptions(value) {
     		throw new Error("<Question>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
     	}
 
@@ -2122,8 +2155,6 @@ var app = (function () {
     }
 
     /* src/Result.svelte generated by Svelte v3.17.2 */
-
-    const { console: console_1$1 } = globals;
     const file$3 = "src/Result.svelte";
 
     function get_each_context$2(ctx, list, i) {
@@ -2132,7 +2163,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (20:1) {#if found.length > 1}
+    // (18:1) {#if found.length > 1}
     function create_if_block$1(ctx) {
     	let div1;
     	let p;
@@ -2157,11 +2188,12 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			add_location(p, file$3, 21, 3, 418);
-    			attr_dev(div0, "class", "svelte-oqztyl");
-    			add_location(div0, file$3, 22, 3, 448);
-    			attr_dev(div1, "class", "alternative-results svelte-oqztyl");
-    			add_location(div1, file$3, 20, 2, 381);
+    			attr_dev(p, "class", "svelte-gj6t1r");
+    			add_location(p, file$3, 19, 3, 407);
+    			attr_dev(div0, "class", "alternative-results svelte-gj6t1r");
+    			add_location(div0, file$3, 20, 3, 437);
+    			attr_dev(div1, "class", "alternative-results-wrapper svelte-gj6t1r");
+    			add_location(div1, file$3, 18, 2, 362);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -2207,35 +2239,57 @@ var app = (function () {
     		block,
     		id: create_if_block$1.name,
     		type: "if",
-    		source: "(20:1) {#if found.length > 1}",
+    		source: "(18:1) {#if found.length > 1}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (24:4) {#each found.slice(1) as result}
+    // (22:4) {#each found.slice(1) as result}
     function create_each_block$2(ctx) {
+    	let div;
     	let img;
     	let img_src_value;
+    	let t0;
+    	let p;
+    	let t1_value = /*result*/ ctx[3].name + "";
+    	let t1;
+    	let t2;
 
     	const block = {
     		c: function create() {
+    			div = element("div");
     			img = element("img");
+    			t0 = space();
+    			p = element("p");
+    			t1 = text(t1_value);
+    			t2 = space();
     			if (img.src !== (img_src_value = "/assets/flags/" + /*result*/ ctx[3].code.toLowerCase() + ".png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "class", "svelte-oqztyl");
-    			add_location(img, file$3, 24, 5, 496);
+    			attr_dev(img, "class", "svelte-gj6t1r");
+    			add_location(img, file$3, 23, 6, 525);
+    			attr_dev(p, "class", "svelte-gj6t1r");
+    			add_location(p, file$3, 24, 6, 591);
+    			attr_dev(div, "class", "svelte-gj6t1r");
+    			add_location(div, file$3, 22, 5, 513);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, img, anchor);
+    			insert_dev(target, div, anchor);
+    			append_dev(div, img);
+    			append_dev(div, t0);
+    			append_dev(div, p);
+    			append_dev(p, t1);
+    			append_dev(div, t2);
     		},
     		p: function update(ctx, dirty) {
     			if (dirty & /*found*/ 1 && img.src !== (img_src_value = "/assets/flags/" + /*result*/ ctx[3].code.toLowerCase() + ".png")) {
     				attr_dev(img, "src", img_src_value);
     			}
+
+    			if (dirty & /*found*/ 1 && t1_value !== (t1_value = /*result*/ ctx[3].name + "")) set_data_dev(t1, t1_value);
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(img);
+    			if (detaching) detach_dev(div);
     		}
     	};
 
@@ -2243,14 +2297,14 @@ var app = (function () {
     		block,
     		id: create_each_block$2.name,
     		type: "each",
-    		source: "(24:4) {#each found.slice(1) as result}",
+    		source: "(22:4) {#each found.slice(1) as result}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (17:0) <Card>
+    // (15:0) <Card>
     function create_default_slot$1(ctx) {
     	let h3;
     	let t0;
@@ -2269,7 +2323,7 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			h3 = element("h3");
-    			t0 = text("Is it ");
+    			t0 = text("Is this ");
     			t1 = text(t1_value);
     			t2 = text("?");
     			t3 = space();
@@ -2279,12 +2333,12 @@ var app = (function () {
     			t5 = space();
     			button = element("button");
     			button.textContent = "Identify another flag";
-    			add_location(h3, file$3, 17, 1, 246);
+    			add_location(h3, file$3, 15, 1, 225);
     			if (img.src !== (img_src_value = "/assets/flags/" + /*found*/ ctx[0][0].code.toLowerCase() + ".png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "class", "svelte-oqztyl");
-    			add_location(img, file$3, 18, 1, 293);
-    			attr_dev(button, "class", "svelte-oqztyl");
-    			add_location(button, file$3, 29, 1, 595);
+    			attr_dev(img, "class", "svelte-gj6t1r");
+    			add_location(img, file$3, 16, 1, 274);
+    			attr_dev(button, "class", "svelte-gj6t1r");
+    			add_location(button, file$3, 30, 1, 663);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h3, anchor);
@@ -2335,7 +2389,7 @@ var app = (function () {
     		block,
     		id: create_default_slot$1.name,
     		type: "slot",
-    		source: "(17:0) <Card>",
+    		source: "(15:0) <Card>",
     		ctx
     	});
 
@@ -2400,7 +2454,6 @@ var app = (function () {
 
     function instance$3($$self, $$props, $$invalidate) {
     	let { found } = $$props;
-    	console.log(found);
     	const dispatch = createEventDispatcher();
 
     	const retry = () => {
@@ -2410,7 +2463,7 @@ var app = (function () {
     	const writable_props = ["found"];
 
     	Object.keys($$props).forEach(key => {
-    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console_1$1.warn(`<Result> was created with unknown prop '${key}'`);
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<Result> was created with unknown prop '${key}'`);
     	});
 
     	$$self.$set = $$props => {
@@ -2444,7 +2497,7 @@ var app = (function () {
     		const props = options.props || {};
 
     		if (/*found*/ ctx[0] === undefined && !("found" in props)) {
-    			console_1$1.warn("<Result> was created without expected prop 'found'");
+    			console.warn("<Result> was created without expected prop 'found'");
     		}
     	}
 
@@ -2462,34 +2515,107 @@ var app = (function () {
     const { Error: Error_1 } = globals;
     const file$4 = "src/Error.svelte";
 
-    // (12:0) <Card>
-    function create_default_slot$2(ctx) {
+    // (17:1) {:else}
+    function create_else_block$1(ctx) {
     	let h3;
-    	let t1;
-    	let button;
-    	let dispose;
+
+    	const block = {
+    		c: function create() {
+    			h3 = element("h3");
+    			h3.textContent = "I need more information to identify this flag...";
+    			add_location(h3, file$4, 17, 2, 314);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, h3, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(h3);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_else_block$1.name,
+    		type: "else",
+    		source: "(17:1) {:else}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (15:1) {#if notFound}
+    function create_if_block$2(ctx) {
+    	let h3;
 
     	const block = {
     		c: function create() {
     			h3 = element("h3");
     			h3.textContent = "I don't know this flag... Are you sure it exists?";
-    			t1 = space();
-    			button = element("button");
-    			button.textContent = "Identify another flag";
-    			add_location(h3, file$4, 12, 1, 204);
-    			attr_dev(button, "class", "svelte-12uus6a");
-    			add_location(button, file$4, 13, 1, 264);
+    			add_location(h3, file$4, 15, 2, 244);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h3, anchor);
-    			insert_dev(target, t1, anchor);
-    			insert_dev(target, button, anchor);
-    			dispose = listen_dev(button, "click", /*retry*/ ctx[0], false, false, false);
     		},
-    		p: noop,
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(h3);
-    			if (detaching) detach_dev(t1);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block$2.name,
+    		type: "if",
+    		source: "(15:1) {#if notFound}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (14:0) <Card>
+    function create_default_slot$2(ctx) {
+    	let t0;
+    	let button;
+    	let dispose;
+
+    	function select_block_type(ctx, dirty) {
+    		if (/*notFound*/ ctx[0]) return create_if_block$2;
+    		return create_else_block$1;
+    	}
+
+    	let current_block_type = select_block_type(ctx);
+    	let if_block = current_block_type(ctx);
+
+    	const block = {
+    		c: function create() {
+    			if_block.c();
+    			t0 = space();
+    			button = element("button");
+    			button.textContent = "Try again";
+    			attr_dev(button, "class", "svelte-12uus6a");
+    			add_location(button, file$4, 19, 1, 380);
+    		},
+    		m: function mount(target, anchor) {
+    			if_block.m(target, anchor);
+    			insert_dev(target, t0, anchor);
+    			insert_dev(target, button, anchor);
+    			dispose = listen_dev(button, "click", /*retry*/ ctx[1], false, false, false);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (current_block_type !== (current_block_type = select_block_type(ctx))) {
+    				if_block.d(1);
+    				if_block = current_block_type(ctx);
+
+    				if (if_block) {
+    					if_block.c();
+    					if_block.m(t0.parentNode, t0);
+    				}
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if_block.d(detaching);
+    			if (detaching) detach_dev(t0);
     			if (detaching) detach_dev(button);
     			dispose();
     		}
@@ -2499,7 +2625,7 @@ var app = (function () {
     		block,
     		id: create_default_slot$2.name,
     		type: "slot",
-    		source: "(12:0) <Card>",
+    		source: "(14:0) <Card>",
     		ctx
     	});
 
@@ -2531,7 +2657,7 @@ var app = (function () {
     		p: function update(ctx, [dirty]) {
     			const card_changes = {};
 
-    			if (dirty & /*$$scope*/ 4) {
+    			if (dirty & /*$$scope, notFound*/ 9) {
     				card_changes.$$scope = { dirty, ctx };
     			}
 
@@ -2562,28 +2688,39 @@ var app = (function () {
     	return block;
     }
 
-    function instance$4($$self) {
+    function instance$4($$self, $$props, $$invalidate) {
+    	let { notFound } = $$props;
     	const dispatch = createEventDispatcher();
 
     	const retry = () => {
     		dispatch("retry");
     	};
 
+    	const writable_props = ["notFound"];
+
+    	Object.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<Error> was created with unknown prop '${key}'`);
+    	});
+
+    	$$self.$set = $$props => {
+    		if ("notFound" in $$props) $$invalidate(0, notFound = $$props.notFound);
+    	};
+
     	$$self.$capture_state = () => {
-    		return {};
+    		return { notFound };
     	};
 
     	$$self.$inject_state = $$props => {
-    		
+    		if ("notFound" in $$props) $$invalidate(0, notFound = $$props.notFound);
     	};
 
-    	return [retry];
+    	return [notFound, retry];
     }
 
     class Error$1 extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$4, create_fragment$4, safe_not_equal, {});
+    		init(this, options, instance$4, create_fragment$4, safe_not_equal, { notFound: 0 });
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
@@ -2591,72 +2728,111 @@ var app = (function () {
     			options,
     			id: create_fragment$4.name
     		});
+
+    		const { ctx } = this.$$;
+    		const props = options.props || {};
+
+    		if (/*notFound*/ ctx[0] === undefined && !("notFound" in props)) {
+    			console.warn("<Error> was created without expected prop 'notFound'");
+    		}
+    	}
+
+    	get notFound() {
+    		throw new Error_1("<Error>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	set notFound(value) {
+    		throw new Error_1("<Error>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
     	}
     }
 
-    const colors = [
-    	'black',
-    	'white',
-    	'red',
-    	'green',
-    	'blue',
-    	'yellow',
-    	'orange'
-    ];
+    const layout = {
+    	question: 'What is the layout (or layouts) of the flag?',
+    	multiple: true,
+    	options: [
+    		{ value: 'plain', label: 'Plain color' },
+    		{ value: 'bandsVertical', label: 'Vertical bands' },
+    		{ value: 'bandsHorizontal', label: 'Horizontal bands' },
+    		{ value: 'triangle', label: 'Triangle on the hoist-side' },
+    		{ value: 'diagonal', label: 'Diagonal' },
+    		{ value: 'unionJack', label: 'Union Jack in the canton' },
+    		{ value: 'stripes', label: 'Stripes' },
+    		{ value: 'cross', label: 'Cross' },
+    		{ value: 'misc', label: 'Miscellaneous'}
+    	]
+    };
 
-    const layout = [
-    	'plain',
-    	'barsVertical',
-    	'barsHorizontal',
-    	'triangle',
-    	'diagonal',
-    	'unionJack',
-    	'stripes',
-    	'cross',
-    	'misc'
-    ];
+    const colors = {
+    	question: 'What are the main colors of the flag?',
+    	multiple: true,
+    	options: [
+    		{ value: 'black' },
+    		{ value: 'white' },
+    		{ value: 'red' },
+    		{ value: 'green' },
+    		{ value: 'blue' },
+    		{ value: 'yellow' },
+    		{ value: 'orange' }
+    	]
+    };
 
-    const figures = [
-    	'none',
-    	'star',
-    	'emblem',
-    	'sun',
-    	'crescent',
-    	'bird',
-    	'weapon',
-    	'cross',
-    	'nature',
-    	'misc'
-    ];
+    const figures = {
+    	question: 'Does the flag contain any figure?',
+    	multiple: true,
+    	options: [
+    		{ value: 'none', label: 'None' },
+    		{ value: 'star', label: 'Star(s)' },
+    		{ value: 'emblem', label: 'Emblem' },
+    		{ value: 'sun', label: 'Sun (or disk)' },
+    		{ value: 'crescent', label: 'Crescent' },
+    		{ value: 'bird', label: 'Bird (i.e. eagle)' },
+    		{ value: 'weapon', label: 'Weapon' },
+    		{ value: 'cross', label: 'Cross' },
+    		{ value: 'nature', label: 'Leaf/tree' },
+    		{ value: 'misc', label: 'Miscellaneous'}
+    	]
+    };
 
-    const nbBars = [
-    	'barsVertical2',
-    	'barsVertical3',
-    	'barsVertical4',
-    	'barsHorizontal2',
-    	'barsHorizontal3'
-    ];
+    const nbStars = {
+    	question: 'How many stars does the flag contain?',
+    	multiple: false,
+    	options: [
+    		{ value: 1, label: 'A single star' },
+    		{ value: 2, label: '2 to 5 stars' },
+    		{ value: 6, label: '6 stars or more' },
+    	]
+    };
 
-    const nbStars = [1, 2, 6];
+    const nbBands = {
+    	question: 'How many bands has the flag?',
+    	multiple: false,
+    	options: [
+    		{ value: 'bandsVertical2', label: '2 bands' },
+    		{ value: 'bandsVertical3', label: '3 bands' },
+    		{ value: 'bandsVertical4', label: '4 bands or more' },
+    		{ value: 'bandsHorizontal2', label: '2 bands' },
+    		{ value: 'bandsHorizontal3', label: '3 bands' },
+    	]
+    };
 
     var options = {
-    	colors,
     	layout,
+    	colors,
     	figures,
-    	nbBars,
-    	nbStars
+    	nbStars,
+    	nbBands
     };
 
     /* src/App.svelte generated by Svelte v3.17.2 */
 
     const { Error: Error_1$1 } = globals;
 
-    // (164:0) {#if !mobile}
+    // (130:0) {#if !mobile}
     function create_if_block_3(ctx) {
     	let current;
 
     	const background = new Background({
-    			props: { flags: /*flags*/ ctx[1] },
+    			props: { flags: /*flags*/ ctx[0] },
     			$$inline: true
     		});
 
@@ -2670,7 +2846,7 @@ var app = (function () {
     		},
     		p: function update(ctx, dirty) {
     			const background_changes = {};
-    			if (dirty & /*flags*/ 2) background_changes.flags = /*flags*/ ctx[1];
+    			if (dirty & /*flags*/ 1) background_changes.flags = /*flags*/ ctx[0];
     			background.$set(background_changes);
     		},
     		i: function intro(local) {
@@ -2691,25 +2867,25 @@ var app = (function () {
     		block,
     		id: create_if_block_3.name,
     		type: "if",
-    		source: "(164:0) {#if !mobile}",
+    		source: "(130:0) {#if !mobile}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (167:0) {#if !loading}
-    function create_if_block$2(ctx) {
+    // (133:0) {#if !loading}
+    function create_if_block$3(ctx) {
     	let current_block_type_index;
     	let if_block;
     	let if_block_anchor;
     	let current;
-    	const if_block_creators = [create_if_block_1, create_if_block_2, create_else_block$1];
+    	const if_block_creators = [create_if_block_1, create_if_block_2, create_else_block$2];
     	const if_blocks = [];
 
     	function select_block_type(ctx, dirty) {
-    		if (/*property*/ ctx[5] && /*filtered*/ ctx[2].length > 1) return 0;
-    		if (/*filtered*/ ctx[2].length <= 3) return 1;
+    		if (/*property*/ ctx[2] && /*filtered*/ ctx[1].length > 1) return 0;
+    		if (/*filtered*/ ctx[1].length > 0 && /*filtered*/ ctx[1].length <= 3) return 1;
     		return 2;
     	}
 
@@ -2768,20 +2944,27 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block$2.name,
+    		id: create_if_block$3.name,
     		type: "if",
-    		source: "(167:0) {#if !loading}",
+    		source: "(133:0) {#if !loading}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (184:1) {:else}
-    function create_else_block$1(ctx) {
+    // (149:1) {:else}
+    function create_else_block$2(ctx) {
     	let current;
-    	const error = new Error$1({ $$inline: true });
-    	error.$on("retry", /*retry_handler_1*/ ctx[15]);
+
+    	const error = new Error$1({
+    			props: {
+    				notFound: /*filtered*/ ctx[1].length === 0
+    			},
+    			$$inline: true
+    		});
+
+    	error.$on("retry", /*retry_handler_1*/ ctx[13]);
 
     	const block = {
     		c: function create() {
@@ -2791,7 +2974,11 @@ var app = (function () {
     			mount_component(error, target, anchor);
     			current = true;
     		},
-    		p: noop,
+    		p: function update(ctx, dirty) {
+    			const error_changes = {};
+    			if (dirty & /*filtered*/ 2) error_changes.notFound = /*filtered*/ ctx[1].length === 0;
+    			error.$set(error_changes);
+    		},
     		i: function intro(local) {
     			if (current) return;
     			transition_in(error.$$.fragment, local);
@@ -2808,25 +2995,25 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block$1.name,
+    		id: create_else_block$2.name,
     		type: "else",
-    		source: "(184:1) {:else}",
+    		source: "(149:1) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (178:32) 
+    // (143:55) 
     function create_if_block_2(ctx) {
     	let current;
 
     	const result = new Result({
-    			props: { found: /*filtered*/ ctx[2] },
+    			props: { found: /*filtered*/ ctx[1] },
     			$$inline: true
     		});
 
-    	result.$on("retry", /*retry_handler*/ ctx[14]);
+    	result.$on("retry", /*retry_handler*/ ctx[12]);
 
     	const block = {
     		c: function create() {
@@ -2838,7 +3025,7 @@ var app = (function () {
     		},
     		p: function update(ctx, dirty) {
     			const result_changes = {};
-    			if (dirty & /*filtered*/ 4) result_changes.found = /*filtered*/ ctx[2];
+    			if (dirty & /*filtered*/ 2) result_changes.found = /*filtered*/ ctx[1];
     			result.$set(result_changes);
     		},
     		i: function intro(local) {
@@ -2859,27 +3046,26 @@ var app = (function () {
     		block,
     		id: create_if_block_2.name,
     		type: "if",
-    		source: "(178:32) ",
+    		source: "(143:55) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (168:1) {#if property && filtered.length > 1}
+    // (134:1) {#if property && filtered.length > 1}
     function create_if_block_1(ctx) {
     	let updating_selected;
     	let current;
 
     	function question_selected_binding(value) {
-    		/*question_selected_binding*/ ctx[13].call(null, value);
+    		/*question_selected_binding*/ ctx[11].call(null, value);
     	}
 
     	let question_props = {
-    		property: /*property*/ ctx[5],
-    		options: options[/*property*/ ctx[5]],
-    		multiple: /*isMultiple*/ ctx[7],
-    		filtered: /*filtered*/ ctx[2]
+    		property: /*property*/ ctx[2],
+    		propertyOptions: options[/*property*/ ctx[2]],
+    		filtered: /*filtered*/ ctx[1]
     	};
 
     	if (/*selected*/ ctx[3] !== void 0) {
@@ -2888,8 +3074,8 @@ var app = (function () {
 
     	const question = new Question({ props: question_props, $$inline: true });
     	binding_callbacks.push(() => bind(question, "selected", question_selected_binding));
-    	question.$on("submit", /*filterFlags*/ ctx[8]);
-    	question.$on("skip", /*skipQuestion*/ ctx[9]);
+    	question.$on("submit", /*filterFlags*/ ctx[7]);
+    	question.$on("skip", /*skipQuestion*/ ctx[8]);
 
     	const block = {
     		c: function create() {
@@ -2901,10 +3087,9 @@ var app = (function () {
     		},
     		p: function update(ctx, dirty) {
     			const question_changes = {};
-    			if (dirty & /*property*/ 32) question_changes.property = /*property*/ ctx[5];
-    			if (dirty & /*property*/ 32) question_changes.options = options[/*property*/ ctx[5]];
-    			if (dirty & /*isMultiple*/ 128) question_changes.multiple = /*isMultiple*/ ctx[7];
-    			if (dirty & /*filtered*/ 4) question_changes.filtered = /*filtered*/ ctx[2];
+    			if (dirty & /*property*/ 4) question_changes.property = /*property*/ ctx[2];
+    			if (dirty & /*property*/ 4) question_changes.propertyOptions = options[/*property*/ ctx[2]];
+    			if (dirty & /*filtered*/ 2) question_changes.filtered = /*filtered*/ ctx[1];
 
     			if (!updating_selected && dirty & /*selected*/ 8) {
     				updating_selected = true;
@@ -2932,7 +3117,7 @@ var app = (function () {
     		block,
     		id: create_if_block_1.name,
     		type: "if",
-    		source: "(168:1) {#if property && filtered.length > 1}",
+    		source: "(134:1) {#if property && filtered.length > 1}",
     		ctx
     	});
 
@@ -2944,7 +3129,7 @@ var app = (function () {
     	let if_block1_anchor;
     	let current;
     	let if_block0 = !/*mobile*/ ctx[6] && create_if_block_3(ctx);
-    	let if_block1 = !/*loading*/ ctx[0] && create_if_block$2(ctx);
+    	let if_block1 = !/*loading*/ ctx[5] && create_if_block$3(ctx);
 
     	const block = {
     		c: function create() {
@@ -2984,12 +3169,12 @@ var app = (function () {
     				check_outros();
     			}
 
-    			if (!/*loading*/ ctx[0]) {
+    			if (!/*loading*/ ctx[5]) {
     				if (if_block1) {
     					if_block1.p(ctx, dirty);
     					transition_in(if_block1, 1);
     				} else {
-    					if_block1 = create_if_block$2(ctx);
+    					if_block1 = create_if_block$3(ctx);
     					if_block1.c();
     					transition_in(if_block1, 1);
     					if_block1.m(if_block1_anchor.parentNode, if_block1_anchor);
@@ -3035,9 +3220,18 @@ var app = (function () {
     }
 
     function instance$5($$self, $$props, $$invalidate) {
-    	let loading = true;
+    	const properties = ["layout", "colors", "figures", "nbStars", "nbBands"];
     	let flags = [];
     	let filtered = [];
+    	let property = properties[0];
+    	let selected = [];
+    	let knownProperties = {};
+    	let loading = true;
+    	let mobile = window.matchMedia("(orientation: portrait)").matches;
+
+    	window.addEventListener("resize", () => {
+    		$$invalidate(6, mobile = window.matchMedia("(orientation: portrait)").matches);
+    	});
 
     	csv$1("./flags.csv").then(data => {
     		data.forEach(e => {
@@ -3048,19 +3242,9 @@ var app = (function () {
     			e.figures = e.figures.split(",").map(d => d === "" ? "none" : d);
     		});
 
-    		$$invalidate(1, flags = data);
-    		$$invalidate(2, filtered = flags);
-    		$$invalidate(0, loading = false);
-    	}); // flags.forEach((flag1, i) => flags.forEach((flag2, j) => { // 	if (j <= i) return // 	if (flag1.nbBars === flag2.nbBars && flag1.nbStars === flag2.nbStars // 		&& flag1.layout.length === flag2.layout.length && flag1.layout.every(e1 => flag2.layout.some(e2 => e1 === e2))
-
-    	let selected = [];
-    	let knownProperties = {};
-    	const properties = ["layout", "colors", "figures", "nbStars", "nbBars"];
-    	let property = "layout";
-    	let mobile = window.matchMedia("(orientation: portrait)").matches;
-
-    	window.addEventListener("resize", () => {
-    		$$invalidate(6, mobile = window.matchMedia("(orientation: portrait)").matches);
+    		$$invalidate(0, flags = data);
+    		$$invalidate(1, filtered = flags);
+    		$$invalidate(5, loading = false);
     	});
 
     	const getNextProperty = () => {
@@ -3068,47 +3252,39 @@ var app = (function () {
     Compute available properties:
     - properties not already known
     - 'nbStars' only if 'figures' is already known and if the flag contains stars
-    - 'nbBars' only if 'layout' is already knozn and if the flag contains bars
+    - 'nbBands' only if 'layout' is already knozn and if the flag contains bands
     */
     		const availableProperties = properties.filter(e => !Object.keys(knownProperties).includes(e)).filter(e => !knownProperties.figures || !knownProperties.figures.includes("star")
     		? e !== "nbStars"
-    		: e).filter(e => !knownProperties.layout || !knownProperties.layout.some(e => e.startsWith("bars"))
-    		? e !== "nbBars"
+    		: e).filter(e => !knownProperties.layout || !knownProperties.layout.some(e => e.startsWith("bands"))
+    		? e !== "nbBands"
     		: e);
 
-    		console.log(availableProperties);
+    		console.log(knownProperties, availableProperties);
     		if (availableProperties.length === 0) return;
 
     		// For each available property, compute the average number of filtered flags depending on the option chosen (only one option is considered)
     		const averages = availableProperties.reduce(
     			(acc, property) => {
-    				console.log(property);
-
+    				// If every flag in filtered has the exact same value(s) for the given property, don't bother
     				if (filtered.every(e => {
-    					const propertyName = property === "nbBars" ? "layout" : property;
-    					console.log(propertyName, filtered[0]);
+    					const propertyName = property === "nbBands" ? "layout" : property;
     					if (Array.isArray(e[propertyName]) && e[propertyName].length === filtered[0][propertyName].length && e[propertyName].every(e1 => filtered[0][propertyName].some(e2 => e1 === e2))) return true;
     					if (!Array.isArray(e[propertyName]) && e[propertyName] == filtered[0][propertyName]) return true;
     					return false;
-    				})) return { ...acc, [property]: Infinity };
+    				})) return acc;
 
-    				// If the property is 'nbBars', only use options for vertical or horizontal (depending on the known layout)
-    				const propertyOptions = options[property].filter(e => property === "nbBars"
-    				? e.startsWith(knownProperties.layout)
-    				: e);
+    				// If the property is 'nbBands', only use options for vertical or horizontal (depending on the known layout)
+    				const propertyOptions = options[property].options.filter(option => property === "nbBands"
+    				? option.value.startsWith(knownProperties.layout)
+    				: option);
 
     				const sum = propertyOptions.reduce(
     					(acc, option) => {
-    						console.log(option, filtered.filter(e => {
-    							const value = e[property === "nbBars" ? "layout" : property];
-    							if (Array.isArray(value)) return value.some(e => e.includes(option));
-    							return value === option;
-    						}));
-
     						return acc + filtered.filter(e => {
-    							const value = e[property === "nbBars" ? "layout" : property];
-    							if (Array.isArray(value)) return value.some(e => e.includes(option));
-    							return value === option;
+    							const value = e[property === "nbBands" ? "layout" : property];
+    							if (Array.isArray(value)) return value.some(e => e.includes(option.value));
+    							return value === option.value;
     						}).length;
     					},
     					0
@@ -3122,22 +3298,21 @@ var app = (function () {
     			{}
     		);
 
-    		console.log(averages);
+    		// Return if no interesting property, or return the property with the smallest average
+    		if (Object.keys(averages).length === 0) return;
 
-    		// Return the property with the smallest average
     		return Object.entries(averages).sort((a, b) => a[1] - b[1])[0][0];
     	};
 
     	const filterFlags = () => {
-    		$$invalidate(0, loading = true);
-    		console.log(selected, property, isMultiple);
+    		$$invalidate(5, loading = true);
 
-    		if (isMultiple) {
-    			$$invalidate(2, filtered = filtered.filter(e => selected.reduce((acc, value) => acc && e[property].some(e => e.includes(value)), true)));
+    		if (options[property].multiple) {
+    			$$invalidate(1, filtered = filtered.filter(e => selected.reduce((acc, value) => acc && e[property].some(e => e.includes(value)), true)));
     			$$invalidate(4, knownProperties = { ...knownProperties, [property]: selected });
     		} else {
-    			$$invalidate(2, filtered = filtered.filter(e => {
-    				if (property === "nbBars") return e.layout.includes(selected[0]);
+    			$$invalidate(1, filtered = filtered.filter(e => {
+    				if (property === "nbBands") return e.layout.includes(selected[0]);
     				return e[property] === selected[0];
     			}));
 
@@ -3147,20 +3322,22 @@ var app = (function () {
     			});
     		}
 
-    		console.log(filtered);
-    		console.log(knownProperties);
-    		console.log(isAmbiguous);
-    		$$invalidate(5, property = getNextProperty());
+    		$$invalidate(2, property = getNextProperty());
     		$$invalidate(3, selected = []);
-    		setTimeout(() => $$invalidate(0, loading = false), 0);
+    		setTimeout(() => $$invalidate(5, loading = false), 0);
     	};
 
     	const skipQuestion = () => {
-    		$$invalidate(0, loading = true);
+    		$$invalidate(5, loading = true);
     		$$invalidate(3, selected = []);
-    		$$invalidate(4, knownProperties = [...knownProperties, property]);
-    		$$invalidate(5, property = getNextProperty());
-    		setTimeout(() => $$invalidate(0, loading = false), 0);
+
+    		$$invalidate(4, knownProperties = {
+    			...knownProperties,
+    			[property]: undefined
+    		});
+
+    		$$invalidate(2, property = getNextProperty());
+    		setTimeout(() => $$invalidate(5, loading = false), 0);
     	};
 
     	function question_selected_binding(value) {
@@ -3169,15 +3346,15 @@ var app = (function () {
     	}
 
     	const retry_handler = () => {
-    		$$invalidate(2, filtered = flags);
+    		$$invalidate(1, filtered = flags);
     		$$invalidate(4, knownProperties = []);
-    		$$invalidate(5, property = "layout");
+    		$$invalidate(2, property = "layout");
     	};
 
     	const retry_handler_1 = () => {
-    		$$invalidate(2, filtered = flags);
+    		$$invalidate(1, filtered = flags);
     		$$invalidate(4, knownProperties = []);
-    		$$invalidate(5, property = "layout");
+    		$$invalidate(2, property = "layout");
     	};
 
     	$$self.$capture_state = () => {
@@ -3185,59 +3362,31 @@ var app = (function () {
     	};
 
     	$$self.$inject_state = $$props => {
-    		if ("loading" in $$props) $$invalidate(0, loading = $$props.loading);
-    		if ("flags" in $$props) $$invalidate(1, flags = $$props.flags);
-    		if ("filtered" in $$props) $$invalidate(2, filtered = $$props.filtered);
+    		if ("flags" in $$props) $$invalidate(0, flags = $$props.flags);
+    		if ("filtered" in $$props) $$invalidate(1, filtered = $$props.filtered);
+    		if ("property" in $$props) $$invalidate(2, property = $$props.property);
     		if ("selected" in $$props) $$invalidate(3, selected = $$props.selected);
     		if ("knownProperties" in $$props) $$invalidate(4, knownProperties = $$props.knownProperties);
-    		if ("property" in $$props) $$invalidate(5, property = $$props.property);
+    		if ("loading" in $$props) $$invalidate(5, loading = $$props.loading);
     		if ("mobile" in $$props) $$invalidate(6, mobile = $$props.mobile);
-    		if ("isMultiple" in $$props) $$invalidate(7, isMultiple = $$props.isMultiple);
-    		if ("isAmbiguous" in $$props) isAmbiguous = $$props.isAmbiguous;
     	};
 
-    	let isMultiple;
-    	let isAmbiguous;
-
     	$$self.$$.update = () => {
-    		if ($$self.$$.dirty & /*filtered*/ 4) {
-    			// 		&& flag1.colors.length === flag2.colors.length && flag1.colors.every(e1 => flag2.colors.some(e2 => e1 === e2))
-    			// 		&& flag1.figures.length === flag2.figures.length && flag1.figures.every(e1 => flag2.figures.some(e2 => e1 === e2)))
-    			// 		console.log(flag1.name, flag2.name);
-    			// }));
-    			// console.log(Array.from(new Set(flags.reduce((acc, value) => [...acc, ...value.figures], []))))
-    			// console.log(flags.filter(e => e.figures.includes("misc")))
-    			 console.log({ filtered });
-    		}
-
-    		if ($$self.$$.dirty & /*selected*/ 8) {
-    			 console.log(selected);
-    		}
-
-    		if ($$self.$$.dirty & /*property*/ 32) {
-    			 $$invalidate(7, isMultiple = ["layout", "colors", "figures"].includes(property));
-    		}
-
-    		if ($$self.$$.dirty & /*filtered*/ 4) {
-    			 isAmbiguous = filtered.every((flag1, i) => filtered.every((flag2, j) => {
-    				if (j <= i) return true;
-    				return flag1.nbBars === flag2.nbBars && flag1.nbStars === flag2.nbStars && flag1.layout.length === flag2.layout.length && flag1.layout.every(e1 => flag2.layout.some(e2 => e1 === e2)) && flag1.colors.length === flag2.colors.length && flag1.colors.every(e1 => flag2.colors.some(e2 => e1 === e2)) && flag1.figures.length === flag2.figures.length && flag1.figures.every(e1 => flag2.figures.some(e2 => e1 === e2));
-    			}));
+    		if ($$self.$$.dirty & /*filtered*/ 2) {
+    			 console.log(filtered);
     		}
     	};
 
     	return [
-    		loading,
     		flags,
     		filtered,
+    		property,
     		selected,
     		knownProperties,
-    		property,
+    		loading,
     		mobile,
-    		isMultiple,
     		filterFlags,
     		skipQuestion,
-    		isAmbiguous,
     		properties,
     		getNextProperty,
     		question_selected_binding,

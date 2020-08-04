@@ -4,21 +4,18 @@
 	import Card from './Card.svelte';
 
 	export let property;
-	export let options;
-	export let multiple = false;
+	export let propertyOptions;
 	export let filtered;
 	export let selected;
 
 	const dispatch = createEventDispatcher();
 
-	if (property === 'nbBars') {
-		options = options.filter(option => filtered.some(e => option.startsWith(e.layout)));
-		console.log(options)
-		if (options.length === 1) dispatch('skip');
+	if (property === 'nbBands') {
+		propertyOptions.options = propertyOptions.options.filter(option => filtered.some(e => option.value.startsWith(e.layout)));
 	}
 
 	const clickHandler = (value) => {
-		if (multiple) {
+		if (propertyOptions.multiple) {
 			selected = (selected.includes(value))
 				? selected.filter(e => e !== value)
 				: [...selected, value];
@@ -38,23 +35,28 @@
 </script>
 
 <Card>
-	<h3>{property.toUpperCase()}</h3>
+	<h3>{propertyOptions.question}</h3>
 	<div class='grid'>
-		{#each options as option}
-			{#if property === 'colors'}
-				<div
-					class='option {selected.includes(option) ? 'selected' : ''}'
-					style='background-color: {option}; padding-top: calc(100% * 2/3);'
-					on:click={() => clickHandler(option)}
-				></div>
-			{:else}
-				<div
-					class='option {selected.includes(option) ? 'selected' : ''}'
-					on:click={() => clickHandler(option)}
-				>
-					<img src='/assets/{property}/{option}.png' />
-				</div>
-			{/if}
+		{#each propertyOptions.options as option}
+			<div class='option'>
+				{#if property === 'colors'}
+					<div
+						class='option-image'
+						class:selected={selected.includes(option.value)}
+						style='background-color: {option.value}; padding-top: calc(100% * 2/3);'
+						on:click={() => clickHandler(option.value)}
+					></div>
+				{:else}
+						<div
+							class='option-image'
+							class:selected={selected.includes(option.value)}
+							on:click={() => clickHandler(option.value)}
+						>
+							<img src='/assets/{property}/{option.value}.png' alt={option.label} />
+						</div>
+						<p>{option.label}</p>
+				{/if}
+			</div>
 		{/each}
 	</div>
 	<div>
@@ -75,20 +77,33 @@
 		gap: 0.5rem;
 
 		.option {
-			width: auto;
-			cursor: pointer;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: center;
 
-			&:hover {
-				opacity: 1;
-			}
-
-			&.selected {
-				outline: 2px solid green;
-			}
-
-			img {
+			.option-image {
 				width: 100%;
-				height: 100%;
+				cursor: pointer;
+
+				&:hover {
+					opacity: 1;
+				}
+
+				&.selected {
+					outline: 2px solid green;
+				}
+
+				img {
+					height: 100%;
+					max-width: 100%;
+					max-height: 100px;
+				}
+			}
+
+			p {
+				font-size: 1rem;
+				text-align: center;
 			}
 		}
 	}

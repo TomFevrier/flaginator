@@ -5,8 +5,6 @@
 
 	export let found;
 
-	console.log(found)
-
 	const dispatch = createEventDispatcher();
 	const retry = () => {
 		dispatch('retry');
@@ -15,14 +13,17 @@
 </script>
 
 <Card>
-	<h3>Is it {found[0].name.toUpperCase()}?</h3>
+	<h3>Is this {found[0].name.toUpperCase()}?</h3>
 	<img src='/assets/flags/{found[0].code.toLowerCase()}.png' />
 	{#if found.length > 1}
-		<div class='alternative-results'>
+		<div class='alternative-results-wrapper'>
 			<p>Alternative results</p>
-			<div>
+			<div class='alternative-results'>
 				{#each found.slice(1) as result}
-					<img src='/assets/flags/{result.code.toLowerCase()}.png' />
+					<div>
+						<img src='/assets/flags/{result.code.toLowerCase()}.png' />
+						<p>{result.name}</p>
+					</div>
 				{/each}
 			</div>
 		</div>
@@ -39,15 +40,34 @@
 		width: 200px;
 	}
 
-	.alternative-results {
-		div {
+	.alternative-results-wrapper {
+
+		margin-top: 2rem;
+
+		p {
+			text-align: center;
+			font-weight: 800;
+			margin: 0;
+		}
+
+		.alternative-results {
 			display: flex;
 			justify-content: center;
 			width: 100%;
 
-			img {
-				width: 100px;
-				margin: 1rem;
+			div {
+				display: flex;
+				flex-direction: column;
+				justify-content: end;
+
+				img {
+					width: 100px;
+					margin: 0.5rem 1rem;
+				}
+
+				p {
+					font-weight: normal;
+				}
 			}
 		}
 	}

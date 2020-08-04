@@ -3,6 +3,8 @@
 
 	import Card from './Card.svelte';
 
+	export let notFound;
+
 	const dispatch = createEventDispatcher();
 	const retry = () => {
 		dispatch('retry');
@@ -10,9 +12,13 @@
 </script>
 
 <Card>
-	<h3>I don't know this flag... Are you sure it exists?</h3>
+	{#if notFound}
+		<h3>I don't know this flag... Are you sure it exists?</h3>
+	{:else}
+		<h3>I need more information to identify this flag...</h3>
+	{/if}
 	<button on:click={retry}>
-		Identify another flag
+		Try again
 	</button>
 </Card>
 

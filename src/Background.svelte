@@ -12,42 +12,48 @@
 			<div class='row'>
 				{#each flags.slice(0, NB_FLAGS) as flag}
 					<img
-						src='assets/flags/{flag.code.toLowerCase()}.png'
+						src='assets/flags/{flag.code.toLowerCase()}_small.png'
 						style='width: calc(200vw / {NB_FLAGS});'
+						alt={flag.name}
 					/>
 				{/each}
 				{#each flags.slice(0, NB_FLAGS * 0.5) as flag}
 					<img
-						src='assets/flags/{flag.code.toLowerCase()}.png'
+						src='assets/flags/{flag.code.toLowerCase()}_small.png'
 						style='width: calc(200vw / {NB_FLAGS});'
+						alt={flag.name}
 					/>
 				{/each}
 			</div>
 			<div class='row'>
 				{#each flags.slice(NB_FLAGS, NB_FLAGS * 2) as flag}
 					<img
-						src='assets/flags/{flag.code.toLowerCase()}.png'
+						src='assets/flags/{flag.code.toLowerCase()}_small.png'
 						style='width: calc(200vw / {NB_FLAGS});'
+						alt={flag.name}
 					/>
 				{/each}
 				{#each flags.slice(NB_FLAGS, NB_FLAGS * 1.5) as flag}
 					<img
-						src='assets/flags/{flag.code.toLowerCase()}.png'
+						src='assets/flags/{flag.code.toLowerCase()}_small.png'
 						style='width: calc(200vw / {NB_FLAGS});'
+						alt={flag.name}
 					/>
 				{/each}
 			</div>
 			<div class='row'>
 				{#each flags.slice(NB_FLAGS * 2, NB_FLAGS * 3) as flag}
 					<img
-						src='assets/flags/{flag.code.toLowerCase()}.png'
+						src='assets/flags/{flag.code.toLowerCase()}_small.png'
 						style='width: calc(200vw / {NB_FLAGS});'
+						alt={flag.name}
 					/>
 				{/each}
 				{#each flags.slice(NB_FLAGS * 2, NB_FLAGS * 2.5) as flag}
 					<img
-						src='assets/flags/{flag.code.toLowerCase()}.png'
+						src='assets/flags/{flag.code.toLowerCase()}_small.png'
 						style='width: calc(200vw / {NB_FLAGS});'
+						alt={flag.name}
 					/>
 				{/each}
 			</div>

@@ -7,12 +7,32 @@
 	import Result from './Result.svelte';
 	import Error from './Error.svelte';
 
-	import options from './options';
+	import options from './options-en';
+	// import options from './options-fr';
 
-	let loading = true;
+	const properties = [
+		'layout',
+		'colors',
+		'figures',
+		'nbStars',
+		'nbBands'
+	];
 
 	let flags = [];
 	let filtered = [];
+	$: console.log(filtered)
+
+	let property = properties[0];
+	let selected = [];
+	let knownProperties = {};
+
+	let loading = true;
+
+	let mobile = window.matchMedia('(orientation: portrait)').matches;
+	window.addEventListener('resize', () => {
+		mobile = window.matchMedia('(orientation: portrait)').matches;
+	});
+
 	csv('./flags.csv').then(data => {
 		data.forEach(e => {
 			e.nbStars = +e.nbStars;
@@ -27,103 +47,54 @@
 		flags = data;
 		filtered = flags;
 		loading = false;
-		// flags.forEach((flag1, i) => flags.forEach((flag2, j) => {
-		// 	if (j <= i) return
-		// 	if (flag1.nbBars === flag2.nbBars && flag1.nbStars === flag2.nbStars
-		// 		&& flag1.layout.length === flag2.layout.length && flag1.layout.every(e1 => flag2.layout.some(e2 => e1 === e2))
-		// 		&& flag1.colors.length === flag2.colors.length && flag1.colors.every(e1 => flag2.colors.some(e2 => e1 === e2))
-		// 		&& flag1.figures.length === flag2.figures.length && flag1.figures.every(e1 => flag2.figures.some(e2 => e1 === e2)))
-		// 		console.log(flag1.name, flag2.name);
-		// }));
-		// console.log(Array.from(new Set(flags.reduce((acc, value) => [...acc, ...value.figures], []))))
-		// console.log(flags.filter(e => e.figures.includes("misc")))
 	});
-
-	$: console.log({filtered});
-
-	let selected = [];
-	$: console.log(selected);
-
-	let knownProperties = {};
-	const properties = [
-		'layout',
-		'colors',
-		'figures',
-		'nbStars',
-		'nbBars'
-	];
-
-	let property = 'layout';
-
-	let mobile = window.matchMedia('(orientation: portrait)').matches;
-	window.addEventListener('resize', () => {
-		mobile = window.matchMedia('(orientation: portrait)').matches;
-	});
-
-	$: isMultiple = ['layout', 'colors', 'figures'].includes(property);
-
-	$: isAmbiguous = filtered.every((flag1, i) => filtered.every((flag2, j) => {
-		if (j <= i) return true;
-		return (flag1.nbBars === flag2.nbBars && flag1.nbStars === flag2.nbStars
-			&& flag1.layout.length === flag2.layout.length && flag1.layout.every(e1 => flag2.layout.some(e2 => e1 === e2))
-			&& flag1.colors.length === flag2.colors.length && flag1.colors.every(e1 => flag2.colors.some(e2 => e1 === e2))
-			&& flag1.figures.length === flag2.figures.length && flag1.figures.every(e1 => flag2.figures.some(e2 => e1 === e2)))
-	}));
 
 	const getNextProperty = () => {
 		/*
 		Compute available properties:
 		- properties not already known
 		- 'nbStars' only if 'figures' is already known and if the flag contains stars
-		- 'nbBars' only if 'layout' is already knozn and if the flag contains bars
+		- 'nbBands' only if 'layout' is already knozn and if the flag contains bands
 		*/
 		const availableProperties = properties
 			.filter(e => !Object.keys(knownProperties).includes(e))
 			.filter(e => !knownProperties.figures || !knownProperties.figures.includes('star') ? e !== 'nbStars' : e)
-			.filter(e => !knownProperties.layout || !knownProperties.layout.some(e => e.startsWith('bars')) ? e !== 'nbBars' : e);
-		console.log(availableProperties)
-
+			.filter(e => !knownProperties.layout || !knownProperties.layout.some(e => e.startsWith('bands')) ? e !== 'nbBands' : e);
+		console.log(knownProperties, availableProperties)
 		if (availableProperties.length === 0) return;
 
 		// For each available property, compute the average number of filtered flags depending on the option chosen (only one option is considered)
 		const averages = availableProperties.reduce((acc, property) => {
-			console.log(property)
+			// If every flag in filtered has the exact same value(s) for the given property, don't bother
 			if (filtered.every(e => {
-				const propertyName = property === 'nbBars' ? 'layout' : property;
-				console.log(propertyName, filtered[0])
+				const propertyName = property === 'nbBands' ? 'layout' : property;
 				if (Array.isArray(e[propertyName]) && e[propertyName].length === filtered[0][propertyName].length && e[propertyName].every(e1 => filtered[0][propertyName].some(e2 => e1 === e2)))
 					return true;
 				if (!Array.isArray(e[propertyName]) && e[propertyName] == filtered[0][propertyName])
 					return true;
 				return false;
-			})) return { ...acc, [property]: Infinity };
-			// If the property is 'nbBars', only use options for vertical or horizontal (depending on the known layout)
-			const propertyOptions = options[property].filter(e => property === 'nbBars' ? e.startsWith(knownProperties.layout) : e);
+			})) return acc;
+			// If the property is 'nbBands', only use options for vertical or horizontal (depending on the known layout)
+			const propertyOptions = options[property].options.filter(option => property === 'nbBands' ? option.value.startsWith(knownProperties.layout) : option);
 			const sum = propertyOptions.reduce((acc, option) => {
-				console.log(option, filtered.filter(e => {
-					const value = e[property === 'nbBars' ? 'layout' : property];
-					if (Array.isArray(value))
-						return value.some(e => e.includes(option));
-					return value === option;
-				}))
 				return acc + filtered.filter(e => {
-					const value = e[property === 'nbBars' ? 'layout' : property];
+					const value = e[property === 'nbBands' ? 'layout' : property];
 					if (Array.isArray(value))
-						return value.some(e => e.includes(option));
-					return value === option;
+						return value.some(e => e.includes(option.value));
+					return value === option.value;
 				}).length;
 			}, 0);
 			return { ...acc, [property]: sum / propertyOptions.length };
 		}, {});
-		console.log(averages)
-		// Return the property with the smallest average
+
+		// Return if no interesting property, or return the property with the smallest average
+		if (Object.keys(averages).length === 0) return;
 		return Object.entries(averages).sort((a, b) => a[1] - b[1])[0][0];
 	}
 
 	const filterFlags = () => {
 		loading = true;
-		console.log(selected, property, isMultiple)
-		if (isMultiple) {
+		if (options[property].multiple) {
 			filtered = filtered.filter(e => selected.reduce((acc, value) => acc && e[property].some(e => e.includes(value)), true));
 			knownProperties = {
 				...knownProperties,
@@ -132,7 +103,7 @@
 		}
 		else {
 			filtered = filtered.filter(e => {
-				if (property === 'nbBars')
+				if (property === 'nbBands')
 					return e.layout.includes(selected[0]);
 				return e[property] === selected[0];
 			});
@@ -141,22 +112,17 @@
 				[property]: selected[0]
 			};
 		}
-		console.log(filtered)
-		console.log(knownProperties)
-		console.log(isAmbiguous)
 		property = getNextProperty();
 		selected = [];
 		setTimeout(() => loading = false, 0);
-
 	}
 
 	const skipQuestion = () => {
 		loading = true;
 		selected = [];
-		knownProperties = [...knownProperties, property];
+		knownProperties = { ...knownProperties, [property]: undefined };
 		property = getNextProperty();
 		setTimeout(() => loading = false, 0);
-
 	}
 
 </script>
@@ -168,21 +134,20 @@
 	{#if property && filtered.length > 1}
 		<Question
 			property={property}
-			options={options[property]}
-			multiple={isMultiple}
+			propertyOptions={options[property]}
 			filtered={filtered}
 			bind:selected={selected}
 			on:submit={filterFlags}
 			on:skip={skipQuestion}
 		/>
-	{:else if filtered.length <= 3}
+	{:else if filtered.length > 0 && filtered.length <= 3}
 		<Result found={filtered} on:retry={() => {
 			filtered = flags;
 			knownProperties = [];
 			property = 'layout';
 		}} />
 	{:else}
-		<Error on:retry={() => {
+		<Error notFound={filtered.length === 0} on:retry={() => {
 			filtered = flags;
 			knownProperties = [];
 			property = 'layout';
