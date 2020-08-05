@@ -3,14 +3,14 @@ name: Continuous Deployment
 on: [push]
 
 jobs:
-    build:
-        runs-on: ubuntu-latest
-        name: Deploying to Surge
-        steps:
-            - uses: actions/checkout@v2
-            - uses: actions/setup-node@v1
-                with:
-                    node-version: '12'
-            - run: npm run build
-            - run: npm install -g surge
-            - run: surge ./build ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
+  build:
+    runs-on: ubuntu-latest
+    name: Deploying to Surge
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '12'
+       - run: npm run build
+       - run: npm install -g surge
+       - run: surge ./build ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
