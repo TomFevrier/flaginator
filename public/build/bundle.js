@@ -960,7 +960,7 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			img = element("img");
-    			if (img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + ".png")) attr_dev(img, "src", img_src_value);
+    			if (img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + "_small.png")) attr_dev(img, "src", img_src_value);
     			set_style(img, "width", "calc(200vw / " + NB_FLAGS + ")");
     			attr_dev(img, "alt", img_alt_value = /*flag*/ ctx[4].name);
     			attr_dev(img, "class", "svelte-21en8w");
@@ -970,7 +970,7 @@ var app = (function () {
     			insert_dev(target, img, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*flags*/ 1 && img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + ".png")) {
+    			if (dirty & /*flags*/ 1 && img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + "_small.png")) {
     				attr_dev(img, "src", img_src_value);
     			}
 
@@ -1003,17 +1003,17 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			img = element("img");
-    			if (img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + ".png")) attr_dev(img, "src", img_src_value);
+    			if (img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + "_small.png")) attr_dev(img, "src", img_src_value);
     			set_style(img, "width", "calc(200vw / " + NB_FLAGS + ")");
     			attr_dev(img, "alt", img_alt_value = /*flag*/ ctx[4].name);
     			attr_dev(img, "class", "svelte-21en8w");
-    			add_location(img, file$1, 20, 5, 465);
+    			add_location(img, file$1, 20, 5, 471);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*flags*/ 1 && img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + ".png")) {
+    			if (dirty & /*flags*/ 1 && img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + "_small.png")) {
     				attr_dev(img, "src", img_src_value);
     			}
 
@@ -1046,17 +1046,17 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			img = element("img");
-    			if (img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + ".png")) attr_dev(img, "src", img_src_value);
+    			if (img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + "_small.png")) attr_dev(img, "src", img_src_value);
     			set_style(img, "width", "calc(200vw / " + NB_FLAGS + ")");
     			attr_dev(img, "alt", img_alt_value = /*flag*/ ctx[4].name);
     			attr_dev(img, "class", "svelte-21en8w");
-    			add_location(img, file$1, 29, 5, 706);
+    			add_location(img, file$1, 29, 5, 718);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*flags*/ 1 && img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + ".png")) {
+    			if (dirty & /*flags*/ 1 && img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + "_small.png")) {
     				attr_dev(img, "src", img_src_value);
     			}
 
@@ -1089,17 +1089,17 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			img = element("img");
-    			if (img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + ".png")) attr_dev(img, "src", img_src_value);
+    			if (img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + "_small.png")) attr_dev(img, "src", img_src_value);
     			set_style(img, "width", "calc(200vw / " + NB_FLAGS + ")");
     			attr_dev(img, "alt", img_alt_value = /*flag*/ ctx[4].name);
     			attr_dev(img, "class", "svelte-21en8w");
-    			add_location(img, file$1, 36, 5, 918);
+    			add_location(img, file$1, 36, 5, 936);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*flags*/ 1 && img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + ".png")) {
+    			if (dirty & /*flags*/ 1 && img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + "_small.png")) {
     				attr_dev(img, "src", img_src_value);
     			}
 
@@ -1132,17 +1132,17 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			img = element("img");
-    			if (img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + ".png")) attr_dev(img, "src", img_src_value);
+    			if (img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + "_small.png")) attr_dev(img, "src", img_src_value);
     			set_style(img, "width", "calc(200vw / " + NB_FLAGS + ")");
     			attr_dev(img, "alt", img_alt_value = /*flag*/ ctx[4].name);
     			attr_dev(img, "class", "svelte-21en8w");
-    			add_location(img, file$1, 45, 5, 1163);
+    			add_location(img, file$1, 45, 5, 1187);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*flags*/ 1 && img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + ".png")) {
+    			if (dirty & /*flags*/ 1 && img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + "_small.png")) {
     				attr_dev(img, "src", img_src_value);
     			}
 
@@ -1175,17 +1175,17 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			img = element("img");
-    			if (img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + ".png")) attr_dev(img, "src", img_src_value);
+    			if (img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + "_small.png")) attr_dev(img, "src", img_src_value);
     			set_style(img, "width", "calc(200vw / " + NB_FLAGS + ")");
     			attr_dev(img, "alt", img_alt_value = /*flag*/ ctx[4].name);
     			attr_dev(img, "class", "svelte-21en8w");
-    			add_location(img, file$1, 52, 5, 1379);
+    			add_location(img, file$1, 52, 5, 1409);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*flags*/ 1 && img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + ".png")) {
+    			if (dirty & /*flags*/ 1 && img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + "_small.png")) {
     				attr_dev(img, "src", img_src_value);
     			}
 
@@ -1308,9 +1308,9 @@ var app = (function () {
     			attr_dev(div0, "class", "row svelte-21en8w");
     			add_location(div0, file$1, 11, 3, 192);
     			attr_dev(div1, "class", "row svelte-21en8w");
-    			add_location(div1, file$1, 27, 3, 627);
+    			add_location(div1, file$1, 27, 3, 639);
     			attr_dev(div2, "class", "row svelte-21en8w");
-    			add_location(div2, file$1, 43, 3, 1080);
+    			add_location(div2, file$1, 43, 3, 1104);
     			attr_dev(div3, "class", "group svelte-21en8w");
     			add_location(div3, file$1, 10, 2, 169);
     		},
