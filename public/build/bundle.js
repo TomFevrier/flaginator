@@ -3926,7 +3926,7 @@ var app = (function () {
 
     const { Error: Error_1$1 } = globals;
 
-    // (153:30) 
+    // (159:30) 
     function create_if_block_1$2(ctx) {
     	let current_block_type_index;
     	let if_block;
@@ -3998,14 +3998,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1$2.name,
     		type: "if",
-    		source: "(153:30) ",
+    		source: "(159:30) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (150:0) {#if !started}
+    // (156:0) {#if !started}
     function create_if_block$5(ctx) {
     	let t;
     	let current;
@@ -4015,7 +4015,7 @@ var app = (function () {
     			$$inline: true
     		});
 
-    	menu.$on("start", /*start_handler*/ ctx[13]);
+    	menu.$on("start", /*start_handler*/ ctx[15]);
 
     	const loadingscreen = new LoadingScreen({
     			props: { hidden: /*loaded*/ ctx[2] },
@@ -4064,14 +4064,14 @@ var app = (function () {
     		block,
     		id: create_if_block$5.name,
     		type: "if",
-    		source: "(150:0) {#if !started}",
+    		source: "(156:0) {#if !started}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (170:1) {:else}
+    // (176:1) {:else}
     function create_else_block$3(ctx) {
     	let current;
 
@@ -4115,14 +4115,14 @@ var app = (function () {
     		block,
     		id: create_else_block$3.name,
     		type: "else",
-    		source: "(170:1) {:else}",
+    		source: "(176:1) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (164:55) 
+    // (170:55) 
     function create_if_block_3(ctx) {
     	let current;
 
@@ -4131,7 +4131,7 @@ var app = (function () {
     			$$inline: true
     		});
 
-    	result.$on("retry", /*retry_handler*/ ctx[15]);
+    	result.$on("retry", /*retry_handler*/ ctx[17]);
 
     	const block = {
     		c: function create() {
@@ -4164,20 +4164,20 @@ var app = (function () {
     		block,
     		id: create_if_block_3.name,
     		type: "if",
-    		source: "(164:55) ",
+    		source: "(170:55) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (154:1) {#if property && filtered.length > 1}
+    // (160:1) {#if property && filtered.length > 1}
     function create_if_block_2(ctx) {
     	let updating_selected;
     	let current;
 
     	function question_selected_binding(value) {
-    		/*question_selected_binding*/ ctx[14].call(null, value);
+    		/*question_selected_binding*/ ctx[16].call(null, value);
     	}
 
     	let question_props = {
@@ -4236,7 +4236,7 @@ var app = (function () {
     		block,
     		id: create_if_block_2.name,
     		type: "if",
-    		source: "(154:1) {#if property && filtered.length > 1}",
+    		source: "(160:1) {#if property && filtered.length > 1}",
     		ctx
     	});
 
@@ -4341,17 +4341,25 @@ var app = (function () {
     }
 
     function instance$9($$self, $$props, $$invalidate) {
+    	let optionImages = [];
+    	let nbOptionImagesLoaded = 0;
+
+    	Object.entries(options).forEach(([property, value]) => {
+    		if (property === "colors") return;
+
+    		value.options.forEach(option => {
+    			const img = new Image();
+    			img.src = `/assets/${property}/${option.value}_small.png`;
+    			img.addEventListener("load", () => $$invalidate(12, nbOptionImagesLoaded++, nbOptionImagesLoaded));
+    			optionImages.push(img);
+    		});
+    	});
+
+    	
     	const properties = ["layout", "colors", "figures", "nbStars", "nbBands"];
     	let flags = [];
     	let filtered = [];
-
-    	// let flagImages = [];
-    	// let nbFlagImagesLoaded = 0;
-    	// $: console.log(flagImages, nbFlagImagesLoaded);
-    	// $: loaded = flags.length > 0 && nbFlagImagesLoaded === flags.length;
     	let loaded = false;
-
-    	window.addEventListener("load", () => setTimeout(() => $$invalidate(2, loaded = true), 2000));
     	let property = properties[0];
     	let selected = [];
     	let knownProperties = {};
@@ -4365,7 +4373,7 @@ var app = (function () {
     			e.layout = e.layout.split(",");
     			e.colors = e.colors.split(",");
     			e.figures = e.figures.split(",").map(d => d === "" ? "none" : d);
-    		}); // const img = new Image(); // img.src = `assets/flags/${e.code.toLowerCase()}_xsmall.png`; // img.addEventListener('load', () => nbFlagImagesLoaded++); // flagImages.push(img);
+    		});
 
     		$$invalidate(0, flags = data);
     		$$invalidate(1, filtered = flags);
@@ -4492,6 +4500,8 @@ var app = (function () {
     	};
 
     	$$self.$inject_state = $$props => {
+    		if ("optionImages" in $$props) $$invalidate(13, optionImages = $$props.optionImages);
+    		if ("nbOptionImagesLoaded" in $$props) $$invalidate(12, nbOptionImagesLoaded = $$props.nbOptionImagesLoaded);
     		if ("flags" in $$props) $$invalidate(0, flags = $$props.flags);
     		if ("filtered" in $$props) $$invalidate(1, filtered = $$props.filtered);
     		if ("loaded" in $$props) $$invalidate(2, loaded = $$props.loaded);
@@ -4503,6 +4513,12 @@ var app = (function () {
     	};
 
     	$$self.$$.update = () => {
+    		if ($$self.$$.dirty & /*nbOptionImagesLoaded*/ 4096) {
+    			 {
+    				if (optionImages.length === nbOptionImagesLoaded) setTimeout(() => $$invalidate(2, loaded = true), 2000);
+    			}
+    		}
+
     		if ($$self.$$.dirty & /*filtered*/ 2) {
     			 console.log(filtered);
     		}
@@ -4521,6 +4537,8 @@ var app = (function () {
     		filterFlags,
     		skipQuestion,
     		retry,
+    		nbOptionImagesLoaded,
+    		optionImages,
     		getNextProperty,
     		start_handler,
     		question_selected_binding,
