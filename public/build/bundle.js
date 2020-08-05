@@ -2418,9 +2418,9 @@ var app = (function () {
     			if (if_block) if_block.c();
     			t4 = space();
     			create_component(button.$$.fragment);
-    			attr_dev(h3, "class", "svelte-4tjy7n");
+    			attr_dev(h3, "class", "svelte-33au9");
     			add_location(h3, file$5, 27, 1, 621);
-    			attr_dev(h4, "class", "svelte-4tjy7n");
+    			attr_dev(h4, "class", "svelte-33au9");
     			add_location(h4, file$5, 28, 1, 642);
     		},
     		m: function mount(target, anchor) {
