@@ -12,14 +12,14 @@
 			<div class='row'>
 				{#each flags.slice(0, NB_FLAGS) as flag}
 					<img
-						src='assets/flags/{flag.code.toLowerCase()}_xsmall.png'
+						src='https://flagcdn.com/w80/{flag.code.toLowerCase()}.png'
 						style='width: calc(200vw / {NB_FLAGS});'
 						alt={flag.name}
 					/>
 				{/each}
 				{#each flags.slice(0, NB_FLAGS * 0.5) as flag}
 					<img
-						src='assets/flags/{flag.code.toLowerCase()}_xsmall.png'
+						src='https://flagcdn.com/w80/{flag.code.toLowerCase()}.png'
 						style='width: calc(200vw / {NB_FLAGS});'
 						alt={flag.name}
 					/>
@@ -28,14 +28,14 @@
 			<div class='row'>
 				{#each flags.slice(NB_FLAGS, NB_FLAGS * 2) as flag}
 					<img
-						src='assets/flags/{flag.code.toLowerCase()}_xsmall.png'
+						src='https://flagcdn.com/w80/{flag.code.toLowerCase()}.png'
 						style='width: calc(200vw / {NB_FLAGS});'
 						alt={flag.name}
 					/>
 				{/each}
 				{#each flags.slice(NB_FLAGS, NB_FLAGS * 1.5) as flag}
 					<img
-						src='assets/flags/{flag.code.toLowerCase()}_xsmall.png'
+						src='https://flagcdn.com/w80/{flag.code.toLowerCase()}.png'
 						style='width: calc(200vw / {NB_FLAGS});'
 						alt={flag.name}
 					/>

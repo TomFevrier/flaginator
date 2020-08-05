@@ -21,7 +21,7 @@
 		padding: 0.5rem 1rem;
 		margin: 0.5rem 0 0.5rem;
 		max-width: 12rem;
-		font-size: 1.2rem;
+		font-size: 1.1rem;
 		font-weight: bold;
 		text-align: center;
 		text-transform: uppercase;

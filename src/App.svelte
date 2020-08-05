@@ -10,6 +10,23 @@
 
 	import { options } from './locales/locale.js';
 
+	// Preload images for options
+	let optionImages = [];
+	let nbOptionImagesLoaded = 0;
+	Object.entries(options).forEach(([property, value]) => {
+		if (property === 'colors') return;
+		value.options.forEach(option => {
+			const img = new Image();
+			img.src = `/assets/${property}/${option.value}_small.png`;
+			img.addEventListener('load', () => nbOptionImagesLoaded++);
+			optionImages.push(img);
+		});
+	});
+	$: {
+		if (optionImages.length === nbOptionImagesLoaded)
+			setTimeout(() => loaded = true, 1000);
+	};
+
 	const properties = [
 		'layout',
 		'colors',
@@ -23,14 +40,7 @@
 	let filtered = [];
 	$: console.log(filtered)
 
-	// let flagImages = [];
-	// let nbFlagImagesLoaded = 0;
-	// $: console.log(flagImages, nbFlagImagesLoaded);
-	// $: loaded = flags.length > 0 && nbFlagImagesLoaded === flags.length;
-
 	let loaded = false;
-
-	window.addEventListener('load', () => setTimeout(() => loaded = true, 2000));
 
 	let property = properties[0];
 	let selected = [];
@@ -49,11 +59,7 @@
 			e.layout = e.layout.split(',');
 			e.colors = e.colors.split(',');
 			e.figures = e.figures.split(',').map(d => d === '' ? 'none' : d);
-			// const img = new Image();
-			// img.src = `assets/flags/${e.code.toLowerCase()}_xsmall.png`;
-			// img.addEventListener('load', () => nbFlagImagesLoaded++);
-			// flagImages.push(img);
-		})
+		});
 		flags = data;
 		filtered = flags;
 		loading = false;

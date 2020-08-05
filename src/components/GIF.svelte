@@ -11,7 +11,7 @@
 
 {#if flags.length > 0}
 	<div class='gif'>
-		<img src='assets/flags/{flags[index].code.toLowerCase()}_small.png' />
+		<img src='https://flagcdn.com/w160/{flags[index].code.toLowerCase()}.png' alt={flags[index].name} />
 	</div>
 {/if}
 
