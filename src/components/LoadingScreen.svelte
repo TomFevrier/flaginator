@@ -1,7 +1,5 @@
 <script>
 	export let hidden;
-
-	console.log(hidden);
 </script>
 
 <div class='loading-screen' class:hidden>

@@ -39,7 +39,7 @@
 	@font-face {
 		font-family: 'Minangkabau';
 		src: url('../assets/Minangkabau.woff') format('woff');
-		font-display: optional;
+		font-display: fallback;
 	}
 
 	h3 {

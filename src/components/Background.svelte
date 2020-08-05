@@ -59,14 +59,6 @@
 			</div>
 		</div>
 	{/each}
-	<!-- <div class='row'>
-		{#each flags.slice(100, 150) as flag}
-			<img src='assets/flags/{flag.code.toLowerCase()}.png' />
-		{/each}
-		{#each flags.slice(100, 125) as flag}
-			<img src='assets/flags/{flag.code.toLowerCase()}.png' />
-		{/each}
-	</div> -->
 </div>
 
 <style lang='scss'>

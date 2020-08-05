@@ -5,8 +5,6 @@
 
 	let index = 0;
 
-	$: console.log(flags[index])
-
 	setInterval(() => index = (index + 1) % flags.length, 500);
 
 </script>
