@@ -47,7 +47,7 @@
 			e.colors = e.colors.split(',');
 			e.figures = e.figures.split(',').map(d => d === '' ? 'none' : d);
 			const img = new Image();
-			img.src = `assets/flags/${e.code.toLowerCase()}_small.png`;
+			img.src = `assets/flags/${e.code.toLowerCase()}_xsmall.png`;
 			img.addEventListener('load', () => nbFlagImagesLoaded++);
 			flagImages.push(img);
 		})
