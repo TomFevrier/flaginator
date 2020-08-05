@@ -18,11 +18,15 @@
 		'nbBands'
 	];
 
-	let loaded = false;
-
 	let flags = [];
+
 	let filtered = [];
 	$: console.log(filtered)
+
+	let flagImages = [];
+	let nbFlagImagesLoaded = 0;
+	// $: console.log(flagImages, nbFlagImagesLoaded);
+	$: loaded = flags.length > 0 && nbFlagImagesLoaded === flags.length;
 
 	let property = properties[0];
 	let selected = [];
@@ -31,8 +35,6 @@
 	let started = false;
 
 	let loading = true;
-
-	window.addEventListener('load', () => setTimeout(() => loaded = true, 2000));
 
 	csv('./flags.csv').then(data => {
 		data.forEach(e => {
@@ -44,6 +46,10 @@
 			e.layout = e.layout.split(',');
 			e.colors = e.colors.split(',');
 			e.figures = e.figures.split(',').map(d => d === '' ? 'none' : d);
+			const img = new Image();
+			img.src = `assets/flags/${e.code.toLowerCase()}.png`;
+			img.addEventListener('load', () => nbFlagImagesLoaded++);
+			flagImages.push(img);
 		})
 		flags = data;
 		filtered = flags;

@@ -1,5 +1,5 @@
 <script>
-	export let flags;
+	export let flags = [];
 
 	$: flags.sort(() => Math.random() >= 0.5);
 
@@ -7,7 +7,7 @@
 
 	$: console.log(flags[index])
 
-	setInterval(() => index = (index + 1) % flags.length, 300);
+	setInterval(() => index = (index + 1) % flags.length, 500);
 
 </script>
 

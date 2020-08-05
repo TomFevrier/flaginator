@@ -1,9 +1,14 @@
 <script>
 	export let secondary = false;
 	export let disabled = false;
+	export let margin = '2rem';
 </script>
 
-<button on:click class:secondary {disabled}>
+<button
+	style='margin-top: {margin}'
+	class:secondary {disabled}
+	on:click
+>
 	<slot></slot>
 </button>
 
@@ -14,7 +19,7 @@
 		border-radius: 5px;
 		color: white;
 		padding: 0.5rem 1rem;
-		margin: 2rem 0 1rem;
+		margin: 0.5rem 0 0.5rem;
 		max-width: 12rem;
 		font-size: 1.2rem;
 		font-weight: bold;

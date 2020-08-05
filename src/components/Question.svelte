@@ -73,20 +73,34 @@
 			</div>
 		{/each}
 	</div>
-	<div>
-		<Button on:click={skip} secondary>
+	<div class='buttons'>
+		<Button
+			secondary
+			margin='0.5rem'
+			on:click={skip}
+		>
 			{translations.skip}
 		</Button>
-		<Button on:click={retry} secondary>
+		<Button
+			secondary
+			margin='0.5rem'
+			on:click={retry}
+		>
 			{translations.retry}
 		</Button>
-		<Button on:click={submit} disabled={selected.length == 0}>
+		<Button
+			disabled={selected.length == 0}
+			margin='0.5rem'
+			on:click={submit}
+		>
 			{translations.next}
 		</Button>
 	</div>
 </Card>
 
 <style lang='scss'>
+	@import './global.scss';
+
 	h3 {
 		font-size: 1.5rem;
 		font-weight: bold;
@@ -129,6 +143,16 @@
 				text-align: center;
 				line-height: 100%;
 			}
+		}
+	}
+
+	.buttons {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+
+		@include md {
+			flex-direction: column-reverse;
 		}
 	}
 </style>
