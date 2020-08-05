@@ -24,7 +24,7 @@
 	});
 	$: {
 		if (optionImages.length === nbOptionImagesLoaded)
-			setTimeout(() => loaded = true, 2000);
+			setTimeout(() => loaded = true, 1000);
 	};
 
 	const properties = [
