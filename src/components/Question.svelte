@@ -4,12 +4,12 @@
 	import Card from './Card.svelte';
 	import Button from './Button.svelte';
 
+	import { translations } from '../locales/locale';
+
 	export let property;
 	export let propertyOptions;
 	export let filtered;
 	export let selected;
-
-	const dispatch = createEventDispatcher();
 
 	if (property === 'nbBands') {
 		propertyOptions.options = propertyOptions.options.filter(option => filtered.some(e => option.value.startsWith(e.layout)));
@@ -25,6 +25,8 @@
 			selected = [value];
 		}
 	}
+
+	const dispatch = createEventDispatcher();
 
 	const submit = () => {
 		dispatch('submit');
@@ -59,28 +61,27 @@
 							class='option-image'
 							class:selected={selected.includes(option.value)}
 							style='
-								background-image: url(/assets/{property}/{option.value}.png);
+								background-image: url(/assets/{property}/{option.value}_small.png);
 								padding-top: calc(100% * 2/3);
 							'
 							on:click={() => clickHandler(option.value)}
 						>
 							<!-- <img src='' alt={option.label} /> -->
 						</div>
-						<p>{option.label}</p>
+						<p class='option-label'>{option.label}</p>
 				{/if}
 			</div>
 		{/each}
 	</div>
 	<div>
-
 		<Button on:click={skip} secondary>
-			Skip
+			{translations.skip}
 		</Button>
 		<Button on:click={retry} secondary>
-			Retry
+			{translations.retry}
 		</Button>
 		<Button on:click={submit} disabled={selected.length == 0}>
-			Next
+			{translations.next}
 		</Button>
 	</div>
 </Card>
@@ -122,10 +123,11 @@
 				}
 			}
 
-			p {
+			.option-label {
 				margin: 0.5rem 0 1rem;
 				font-size: 1rem;
 				text-align: center;
+				line-height: 100%;
 			}
 		}
 	}

@@ -18,12 +18,12 @@ const colors = {
 	question: 'What are the main colors of the flag?',
 	multiple: true,
 	options: [
-		{ value: 'black' },
-		{ value: 'white' },
 		{ value: 'red' },
-		{ value: 'green' },
 		{ value: 'blue' },
+		{ value: 'green' },
+		{ value: 'white' },
 		{ value: 'yellow' },
+		{ value: 'black' },
 		{ value: 'orange' }
 	]
 };

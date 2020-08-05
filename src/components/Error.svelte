@@ -4,6 +4,8 @@
 	import Card from './Card.svelte';
 	import Button from './Button.svelte';
 
+	import { translations } from '../locales/locale';
+
 	export let notFound;
 
 	const dispatch = createEventDispatcher();
@@ -14,18 +16,11 @@
 
 <Card>
 	{#if notFound}
-		<h3>I don't know this flag... Are you sure it exists?</h3>
+		<h3>{translations.errorNotFound}</h3>
 	{:else}
-		<h3>I need more information to identify this flag...</h3>
+		<h3>{translations.errorImprecise}</h3>
 	{/if}
 	<Button on:click={retry}>
-		Retry
+		{translations.retry}
 	</Button>
 </Card>
-
-<style lang='scss'>
-	button {
-		margin-top: 2rem;
-		cursor: pointer;
-	}
-</style>

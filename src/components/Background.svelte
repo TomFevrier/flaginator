@@ -8,7 +8,7 @@
 
 <div class='wrapper'>
 	{#each new Array(2) as _}
-		<div>
+		<div class='group'>
 			<div class='row'>
 				{#each flags.slice(0, NB_FLAGS) as flag}
 					<img
@@ -78,30 +78,41 @@
 		top: 0;
 		left: 0;
 		z-index: -1;
-		animation: marquee 60s linear infinite;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
 
-		.row {
-			width: 100%;
-			display: flex;
-			align-items: center;
+		.group {
+			position: absolute;
+			left: 0;
+
+			.row {
+				width: 100%;
+				display: flex;
+				align-items: center;
+
+				img {
+					margin: 1rem;
+				}
+			}
+
+			&:nth-child(1) {
+				top: 0;
+				animation: marquee 60s linear infinite;
+			}
+
+			&:nth-child(2) {
+				bottom: 0;
+				animation: marquee 60s linear infinite reverse;
+			}
 
 			@keyframes marquee {
+				from {
+					left: 0;
+				}
 				to {
 					left: -200vw;
 				}
 			}
-
-			img {
-				margin: 1rem;
-			}
 		}
 	}
-
-
-
 
 
 </style>

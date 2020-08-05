@@ -2,8 +2,11 @@
 	import { createEventDispatcher } from 'svelte';
 
 	import Background from './Background.svelte';
+	import GIF from './GIF.svelte';
 	import Card from './Card.svelte';
 	import Button from './Button.svelte';
+
+	import { translations } from '../locales/locale';
 
 	export let flags;
 
@@ -19,13 +22,16 @@
 </script>
 
 {#if !mobile}
-	<Background flags={flags} />
+	<Background {flags} />
 {/if}
 <Card>
 	<h3>flaginator</h3>
-	<p>Identify any flag</p>
+	<h4>{translations.intro}</h4>
+	{#if mobile}
+		<GIF {flags} />
+	{/if}
 	<Button on:click={start}>
-		Start
+		{translations.start}
 	</Button>
 </Card>
 
@@ -43,8 +49,8 @@
 		margin: 1rem;
 	}
 
-	button {
-		margin-top: 2rem;
-		cursor: pointer;
+	h4 {
+		text-align: center;
+		font-size: 1.2rem;
 	}
 </style>

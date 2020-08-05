@@ -1,8 +1,6 @@
 <script>
 	export let secondary = false;
 	export let disabled = false;
-
-	console.log(secondary)
 </script>
 
 <button on:click class:secondary {disabled}>
@@ -16,6 +14,8 @@
 		border-radius: 5px;
 		color: white;
 		padding: 0.5rem 1rem;
+		margin: 2rem 0 1rem;
+		max-width: 12rem;
 		font-size: 1.2rem;
 		font-weight: bold;
 		text-align: center;

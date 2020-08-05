@@ -1,5 +1,5 @@
 const layout = {
-	question: 'Quel est le type de drapeau ?',
+	question: 'Quel est le type du drapeau ?',
 	multiple: true,
 	options: [
 		{ value: 'plain', label: 'Uni' },
@@ -18,12 +18,12 @@ const colors = {
 	question: 'Quelles sont les couleurs principales du drapeau ?',
 	multiple: true,
 	options: [
-		{ value: 'black' },
-		{ value: 'white' },
 		{ value: 'red' },
-		{ value: 'green' },
 		{ value: 'blue' },
+		{ value: 'green' },
+		{ value: 'white' },
 		{ value: 'yellow' },
+		{ value: 'black' },
 		{ value: 'orange' }
 	]
 };

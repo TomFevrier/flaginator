@@ -2,15 +2,13 @@
 	import { csv } from 'd3-fetch';
 	import { mean } from 'd3-array';
 
+	import LoadingScreen from './components/LoadingScreen.svelte';
 	import Menu from './components/Menu.svelte';
 	import Question from './components/Question.svelte';
 	import Result from './components/Result.svelte';
 	import Error from './components/Error.svelte';
 
-	import optionsFr from './options-en';
-	import optionsEn from './options-en';
-
-	const options = navigator.languages[0] === 'fr-FR' ? optionsFr : optionsEn;
+	import { options } from './locales/locale.js';
 
 	const properties = [
 		'layout',
@@ -19,6 +17,8 @@
 		'nbStars',
 		'nbBands'
 	];
+
+	let loaded = false;
 
 	let flags = [];
 	let filtered = [];
@@ -29,7 +29,10 @@
 	let knownProperties = {};
 
 	let started = false;
+
 	let loading = true;
+
+	window.addEventListener('load', () => setTimeout(() => loaded = true, 2000));
 
 	csv('./flags.csv').then(data => {
 		data.forEach(e => {
@@ -136,7 +139,8 @@
 
 
 {#if !started}
-	<Menu flags={flags} on:start={() => started = true} />
+	<Menu {flags} on:start={() => started = true} />
+	<LoadingScreen hidden={loaded} />
 {:else if started && !loading}
 	{#if property && filtered.length > 1}
 		<Question

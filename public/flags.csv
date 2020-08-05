@@ -1,196 +1,196 @@
-name,code,layout,colors,figures,nbStars
-Afghanistan,AF,bandsHorizontal3,"black,red,green,white",emblem,
-Albania,AL,plain,"black,red",bird,
-Algeria,DZ,bandsHorizontal2,"green,white,red","crescent,star",1
-Andorra,AD,bandsHorizontal3,"blue,yellow,red",emblem,
-Angola,AO,bandsVertical2,"red,black,yellow","star,weapon",1
-Antigua and Barbada,AG,misc,"red,white,blue,yellow,black",sun,
-Argentina,AR,bandsVertical3,"blue,white,yellow",sun,
-Armenia,AL,bandsVertical3,"red,blue,yellow",,
-Australia,AU,unionJack,"blue,white,red",star,6
-Austria,AT,bandsVertical3,"red,white",,
-Azerbaijan,AZ,bandsVertical3,"blue,red,green,white","crescent,star",1
-Bahamas,BS,"triangle,bandsVertical3","blue,yellow,black",,
-Bahrain,BH,bandsHorizontal2,"white,red",,
-Bangladesh,BD,plain,"green,red",sun,
-Barbados,BB,bandsHorizontal3,"blue,yellow,black",weapon,
-Belarus,BY,bandsHorizontal2,"red,green,white",misc,
-Belgium,BE,bandsHorizontal3,"black,yellow,red",,
-Belize,BZ,bandsVertical3,"red,blue",emblem,
-Benin,BJ,misc,"green,yellow,red",,
-Bhutan,BT,diagonal,"yellow,orange",misc,
-Bolivia,BO,bandsVertical3,"red,yellow,green",emblem,
-Bosnia and Herzegovinia,BA,misc,"blue,yellow,white",star,9
-Botswana,BW,plain,"blue,black,white",misc,
-Brazil,BR,plain,"green,yellow,blue","emblem,star",27
-Brunei,BN,diagonal,"yellow,white,black",emblem,
-Bulgaria,BG,bandsVertical3,"white,green,red",,
-Burkina Faso,BF,bandsVertical2,"red,green",star,1
-Burundi,BI,misc,"red,green,white",star,3
-Cambodia,KH,bandsVertical3,"blue,red,white",emblem,
-Cameroon,CM,bandsHorizontal3,"green,red,yellow",star,1
-Canada,CA,bandsHorizontal3,"red,white",nature,
-Cape Verde,CV,plain,"blue,red,white,yellow","star,misc",10
-Central African Republic,CF,bandsVertical4,"blue,white,green,yellow,red",star,1
-Chad,TD,bandsHorizontal3,"blue,yellow,red",,
-Chile,CL,bandsVertical2,"red,white,blue",star,1
-China,CN,plain,"red,yellow",star,5
-Colombia,CO,bandsVertical3,"yellow,blue,red",,
-Comoros,KM,"triangle,bandsVertical4","green,yellow,white,red,blue","crescent,star",4
-Democratic Republic of the Congo,CD,diagonal,"blue,yellow,red",star,1
-Costa Rica,CR,bandsVertical4,"blue,white,red",,
-Croatia,HR,bandsVertical3,"red,white,blue",emblem,
-Cuba,CU,"triangle,stripes","blue,white,red",star,1
-Cyprus,CY,plain,"white,yellow",emblem,
-Czech Republic,CZ,"triangle,bandsVertical2","blue,white,red",,
-Denmark,DK,cross,"white,red",,
-Djibouti,DJ,"triangle,bandsVertical2","blue,green,white,red",star,1
-Dominica,DM,cross,"green,yellow,black,white,red","bird,star",10
-Dominican Republic,DO,cross,"blue,red,white",emblem,
-East Timor,TP,triangle,"black,yellow,red,white",star,1
-Ecuador,EC,bandsVertical3,"yellow,blue,red",emblem,
-Egypt,EG,bandsVertical3,"red,white,black,yellow",bird,
-El Salvador,SV,bandsVertical3,"blue,white",emblem,
-Equatorial Guinea,GQ,"triangle,bandsVertical3","blue,green,white,red",emblem,
-Eritrea,ER,triangle,"red,green,blue,yellow",emblem,
-Estonia,EE,bandsVertical3,"green,black,white",,
-Eswatini,SZ,bandsVertical3,"blue,yellow,red,black,white",weapon,
-Ethiopia,ET,bandsVertical3,"green,yellow,red,blue",star,1
-Fiji,FJ,unionJack,"blue,white,red",emblem,
-Finland,FI,cross,"blue,white",,
-France,FR,bandsHorizontal3,"blue,white,red",,
-Gabon,GA,bandsVertical3,"green,yellow,blue",,
-Gambia,GM,bandsVertical2,"red,blue,green,white",,
-Georgia,GE,cross,"red,white",cross,
-Germany,DE,bandsVertical3,"black,red,yellow",,
-Ghana,GH,bandsVertical3,"red,yellow,green,black",star,1
-Greece,GR,stripes,"blue,white",cross,
-Grenada,GD,misc,"red,yellow,green",star,7
-Guatemala,GT,bandsHorizontal3,"blue,white",emblem,
-Guinea,GN,bandsHorizontal3,"red,yellow,green",,
-Guinea-Bissau,GW,misc,"red,yellow,green,black",star,1
-Guyana,GY,triangle,"red,black,yellow,white,green",misc,
-Haiti,HT,bandsVertical2,"blue,red",emblem,
-Honduras,HN,bandsVertical3,"blue,white",star,5
-Hungary,HU,bandsVertical3,"red,white,green",,
-Iceland,IS,cross,"blue,red,white",,
-India,IN,bandsVertical3,"orange,white,green",emblem,
-Indonesia,ID,bandsVertical2,"red,white",,
-Iran,IR,bandsVertical3,"green,white,red",emblem,
-Iraq,IQ,bandsVertical3,"red,white,black,green",emblem,
-Ireland,IE,bandsHorizontal3,"green,white,orange",,
-Israel,IL,plain,"blue,white",star,
-Italy,IT,bandsHorizontal3,"green,white,red",,
-Ivory Coast,CI,bandsHorizontal3,"orange,white,green",,
-Jamaica,JM,misc,"green,black,yellow",,
-Japan,JP,plain,"white,red",sun,
-Jordan,JO,"triangle,bandsVertical3","red,black,white,green",star,1
-Kazakhstan,KZ,plain,"blue,yellow","sun,bird",
-Kenya,KE,bandsVertical3,"black,red,green,white",weapon,
-Kiribati,KI,misc,"red,yellow,blue,white","sun,bird",
-North Korea,KP,bandsVertical3,"blue,red,white",star,1
-South Korea,KR,plain,"white,blue,red,black",emblem,
-Kuwait,KW,"misc,bandsVertical3","black,green,white,red",,
-Kyrgyzstan,KG,plain,"red,yellow","sun,emblem",
-Laos,LA,bandsVertical3,"red,blue,white",sun,
-Latvia,LV,bandsVertical3,"red,white",,
-Lebanon,LB,bandsVertical3,"red,white,green",nature,
-Lesotho,LS,bandsVertical3,"blue,white,green,black",emblem,
-Liberia,LR,stripes,"red,white,blue",star,1
-Libya,LY,bandsVertical3,"red,black,green,white","star,crescent",1
-Liechtenstein,LI,bandsVertical2,"blue,red",emblem,
-Lithuania,LT,bandsVertical3,"yellow,green,red",,
-Luxembourg,LU,bandsVertical3,"red,white,blue",,
-Madagascar,MG,misc,"white,red,green",,
-Malawi,MW,bandsVertical3,"black,red,green",sun,
-Malaysia,MY,stripes,"red,white,blue","crescent,sun",
-Maldives,MV,plain,"red,green,white",crescent,
-Mali,ML,bandsHorizontal3,"green,yellow,red",,
-Malta,MT,bandsHorizontal2,"white,red",cross,
-The Marshall Islands,MH,diagonal,"blue,orange,white",sun,
-Mauritania,MR,bandsVertical3,"red,green,yellow","crescent,star",
-Mauritius,MU,bandsVertical4,"red,blue,yellow,green",,
-Mexico,MX,bandsHorizontal3,"green,white,red","emblem,bird",
-Federated States of Micronesia,FM,plain,"blue,white",star,4
-Moldova,MD,bandsHorizontal3,"blue,yellow,red","emblem,bird",
-Monaco,MC,bandsVertical2,"red,white",,
-Mongolia,MN,bandsHorizontal3,"red,blue,yellow","emblem,crescent,sun",
-Montenegro,ME,plain,"yellow,red","emblem,bird",
-Morocco,MA,plain,"red,green",star,1
-Mozambique,MZ,"triangle,bandsVertical3","red,green,black,yellow,white","weapon,star",1
-Myanmar,MM,bandsVertical3,"yellow,green,red,white",star,1
-Namibia,NA,diagonal,"blue,red,green,white",sun,
-Nauru,NR,plain,"blue,yellow,white",sun,
-Nepal,NP,misc,"red,blue,white","sun,crescent",
-The Netherlands,NL,bandsVertical3,"red,white,blue",,
-New Zealand,NZ,unionJack,"blue,red,white",star,4
-Nicaragua,NI,bandsVertical3,"blue,white",emblem,
-The Niger,NE,bandsVertical3,"orange,white,green",sun,
-Nigeria,NG,bandsHorizontal3,"green,white",,
-Republic of North Macedonia,MK,plain,"red,yellow",sun,
-Norway,NO,cross,"red,white,blue",,
-Oman,OM,bandsVertical3,"white,red,green","emblem,weapon",
-Pakistan,PK,bandsHorizontal2,"white,green","crescent,star",1
-Palau,PW,plain,"green,yellow",sun,
-Palestine,PS,"triangle,bandsVertical3","red,black,green,white",,
-Panama,PA,misc,"blue,white,red",star,2
-Papua New Guinea,PG,diagonal,"red,black,yellow,white","star,bird",5
-Paraguay,PY,bandsVertical3,"red,white,blue","star,emblem",1
-Peru,PE,bandsHorizontal3,"red,white",,
-The Philippines,PH,"triangle,bandsVertical2","white,yellow,red,blue","star,sun",3
-Poland,PL,bandsVertical2,"white,red",,
-Portugal,PT,bandsHorizontal2,"green,red,yellow,white,blue",emblem,
-Qatar,QA,bandsHorizontal2,"white,red",,
-Romania,RO,bandsHorizontal3,"blue,yellow,red",,
-Russia,RU,bandsVertical3,"white,blue,red",,
-Rwanda,RW,bandsHorizontal3,"blue,yellow,green",sun,
-Saint Kitts and Nevis,KN,diagonal,"green,yellow,black,white,red",star,2
-Santa Lucia,LC,plain,"blue,white,black,yellow",misc,
-Saint Vincent and the Grenadines,VC,bandsHorizontal3,"blue,yellow,green",misc,
-Samoa,WS,plain,"red,blue,white",star,5
-San Marino,SM,bandsVertical2,"white,blue",emblem,
-São Tomé and Príncipe,ST,"triangle,bandsVertical3","red,green,yellow,black",star,2
-Saudi Arabia,SA,plain,"green,white","emblem,weapon",
-Senegal,SN,bandsHorizontal3,"green,yellow,red",star,1
-Serbia,RS,bandsVertical3,"red,blue,white","emblem,bird",
-Seychelles,SC,misc,"blue,yellow,red,white,green",,
-Sierra Leone,SL,bandsVertical3,"green,white,blue",,
-Singapore,SG,bandsVertical2,"red,white","crescent,star",5
-Slovakia,SK,bandsVertical3,"white,blue,red","emblem,cross",
-Slovenia,SI,bandsVertical3,"white,blue,red","emblem,star",3
-Solomon Islands,SB,diagonal,"blue,yellow,white,green",star,5
-Somalia,SO,plain,"blue,white",star,1
-South Africa,ZA,triangle,"black,yellow,green,white,red,blue",,
-South Sudan,SS,"triangle,bandsVertical3","blue,yellow,black,red,green,white",star,1
-Spain,ES,bandsVertical3,"red,yellow",emblem,
-Sri Lanka,LK,misc,"yellow,green,orange,red","weapon,misc",
-Sudan,SD,"triangle,bandsVertical3","red,white,black,green",,
-Suriname,SR,bandsVertical4,"green,white,red,yellow",star,1
-Sweden,SE,cross,"blue,yellow",,
-Switzerland,CH,"plain,cross","red,white",cross,
-Syria,SY,bandsVertical3,"red,white,black,green",star,2
-Taiwan,TW,plain,"red,blue,white",sun,
-Tajikistan,TD,bandsVertical3,"red,white,green,yellow","emblem,star",7
-Tanzania,TZ,diagonal,"green,yellow,black,blue",,
-Thailand,TH,bandsVertical4,"red,white,blue",,
-Togo,TG,stripes,"red,white,green,yellow",star,1
-Tonga,TO,plain,"red,white",cross,
-Trinidad and Tobago,TT,diagonal,"red,black,white",,
-Tunisia,TN,plain,"red,white","crescent,star",1
-Turkey,TR,plain,"red,white","crescent,star",1
-Turkmenistan,TM,plain,"green,white","crescent,star",5
-Tuvalu,TV,unionJack,"red,blue,white,yellow",star,9
-Uganda,UG,stripes,"black,yellow,red",bird,
-Ukraine,UA,bandsVertical2,"blue,yellow",,
-The United Arab Emirates,AE,bandsVertical3,"red,green,white,black",,
-The United Kingdom,GB,"cross,unionJack","blue,white,red",cross,
-The United States,US,stripes,"blue,white,red",star,50
-Uruguay,UY,stripes,"blue,white,yellow",sun,
-Uzbekistan,UZ,bandsVertical3,"blue,red,green,white","crescent,star",12
-Vanuatu,VU,triangle,"red,green,black,yellow",emblem,
-Vatican City,VA,bandsHorizontal2,"white,yellow",emblem,
-Venezuela,VE,bandsVertical3,"yellow,blue,red",star,8
-Vietnam,VN,plain,"red,yellow",star,1
-Yemen,YE,bandsVertical3,"red,white,black",,
-Zambia,ZM,plain,"green,red,black,orange","bird,misc",
-Zimbabwe,ZW,"stripes,triangle","white,black,green,yellow,red","star,emblem",1
+name,nom,prep,code,layout,colors,figures,nbStars
+Afghanistan,Afghanistan,de l’,AF,bandsHorizontal3,"black,red,green,white",emblem,
+Albania,Albanie,de l’,AL,plain,"black,red",bird,
+Algeria,Algérie,de l’,DZ,bandsHorizontal2,"green,white,red","crescent,star",1
+Andorra,Andorre,d’,AD,bandsHorizontal3,"blue,yellow,red",emblem,
+Angola,Angola,de l’,AO,bandsVertical2,"red,black,yellow","star,weapon",1
+Antigua and Barbada,Antigua-et-Barbuda,d’,AG,misc,"red,white,blue,yellow,black",sun,
+Argentina,Argentine,de l’,AR,bandsVertical3,"blue,white,yellow",sun,
+Armenia,Albanie,de l’,AL,bandsVertical3,"red,blue,yellow",,
+Australia,Australie,de l’,AU,unionJack,"blue,white,red",star,6
+Austria,Autriche,de l’,AT,bandsVertical3,"red,white",,
+Azerbaijan,Azerbaïdjan,de l’,AZ,bandsVertical3,"blue,red,green,white","crescent,star",1
+Bahamas,Bahamas,des ,BS,"triangle,bandsVertical3","blue,yellow,black",,
+Bahrain,Bahreïn,du ,BH,bandsHorizontal2,"white,red",,
+Bangladesh,Bangladesh,du ,BD,plain,"green,red",sun,
+Barbados,Barbade,de la ,BB,bandsHorizontal3,"blue,yellow,black",weapon,
+Belarus,Biélorussie,de la ,BY,bandsHorizontal2,"red,green,white",misc,
+Belgium,Belgique,de la ,BE,bandsHorizontal3,"black,yellow,red",,
+Belize,Belize,du ,BZ,bandsVertical3,"red,blue",emblem,
+Benin,Bénin,du ,BJ,misc,"green,yellow,red",,
+Bhutan,Bhoutan,du ,BT,diagonal,"yellow,orange",misc,
+Bolivia,Bolivie,de la ,BO,bandsVertical3,"red,yellow,green",emblem,
+Bosnia and Herzegovinia,Bosnie-Herzégovine,de la ,BA,misc,"blue,yellow,white",star,9
+Botswana,Botswana,du ,BW,plain,"blue,black,white",misc,
+Brazil,Brésil,du ,BR,plain,"green,yellow,blue","emblem,star",27
+Brunei,Brunei,du ,BN,diagonal,"yellow,white,black",emblem,
+Bulgaria,Bulgarie,de la ,BG,bandsVertical3,"white,green,red",,
+Burkina Faso,Burkina Faso,du ,BF,bandsVertical2,"red,green",star,1
+Burundi,Burundi,du ,BI,misc,"red,green,white",star,3
+Cambodia,Cambodge,du ,KH,bandsVertical3,"blue,red,white",emblem,
+Cameroon,Cameroun,du ,CM,bandsHorizontal3,"green,red,yellow",star,1
+Canada,Canada,du ,CA,bandsHorizontal3,"red,white",nature,
+Cape Verde,Cap-Vert,du ,CV,plain,"blue,red,white,yellow","star,misc",10
+Central African Republic,République centrafricaine,de la ,CF,bandsVertical4,"blue,white,green,yellow,red",star,1
+Chad,Tchad,du ,TD,bandsHorizontal3,"blue,yellow,red",,
+Chile,Chili,du ,CL,bandsVertical2,"red,white,blue",star,1
+China,Chine,de la ,CN,plain,"red,yellow",star,5
+Colombia,Colombie,de la ,CO,bandsVertical3,"yellow,blue,red",,
+Comoros,Comores,des ,KM,"triangle,bandsVertical4","green,yellow,white,red,blue","crescent,star",4
+Democratic Republic of the Congo,République démocratique du Congo,de la ,CD,diagonal,"blue,yellow,red",star,1
+Costa Rica,Costa Rica,du ,CR,bandsVertical4,"blue,white,red",,
+Croatia,Croatie,de la ,HR,bandsVertical3,"red,white,blue",emblem,
+Cuba,Cuba,de ,CU,"triangle,stripes","blue,white,red",star,1
+Cyprus,Chypre,de ,CY,plain,"white,yellow",emblem,
+Czech Republic,République tchèque,de la ,CZ,"triangle,bandsVertical2","blue,white,red",,
+Denmark,Danemark,du ,DK,cross,"white,red",,
+Djibouti,Djibouti,de ,DJ,"triangle,bandsVertical2","blue,green,white,red",star,1
+Dominica,Dominique,de la ,DM,cross,"green,yellow,black,white,red","bird,star",10
+Dominican Republic,République dominicaine,de la ,DO,cross,"blue,red,white",emblem,
+East Timor,Timor oriental,du ,TP,triangle,"black,yellow,red,white",star,1
+Ecuador,Équateur,de l’,EC,bandsVertical3,"yellow,blue,red",emblem,
+Egypt,Égypte,de l’,EG,bandsVertical3,"red,white,black,yellow",bird,
+El Salvador,Salvador,du ,SV,bandsVertical3,"blue,white",emblem,
+Equatorial Guinea,Guinée équatoriale,de la ,GQ,"triangle,bandsVertical3","blue,green,white,red",emblem,
+Eritrea,Érythrée,de l’,ER,triangle,"red,green,blue,yellow",emblem,
+Estonia,Estonie,de l’,EE,bandsVertical3,"green,black,white",,
+Eswatini,Eswatini,de l’,SZ,bandsVertical3,"blue,yellow,red,black,white",weapon,
+Ethiopia,Éthiopie,de l’,ET,bandsVertical3,"green,yellow,red,blue",star,1
+Fiji,Fidji,des ,FJ,unionJack,"blue,white,red",emblem,
+Finland,Finlande,de la ,FI,cross,"blue,white",,
+France,France,de la ,FR,bandsHorizontal3,"blue,white,red",,
+Gabon,Gabon,du ,GA,bandsVertical3,"green,yellow,blue",,
+Gambia,Gambie,de la ,GM,bandsVertical2,"red,blue,green,white",,
+Georgia,Géorgie,de la ,GE,cross,"red,white",cross,
+Germany,Allemagne,de l’,DE,bandsVertical3,"black,red,yellow",,
+Ghana,Ghana,du ,GH,bandsVertical3,"red,yellow,green,black",star,1
+Greece,Grèce,de la ,GR,stripes,"blue,white",cross,
+Grenada,Grenade,de la ,GD,misc,"red,yellow,green",star,7
+Guatemala,Guatemala,du ,GT,bandsHorizontal3,"blue,white",emblem,
+Guinea,Guinée,de la ,GN,bandsHorizontal3,"red,yellow,green",,
+Guinea-Bissau,Guinée-Bissau,de la ,GW,misc,"red,yellow,green,black",star,1
+Guyana,Guyane,de la ,GY,triangle,"red,black,yellow,white,green",misc,
+Haiti,Haïti,d’,HT,bandsVertical2,"blue,red",emblem,
+Honduras,Honduras,du ,HN,bandsVertical3,"blue,white",star,5
+Hungary,Hongrie,de la ,HU,bandsVertical3,"red,white,green",,
+Iceland,Islande,de l’,IS,cross,"blue,red,white",,
+India,Inde,de l’,IN,bandsVertical3,"orange,white,green",emblem,
+Indonesia,Indonésie,de l’,ID,bandsVertical2,"red,white",,
+Iran,Iran,de l’,IR,bandsVertical3,"green,white,red",emblem,
+Iraq,Irak,de l’,IQ,bandsVertical3,"red,white,black,green",emblem,
+Ireland,Irlande,de l’,IE,bandsHorizontal3,"green,white,orange",,
+Israel,Israël,d’,IL,plain,"blue,white",star,
+Italy,Italie,de l’,IT,bandsHorizontal3,"green,white,red",,
+Ivory Coast,Côte d’Ivoire,de la ,CI,bandsHorizontal3,"orange,white,green",,
+Jamaica,Jamaïque,de la ,JM,misc,"green,black,yellow",,
+Japan,Japon,du ,JP,plain,"white,red",sun,
+Jordan,Jordanie,de la ,JO,"triangle,bandsVertical3","red,black,white,green",star,1
+Kazakhstan,Kazakhstan,du ,KZ,plain,"blue,yellow","sun,bird",
+Kenya,Kenya,du ,KE,bandsVertical3,"black,red,green,white",weapon,
+Kiribati,Kiribati,des ,KI,misc,"red,yellow,blue,white","sun,bird",
+North Korea,Corée du Nord,de la ,KP,bandsVertical3,"blue,red,white",star,1
+South Korea,Corée du Sud,de la ,KR,plain,"white,blue,red,black",emblem,
+Kuwait,Koweït,du ,KW,"misc,bandsVertical3","black,green,white,red",,
+Kyrgyzstan,Kirghizistan,du ,KG,plain,"red,yellow","sun,emblem",
+Laos,Laos,du ,LA,bandsVertical3,"red,blue,white",sun,
+Latvia,Lettonie,de la ,LV,bandsVertical3,"red,white",,
+Lebanon,Liban,du ,LB,bandsVertical3,"red,white,green",nature,
+Lesotho,Lesotho,du ,LS,bandsVertical3,"blue,white,green,black",emblem,
+Liberia,Libéria,du ,LR,stripes,"red,white,blue",star,1
+Libya,Libye,de la ,LY,bandsVertical3,"red,black,green,white","star,crescent",1
+Liechtenstein,Liechtenstein,du ,LI,bandsVertical2,"blue,red",emblem,
+Lithuania,Lituanie,de la ,LT,bandsVertical3,"yellow,green,red",,
+Luxembourg,Luxembourg,du ,LU,bandsVertical3,"red,white,blue",,
+Madagascar,Madagascar,de ,MG,misc,"white,red,green",,
+Malawi,Malawi,du ,MW,bandsVertical3,"black,red,green",sun,
+Malaysia,Malaisie,de la ,MY,stripes,"red,white,blue","crescent,sun",
+Maldives,Maldives,des ,MV,plain,"red,green,white",crescent,
+Mali,Mali,du ,ML,bandsHorizontal3,"green,yellow,red",,
+Malta,Malte,de ,MT,bandsHorizontal2,"white,red",cross,
+The Marshall Islands,Îles Marshall,des ,MH,diagonal,"blue,orange,white",sun,
+Mauritania,Mauritanie,de la ,MR,bandsVertical3,"red,green,yellow","crescent,star",
+Mauritius,Île Maurice,de l’,MU,bandsVertical4,"red,blue,yellow,green",,
+Mexico,Mexique,du ,MX,bandsHorizontal3,"green,white,red","emblem,bird",
+Federated States of Micronesia,Micronésie,de la ,FM,plain,"blue,white",star,4
+Moldova,Moldavie,de la ,MD,bandsHorizontal3,"blue,yellow,red","emblem,bird",
+Monaco,Monaco,de ,MC,bandsVertical2,"red,white",,
+Mongolia,Mongolie,de la ,MN,bandsHorizontal3,"red,blue,yellow","emblem,crescent,sun",
+Montenegro,Monténégro,du ,ME,plain,"yellow,red","emblem,bird",
+Morocco,Maroc,du ,MA,plain,"red,green",star,1
+Mozambique,Mozambique,du ,MZ,"triangle,bandsVertical3","red,green,black,yellow,white","weapon,star",1
+Myanmar,Myanmar,du ,MM,bandsVertical3,"yellow,green,red,white",star,1
+Namibia,Namibie,de la ,NA,diagonal,"blue,red,green,white",sun,
+Nauru,Nauru,de ,NR,plain,"blue,yellow,white",sun,
+Nepal,Népal,du ,NP,misc,"red,blue,white","sun,crescent",
+The Netherlands,Pays-Bas,des ,NL,bandsVertical3,"red,white,blue",,
+New Zealand,Nouvelle-Zélande,de la ,NZ,unionJack,"blue,red,white",star,4
+Nicaragua,Nicaragua,du ,NI,bandsVertical3,"blue,white",emblem,
+The Niger,Niger,du ,NE,bandsVertical3,"orange,white,green",sun,
+Nigeria,Nigeria,du ,NG,bandsHorizontal3,"green,white",,
+Republic of North Macedonia,Macédoine,de la ,MK,plain,"red,yellow",sun,
+Norway,Norvège,de la ,NO,cross,"red,white,blue",,
+Oman,Oman,d’,OM,bandsVertical3,"white,red,green","emblem,weapon",
+Pakistan,Pakistan,du ,PK,bandsHorizontal2,"white,green","crescent,star",1
+Palau,Palaos,des ,PW,plain,"green,yellow",sun,
+Palestine,Palestine,de la ,PS,"triangle,bandsVertical3","red,black,green,white",,
+Panama,Panama,du ,PA,misc,"blue,white,red",star,2
+Papua New Guinea,Papouasie-Nouvelle-Guinée,de la ,PG,diagonal,"red,black,yellow,white","star,bird",5
+Paraguay,Paraguay,du ,PY,bandsVertical3,"red,white,blue","star,emblem",1
+Peru,Pérou,du ,PE,bandsHorizontal3,"red,white",,
+The Philippines,Philippines,des ,PH,"triangle,bandsVertical2","white,yellow,red,blue","star,sun",3
+Poland,Pologne,de la ,PL,bandsVertical2,"white,red",,
+Portugal,Portugal,du ,PT,bandsHorizontal2,"green,red,yellow,white,blue",emblem,
+Qatar,Qatar,du ,QA,bandsHorizontal2,"white,red",,
+Romania,Roumanie,de la ,RO,bandsHorizontal3,"blue,yellow,red",,
+Russia,Russie,de la ,RU,bandsVertical3,"white,blue,red",,
+Rwanda,Rwanda,du ,RW,bandsHorizontal3,"blue,yellow,green",sun,
+Saint Kitts and Nevis,Saint-Christophe-et-Niévès,de ,KN,diagonal,"green,yellow,black,white,red",star,2
+Santa Lucia,Sainte-Lucie,de ,LC,plain,"blue,white,black,yellow",misc,
+Saint Vincent and the Grenadines,Saint-Vincent-et-les Grenadines,de ,VC,bandsHorizontal3,"blue,yellow,green",misc,
+Samoa,Samoa,des ,WS,plain,"red,blue,white",star,5
+San Marino,Saint-Marin,de ,SM,bandsVertical2,"white,blue",emblem,
+São Tomé and Príncipe,Sao Tomé-et-Principe,de ,ST,"triangle,bandsVertical3","red,green,yellow,black",star,2
+Saudi Arabia,Arabie Saoudite,de l’,SA,plain,"green,white","emblem,weapon",
+Senegal,Sénégal,du ,SN,bandsHorizontal3,"green,yellow,red",star,1
+Serbia,Serbie,de la ,RS,bandsVertical3,"red,blue,white","emblem,bird",
+Seychelles,Seychelles,des ,SC,misc,"blue,yellow,red,white,green",,
+Sierra Leone,Sierra Leone,du ,SL,bandsVertical3,"green,white,blue",,
+Singapore,Singapour,de ,SG,bandsVertical2,"red,white","crescent,star",5
+Slovakia,Slovaquie,de la ,SK,bandsVertical3,"white,blue,red","emblem,cross",
+Slovenia,Slovénie,de la ,SI,bandsVertical3,"white,blue,red","emblem,star",3
+Solomon Islands,Îles Salomon,des ,SB,diagonal,"blue,yellow,white,green",star,5
+Somalia,Somalie,de la ,SO,plain,"blue,white",star,1
+South Africa,Afrique du Sud,de l’,ZA,triangle,"black,yellow,green,white,red,blue",,
+South Sudan,Sud-Soudan,du ,SS,"triangle,bandsVertical3","blue,yellow,black,red,green,white",star,1
+Spain,Espagne,de l’,ES,bandsVertical3,"red,yellow",emblem,
+Sri Lanka,Sri Lanka,du ,LK,misc,"yellow,green,orange,red","weapon,misc",
+Sudan,Soudan,du ,SD,"triangle,bandsVertical3","red,white,black,green",,
+Suriname,Suriname,du ,SR,bandsVertical4,"green,white,red,yellow",star,1
+Sweden,Suède,de la ,SE,cross,"blue,yellow",,
+Switzerland,Suisse,de la ,CH,"plain,cross","red,white",cross,
+Syria,Syrie,de la ,SY,bandsVertical3,"red,white,black,green",star,2
+Taiwan,Taiwan,de ,TW,plain,"red,blue,white",sun,
+Tajikistan,Tchad,du ,TD,bandsVertical3,"red,white,green,yellow","emblem,star",7
+Tanzania,Tanzanie,de la ,TZ,diagonal,"green,yellow,black,blue",,
+Thailand,Thaïlande,de la ,TH,bandsVertical4,"red,white,blue",,
+Togo,Togo,du ,TG,stripes,"red,white,green,yellow",star,1
+Tonga,Tonga,des ,TO,plain,"red,white",cross,
+Trinidad and Tobago,Trinité-et-Tobago,de ,TT,diagonal,"red,black,white",,
+Tunisia,Tunisie,de la ,TN,plain,"red,white","crescent,star",1
+Turkey,Turquie,de la ,TR,plain,"red,white","crescent,star",1
+Turkmenistan,Turkménistan,du ,TM,plain,"green,white","crescent,star",5
+Tuvalu,Tuvalu,des ,TV,unionJack,"red,blue,white,yellow",star,9
+Uganda,Ouganda,de l’,UG,stripes,"black,yellow,red",bird,
+Ukraine,Ukraine,de l’,UA,bandsVertical2,"blue,yellow",,
+The United Arab Emirates,Émirats Arabes Unis,des ,AE,bandsVertical3,"red,green,white,black",,
+The United Kingdom,Royaume-Uni,du ,GB,"cross,unionJack","blue,white,red",cross,
+The United States,États-Unis,des ,US,stripes,"blue,white,red",star,50
+Uruguay,Uruguay,de l’,UY,stripes,"blue,white,yellow",sun,
+Uzbekistan,Ouzbékistan,de l’,UZ,bandsVertical3,"blue,red,green,white","crescent,star",12
+Vanuatu,Vanuatu,du ,VU,triangle,"red,green,black,yellow",emblem,
+Vatican City,Vatican,du ,VA,bandsHorizontal2,"white,yellow",emblem,
+Venezuela,Venezuela,du ,VE,bandsVertical3,"yellow,blue,red",star,8
+Vietnam,Viêt Nam,du ,VN,plain,"red,yellow",star,1
+Yemen,Yémen,du ,YE,bandsVertical3,"red,white,black",,
+Zambia,Zambie,de la ,ZM,plain,"green,red,black,orange","bird,misc",
+Zimbabwe,Zimbabwe,du ,ZW,"stripes,triangle","white,black,green,yellow,red","star,emblem",1
