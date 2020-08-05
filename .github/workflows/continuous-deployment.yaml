@@ -3,11 +3,20 @@ name: Continuous Deployment
 on: [push]
 
 jobs:
-    build:
-        runs-on: ubuntu-latest
-        name: Deploying to Surge
-        steps:
-            - uses: actions/checkout@v2
-            - run: npm run build
-            - run: npm install -g surge
-            - run: surge ./build ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
+  build:
+    runs-on: ubuntu-latest
+    name: Deploying to Surge
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+      - name: Install dependencies
+        run: npm install -g surge
+        run: npm install
+      - name: Build
+        run: npm run build
+      - name: Deploy
+        run: surge ./build ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
