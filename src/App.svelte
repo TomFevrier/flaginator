@@ -23,17 +23,20 @@
 	let filtered = [];
 	$: console.log(filtered)
 
-	let flagImages = [];
-	let nbFlagImagesLoaded = 0;
+	// let flagImages = [];
+	// let nbFlagImagesLoaded = 0;
 	// $: console.log(flagImages, nbFlagImagesLoaded);
-	$: loaded = flags.length > 0 && nbFlagImagesLoaded === flags.length;
+	// $: loaded = flags.length > 0 && nbFlagImagesLoaded === flags.length;
+
+	let loaded = false;
+
+	window.addEventListener('load', () => setTimeout(() => loaded = true, 2000));
 
 	let property = properties[0];
 	let selected = [];
 	let knownProperties = {};
 
 	let started = false;
-
 	let loading = true;
 
 	csv('./flags.csv').then(data => {
@@ -46,10 +49,10 @@
 			e.layout = e.layout.split(',');
 			e.colors = e.colors.split(',');
 			e.figures = e.figures.split(',').map(d => d === '' ? 'none' : d);
-			const img = new Image();
-			img.src = `assets/flags/${e.code.toLowerCase()}_xsmall.png`;
-			img.addEventListener('load', () => nbFlagImagesLoaded++);
-			flagImages.push(img);
+			// const img = new Image();
+			// img.src = `assets/flags/${e.code.toLowerCase()}_xsmall.png`;
+			// img.addEventListener('load', () => nbFlagImagesLoaded++);
+			// flagImages.push(img);
 		})
 		flags = data;
 		filtered = flags;

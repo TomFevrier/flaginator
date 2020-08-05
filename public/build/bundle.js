@@ -933,18 +933,6 @@ var app = (function () {
     	return child_ctx;
     }
 
-    function get_each_context_5(ctx, list, i) {
-    	const child_ctx = ctx.slice();
-    	child_ctx[4] = list[i];
-    	return child_ctx;
-    }
-
-    function get_each_context_6(ctx, list, i) {
-    	const child_ctx = ctx.slice();
-    	child_ctx[4] = list[i];
-    	return child_ctx;
-    }
-
     function get_each_context(ctx, list, i) {
     	const child_ctx = ctx.slice();
     	child_ctx[1] = list[i];
@@ -952,7 +940,7 @@ var app = (function () {
     }
 
     // (13:4) {#each flags.slice(0, NB_FLAGS) as flag}
-    function create_each_block_6(ctx) {
+    function create_each_block_4(ctx) {
     	let img;
     	let img_src_value;
     	let img_alt_value;
@@ -985,7 +973,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_each_block_6.name,
+    		id: create_each_block_4.name,
     		type: "each",
     		source: "(13:4) {#each flags.slice(0, NB_FLAGS) as flag}",
     		ctx
@@ -995,7 +983,7 @@ var app = (function () {
     }
 
     // (20:4) {#each flags.slice(0, NB_FLAGS * 0.5) as flag}
-    function create_each_block_5(ctx) {
+    function create_each_block_3(ctx) {
     	let img;
     	let img_src_value;
     	let img_alt_value;
@@ -1028,7 +1016,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_each_block_5.name,
+    		id: create_each_block_3.name,
     		type: "each",
     		source: "(20:4) {#each flags.slice(0, NB_FLAGS * 0.5) as flag}",
     		ctx
@@ -1038,7 +1026,7 @@ var app = (function () {
     }
 
     // (29:4) {#each flags.slice(NB_FLAGS, NB_FLAGS * 2) as flag}
-    function create_each_block_4(ctx) {
+    function create_each_block_2(ctx) {
     	let img;
     	let img_src_value;
     	let img_alt_value;
@@ -1071,7 +1059,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_each_block_4.name,
+    		id: create_each_block_2.name,
     		type: "each",
     		source: "(29:4) {#each flags.slice(NB_FLAGS, NB_FLAGS * 2) as flag}",
     		ctx
@@ -1081,7 +1069,7 @@ var app = (function () {
     }
 
     // (36:4) {#each flags.slice(NB_FLAGS, NB_FLAGS * 1.5) as flag}
-    function create_each_block_3(ctx) {
+    function create_each_block_1(ctx) {
     	let img;
     	let img_src_value;
     	let img_alt_value;
@@ -1114,7 +1102,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_each_block_3.name,
+    		id: create_each_block_1.name,
     		type: "each",
     		source: "(36:4) {#each flags.slice(NB_FLAGS, NB_FLAGS * 1.5) as flag}",
     		ctx
@@ -1123,140 +1111,37 @@ var app = (function () {
     	return block;
     }
 
-    // (45:4) {#each flags.slice(NB_FLAGS * 2, NB_FLAGS * 3) as flag}
-    function create_each_block_2(ctx) {
-    	let img;
-    	let img_src_value;
-    	let img_alt_value;
-
-    	const block = {
-    		c: function create() {
-    			img = element("img");
-    			if (img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + "_xsmall.png")) attr_dev(img, "src", img_src_value);
-    			set_style(img, "width", "calc(200vw / " + NB_FLAGS + ")");
-    			attr_dev(img, "alt", img_alt_value = /*flag*/ ctx[4].name);
-    			attr_dev(img, "class", "svelte-21en8w");
-    			add_location(img, file$1, 45, 5, 1191);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, img, anchor);
-    		},
-    		p: function update(ctx, dirty) {
-    			if (dirty & /*flags*/ 1 && img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + "_xsmall.png")) {
-    				attr_dev(img, "src", img_src_value);
-    			}
-
-    			if (dirty & /*flags*/ 1 && img_alt_value !== (img_alt_value = /*flag*/ ctx[4].name)) {
-    				attr_dev(img, "alt", img_alt_value);
-    			}
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(img);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_each_block_2.name,
-    		type: "each",
-    		source: "(45:4) {#each flags.slice(NB_FLAGS * 2, NB_FLAGS * 3) as flag}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (52:4) {#each flags.slice(NB_FLAGS * 2, NB_FLAGS * 2.5) as flag}
-    function create_each_block_1(ctx) {
-    	let img;
-    	let img_src_value;
-    	let img_alt_value;
-
-    	const block = {
-    		c: function create() {
-    			img = element("img");
-    			if (img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + "_xsmall.png")) attr_dev(img, "src", img_src_value);
-    			set_style(img, "width", "calc(200vw / " + NB_FLAGS + ")");
-    			attr_dev(img, "alt", img_alt_value = /*flag*/ ctx[4].name);
-    			attr_dev(img, "class", "svelte-21en8w");
-    			add_location(img, file$1, 52, 5, 1414);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, img, anchor);
-    		},
-    		p: function update(ctx, dirty) {
-    			if (dirty & /*flags*/ 1 && img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + "_xsmall.png")) {
-    				attr_dev(img, "src", img_src_value);
-    			}
-
-    			if (dirty & /*flags*/ 1 && img_alt_value !== (img_alt_value = /*flag*/ ctx[4].name)) {
-    				attr_dev(img, "alt", img_alt_value);
-    			}
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(img);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_each_block_1.name,
-    		type: "each",
-    		source: "(52:4) {#each flags.slice(NB_FLAGS * 2, NB_FLAGS * 2.5) as flag}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
     // (10:1) {#each new Array(2) as _}
     function create_each_block(ctx) {
-    	let div3;
+    	let div2;
     	let div0;
     	let t0;
     	let t1;
     	let div1;
     	let t2;
     	let t3;
-    	let div2;
-    	let t4;
-    	let t5;
-    	let each_value_6 = /*flags*/ ctx[0].slice(0, NB_FLAGS);
-    	let each_blocks_5 = [];
-
-    	for (let i = 0; i < each_value_6.length; i += 1) {
-    		each_blocks_5[i] = create_each_block_6(get_each_context_6(ctx, each_value_6, i));
-    	}
-
-    	let each_value_5 = /*flags*/ ctx[0].slice(0, NB_FLAGS * 0.5);
-    	let each_blocks_4 = [];
-
-    	for (let i = 0; i < each_value_5.length; i += 1) {
-    		each_blocks_4[i] = create_each_block_5(get_each_context_5(ctx, each_value_5, i));
-    	}
-
-    	let each_value_4 = /*flags*/ ctx[0].slice(NB_FLAGS, NB_FLAGS * 2);
+    	let each_value_4 = /*flags*/ ctx[0].slice(0, NB_FLAGS);
     	let each_blocks_3 = [];
 
     	for (let i = 0; i < each_value_4.length; i += 1) {
     		each_blocks_3[i] = create_each_block_4(get_each_context_4(ctx, each_value_4, i));
     	}
 
-    	let each_value_3 = /*flags*/ ctx[0].slice(NB_FLAGS, NB_FLAGS * 1.5);
+    	let each_value_3 = /*flags*/ ctx[0].slice(0, NB_FLAGS * 0.5);
     	let each_blocks_2 = [];
 
     	for (let i = 0; i < each_value_3.length; i += 1) {
     		each_blocks_2[i] = create_each_block_3(get_each_context_3(ctx, each_value_3, i));
     	}
 
-    	let each_value_2 = /*flags*/ ctx[0].slice(NB_FLAGS * 2, NB_FLAGS * 3);
+    	let each_value_2 = /*flags*/ ctx[0].slice(NB_FLAGS, NB_FLAGS * 2);
     	let each_blocks_1 = [];
 
     	for (let i = 0; i < each_value_2.length; i += 1) {
     		each_blocks_1[i] = create_each_block_2(get_each_context_2(ctx, each_value_2, i));
     	}
 
-    	let each_value_1 = /*flags*/ ctx[0].slice(NB_FLAGS * 2, NB_FLAGS * 2.5);
+    	let each_value_1 = /*flags*/ ctx[0].slice(NB_FLAGS, NB_FLAGS * 1.5);
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value_1.length; i += 1) {
@@ -1265,146 +1150,72 @@ var app = (function () {
 
     	const block = {
     		c: function create() {
-    			div3 = element("div");
+    			div2 = element("div");
     			div0 = element("div");
-
-    			for (let i = 0; i < each_blocks_5.length; i += 1) {
-    				each_blocks_5[i].c();
-    			}
-
-    			t0 = space();
-
-    			for (let i = 0; i < each_blocks_4.length; i += 1) {
-    				each_blocks_4[i].c();
-    			}
-
-    			t1 = space();
-    			div1 = element("div");
 
     			for (let i = 0; i < each_blocks_3.length; i += 1) {
     				each_blocks_3[i].c();
     			}
 
-    			t2 = space();
+    			t0 = space();
 
     			for (let i = 0; i < each_blocks_2.length; i += 1) {
     				each_blocks_2[i].c();
     			}
 
-    			t3 = space();
-    			div2 = element("div");
+    			t1 = space();
+    			div1 = element("div");
 
     			for (let i = 0; i < each_blocks_1.length; i += 1) {
     				each_blocks_1[i].c();
     			}
 
-    			t4 = space();
+    			t2 = space();
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
     			}
 
-    			t5 = space();
+    			t3 = space();
     			attr_dev(div0, "class", "row svelte-21en8w");
     			add_location(div0, file$1, 11, 3, 192);
     			attr_dev(div1, "class", "row svelte-21en8w");
     			add_location(div1, file$1, 27, 3, 641);
-    			attr_dev(div2, "class", "row svelte-21en8w");
-    			add_location(div2, file$1, 43, 3, 1108);
-    			attr_dev(div3, "class", "group svelte-21en8w");
-    			add_location(div3, file$1, 10, 2, 169);
+    			attr_dev(div2, "class", "group svelte-21en8w");
+    			add_location(div2, file$1, 10, 2, 169);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, div3, anchor);
-    			append_dev(div3, div0);
+    			insert_dev(target, div2, anchor);
+    			append_dev(div2, div0);
 
-    			for (let i = 0; i < each_blocks_5.length; i += 1) {
-    				each_blocks_5[i].m(div0, null);
+    			for (let i = 0; i < each_blocks_3.length; i += 1) {
+    				each_blocks_3[i].m(div0, null);
     			}
 
     			append_dev(div0, t0);
 
-    			for (let i = 0; i < each_blocks_4.length; i += 1) {
-    				each_blocks_4[i].m(div0, null);
+    			for (let i = 0; i < each_blocks_2.length; i += 1) {
+    				each_blocks_2[i].m(div0, null);
     			}
 
-    			append_dev(div3, t1);
-    			append_dev(div3, div1);
+    			append_dev(div2, t1);
+    			append_dev(div2, div1);
 
-    			for (let i = 0; i < each_blocks_3.length; i += 1) {
-    				each_blocks_3[i].m(div1, null);
+    			for (let i = 0; i < each_blocks_1.length; i += 1) {
+    				each_blocks_1[i].m(div1, null);
     			}
 
     			append_dev(div1, t2);
 
-    			for (let i = 0; i < each_blocks_2.length; i += 1) {
-    				each_blocks_2[i].m(div1, null);
-    			}
-
-    			append_dev(div3, t3);
-    			append_dev(div3, div2);
-
-    			for (let i = 0; i < each_blocks_1.length; i += 1) {
-    				each_blocks_1[i].m(div2, null);
-    			}
-
-    			append_dev(div2, t4);
-
     			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].m(div2, null);
+    				each_blocks[i].m(div1, null);
     			}
 
-    			append_dev(div3, t5);
+    			append_dev(div2, t3);
     		},
     		p: function update(ctx, dirty) {
     			if (dirty & /*flags, NB_FLAGS*/ 1) {
-    				each_value_6 = /*flags*/ ctx[0].slice(0, NB_FLAGS);
-    				let i;
-
-    				for (i = 0; i < each_value_6.length; i += 1) {
-    					const child_ctx = get_each_context_6(ctx, each_value_6, i);
-
-    					if (each_blocks_5[i]) {
-    						each_blocks_5[i].p(child_ctx, dirty);
-    					} else {
-    						each_blocks_5[i] = create_each_block_6(child_ctx);
-    						each_blocks_5[i].c();
-    						each_blocks_5[i].m(div0, t0);
-    					}
-    				}
-
-    				for (; i < each_blocks_5.length; i += 1) {
-    					each_blocks_5[i].d(1);
-    				}
-
-    				each_blocks_5.length = each_value_6.length;
-    			}
-
-    			if (dirty & /*flags, NB_FLAGS*/ 1) {
-    				each_value_5 = /*flags*/ ctx[0].slice(0, NB_FLAGS * 0.5);
-    				let i;
-
-    				for (i = 0; i < each_value_5.length; i += 1) {
-    					const child_ctx = get_each_context_5(ctx, each_value_5, i);
-
-    					if (each_blocks_4[i]) {
-    						each_blocks_4[i].p(child_ctx, dirty);
-    					} else {
-    						each_blocks_4[i] = create_each_block_5(child_ctx);
-    						each_blocks_4[i].c();
-    						each_blocks_4[i].m(div0, null);
-    					}
-    				}
-
-    				for (; i < each_blocks_4.length; i += 1) {
-    					each_blocks_4[i].d(1);
-    				}
-
-    				each_blocks_4.length = each_value_5.length;
-    			}
-
-    			if (dirty & /*flags, NB_FLAGS*/ 1) {
-    				each_value_4 = /*flags*/ ctx[0].slice(NB_FLAGS, NB_FLAGS * 2);
+    				each_value_4 = /*flags*/ ctx[0].slice(0, NB_FLAGS);
     				let i;
 
     				for (i = 0; i < each_value_4.length; i += 1) {
@@ -1415,7 +1226,7 @@ var app = (function () {
     					} else {
     						each_blocks_3[i] = create_each_block_4(child_ctx);
     						each_blocks_3[i].c();
-    						each_blocks_3[i].m(div1, t2);
+    						each_blocks_3[i].m(div0, t0);
     					}
     				}
 
@@ -1427,7 +1238,7 @@ var app = (function () {
     			}
 
     			if (dirty & /*flags, NB_FLAGS*/ 1) {
-    				each_value_3 = /*flags*/ ctx[0].slice(NB_FLAGS, NB_FLAGS * 1.5);
+    				each_value_3 = /*flags*/ ctx[0].slice(0, NB_FLAGS * 0.5);
     				let i;
 
     				for (i = 0; i < each_value_3.length; i += 1) {
@@ -1438,7 +1249,7 @@ var app = (function () {
     					} else {
     						each_blocks_2[i] = create_each_block_3(child_ctx);
     						each_blocks_2[i].c();
-    						each_blocks_2[i].m(div1, null);
+    						each_blocks_2[i].m(div0, null);
     					}
     				}
 
@@ -1450,7 +1261,7 @@ var app = (function () {
     			}
 
     			if (dirty & /*flags, NB_FLAGS*/ 1) {
-    				each_value_2 = /*flags*/ ctx[0].slice(NB_FLAGS * 2, NB_FLAGS * 3);
+    				each_value_2 = /*flags*/ ctx[0].slice(NB_FLAGS, NB_FLAGS * 2);
     				let i;
 
     				for (i = 0; i < each_value_2.length; i += 1) {
@@ -1461,7 +1272,7 @@ var app = (function () {
     					} else {
     						each_blocks_1[i] = create_each_block_2(child_ctx);
     						each_blocks_1[i].c();
-    						each_blocks_1[i].m(div2, t4);
+    						each_blocks_1[i].m(div1, t2);
     					}
     				}
 
@@ -1473,7 +1284,7 @@ var app = (function () {
     			}
 
     			if (dirty & /*flags, NB_FLAGS*/ 1) {
-    				each_value_1 = /*flags*/ ctx[0].slice(NB_FLAGS * 2, NB_FLAGS * 2.5);
+    				each_value_1 = /*flags*/ ctx[0].slice(NB_FLAGS, NB_FLAGS * 1.5);
     				let i;
 
     				for (i = 0; i < each_value_1.length; i += 1) {
@@ -1484,7 +1295,7 @@ var app = (function () {
     					} else {
     						each_blocks[i] = create_each_block_1(child_ctx);
     						each_blocks[i].c();
-    						each_blocks[i].m(div2, null);
+    						each_blocks[i].m(div1, null);
     					}
     				}
 
@@ -1496,9 +1307,7 @@ var app = (function () {
     			}
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div3);
-    			destroy_each(each_blocks_5, detaching);
-    			destroy_each(each_blocks_4, detaching);
+    			if (detaching) detach_dev(div2);
     			destroy_each(each_blocks_3, detaching);
     			destroy_each(each_blocks_2, detaching);
     			destroy_each(each_blocks_1, detaching);
@@ -1590,7 +1399,7 @@ var app = (function () {
     	return block;
     }
 
-    const NB_FLAGS = 30;
+    const NB_FLAGS = 42;
 
     function instance$1($$self, $$props, $$invalidate) {
     	let { flags } = $$props;
@@ -4114,7 +3923,7 @@ var app = (function () {
 
     const { Error: Error_1$1 } = globals;
 
-    // (150:30) 
+    // (153:30) 
     function create_if_block_1$2(ctx) {
     	let current_block_type_index;
     	let if_block;
@@ -4124,7 +3933,7 @@ var app = (function () {
     	const if_blocks = [];
 
     	function select_block_type_1(ctx, dirty) {
-    		if (/*property*/ ctx[2] && /*filtered*/ ctx[1].length > 1) return 0;
+    		if (/*property*/ ctx[3] && /*filtered*/ ctx[1].length > 1) return 0;
     		if (/*filtered*/ ctx[1].length > 0 && /*filtered*/ ctx[1].length <= 3) return 1;
     		return 2;
     	}
@@ -4186,14 +3995,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1$2.name,
     		type: "if",
-    		source: "(150:30) ",
+    		source: "(153:30) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (147:0) {#if !started}
+    // (150:0) {#if !started}
     function create_if_block$5(ctx) {
     	let t;
     	let current;
@@ -4203,10 +4012,10 @@ var app = (function () {
     			$$inline: true
     		});
 
-    	menu.$on("start", /*start_handler*/ ctx[15]);
+    	menu.$on("start", /*start_handler*/ ctx[13]);
 
     	const loadingscreen = new LoadingScreen({
-    			props: { hidden: /*loaded*/ ctx[7] },
+    			props: { hidden: /*loaded*/ ctx[2] },
     			$$inline: true
     		});
 
@@ -4227,7 +4036,7 @@ var app = (function () {
     			if (dirty & /*flags*/ 1) menu_changes.flags = /*flags*/ ctx[0];
     			menu.$set(menu_changes);
     			const loadingscreen_changes = {};
-    			if (dirty & /*loaded*/ 128) loadingscreen_changes.hidden = /*loaded*/ ctx[7];
+    			if (dirty & /*loaded*/ 4) loadingscreen_changes.hidden = /*loaded*/ ctx[2];
     			loadingscreen.$set(loadingscreen_changes);
     		},
     		i: function intro(local) {
@@ -4252,14 +4061,14 @@ var app = (function () {
     		block,
     		id: create_if_block$5.name,
     		type: "if",
-    		source: "(147:0) {#if !started}",
+    		source: "(150:0) {#if !started}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (167:1) {:else}
+    // (170:1) {:else}
     function create_else_block$3(ctx) {
     	let current;
 
@@ -4303,14 +4112,14 @@ var app = (function () {
     		block,
     		id: create_else_block$3.name,
     		type: "else",
-    		source: "(167:1) {:else}",
+    		source: "(170:1) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (161:55) 
+    // (164:55) 
     function create_if_block_3(ctx) {
     	let current;
 
@@ -4319,7 +4128,7 @@ var app = (function () {
     			$$inline: true
     		});
 
-    	result.$on("retry", /*retry_handler*/ ctx[17]);
+    	result.$on("retry", /*retry_handler*/ ctx[15]);
 
     	const block = {
     		c: function create() {
@@ -4352,30 +4161,30 @@ var app = (function () {
     		block,
     		id: create_if_block_3.name,
     		type: "if",
-    		source: "(161:55) ",
+    		source: "(164:55) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (151:1) {#if property && filtered.length > 1}
+    // (154:1) {#if property && filtered.length > 1}
     function create_if_block_2(ctx) {
     	let updating_selected;
     	let current;
 
     	function question_selected_binding(value) {
-    		/*question_selected_binding*/ ctx[16].call(null, value);
+    		/*question_selected_binding*/ ctx[14].call(null, value);
     	}
 
     	let question_props = {
-    		property: /*property*/ ctx[2],
-    		propertyOptions: options[/*property*/ ctx[2]],
+    		property: /*property*/ ctx[3],
+    		propertyOptions: options[/*property*/ ctx[3]],
     		filtered: /*filtered*/ ctx[1]
     	};
 
-    	if (/*selected*/ ctx[3] !== void 0) {
-    		question_props.selected = /*selected*/ ctx[3];
+    	if (/*selected*/ ctx[4] !== void 0) {
+    		question_props.selected = /*selected*/ ctx[4];
     	}
 
     	const question = new Question({ props: question_props, $$inline: true });
@@ -4394,13 +4203,13 @@ var app = (function () {
     		},
     		p: function update(ctx, dirty) {
     			const question_changes = {};
-    			if (dirty & /*property*/ 4) question_changes.property = /*property*/ ctx[2];
-    			if (dirty & /*property*/ 4) question_changes.propertyOptions = options[/*property*/ ctx[2]];
+    			if (dirty & /*property*/ 8) question_changes.property = /*property*/ ctx[3];
+    			if (dirty & /*property*/ 8) question_changes.propertyOptions = options[/*property*/ ctx[3]];
     			if (dirty & /*filtered*/ 2) question_changes.filtered = /*filtered*/ ctx[1];
 
-    			if (!updating_selected && dirty & /*selected*/ 8) {
+    			if (!updating_selected && dirty & /*selected*/ 16) {
     				updating_selected = true;
-    				question_changes.selected = /*selected*/ ctx[3];
+    				question_changes.selected = /*selected*/ ctx[4];
     				add_flush_callback(() => updating_selected = false);
     			}
 
@@ -4424,7 +4233,7 @@ var app = (function () {
     		block,
     		id: create_if_block_2.name,
     		type: "if",
-    		source: "(151:1) {#if property && filtered.length > 1}",
+    		source: "(154:1) {#if property && filtered.length > 1}",
     		ctx
     	});
 
@@ -4440,8 +4249,8 @@ var app = (function () {
     	const if_blocks = [];
 
     	function select_block_type(ctx, dirty) {
-    		if (!/*started*/ ctx[5]) return 0;
-    		if (/*started*/ ctx[5] && !/*loading*/ ctx[6]) return 1;
+    		if (!/*started*/ ctx[6]) return 0;
+    		if (/*started*/ ctx[6] && !/*loading*/ ctx[7]) return 1;
     		return -1;
     	}
 
@@ -4532,8 +4341,14 @@ var app = (function () {
     	const properties = ["layout", "colors", "figures", "nbStars", "nbBands"];
     	let flags = [];
     	let filtered = [];
-    	let flagImages = [];
-    	let nbFlagImagesLoaded = 0;
+
+    	// let flagImages = [];
+    	// let nbFlagImagesLoaded = 0;
+    	// $: console.log(flagImages, nbFlagImagesLoaded);
+    	// $: loaded = flags.length > 0 && nbFlagImagesLoaded === flags.length;
+    	let loaded = false;
+
+    	window.addEventListener("load", () => setTimeout(() => $$invalidate(2, loaded = true), 2000));
     	let property = properties[0];
     	let selected = [];
     	let knownProperties = {};
@@ -4547,15 +4362,11 @@ var app = (function () {
     			e.layout = e.layout.split(",");
     			e.colors = e.colors.split(",");
     			e.figures = e.figures.split(",").map(d => d === "" ? "none" : d);
-    			const img = new Image();
-    			img.src = `assets/flags/${e.code.toLowerCase()}_xsmall.png`;
-    			img.addEventListener("load", () => $$invalidate(12, nbFlagImagesLoaded++, nbFlagImagesLoaded));
-    			flagImages.push(img);
-    		});
+    		}); // const img = new Image(); // img.src = `assets/flags/${e.code.toLowerCase()}_xsmall.png`; // img.addEventListener('load', () => nbFlagImagesLoaded++); // flagImages.push(img);
 
     		$$invalidate(0, flags = data);
     		$$invalidate(1, filtered = flags);
-    		$$invalidate(6, loading = false);
+    		$$invalidate(7, loading = false);
     	});
 
     	const getNextProperty = () => {
@@ -4616,61 +4427,61 @@ var app = (function () {
     	};
 
     	const filterFlags = () => {
-    		$$invalidate(6, loading = true);
+    		$$invalidate(7, loading = true);
 
     		if (options[property].multiple) {
     			$$invalidate(1, filtered = filtered.filter(e => selected.reduce((acc, value) => acc && e[property].some(e => e.includes(value)), true)));
-    			$$invalidate(4, knownProperties = { ...knownProperties, [property]: selected });
+    			$$invalidate(5, knownProperties = { ...knownProperties, [property]: selected });
     		} else {
     			$$invalidate(1, filtered = filtered.filter(e => {
     				if (property === "nbBands") return e.layout.includes(selected[0]);
     				return e[property] === selected[0];
     			}));
 
-    			$$invalidate(4, knownProperties = {
+    			$$invalidate(5, knownProperties = {
     				...knownProperties,
     				[property]: selected[0]
     			});
     		}
 
-    		$$invalidate(2, property = getNextProperty());
-    		$$invalidate(3, selected = []);
-    		setTimeout(() => $$invalidate(6, loading = false), 0);
+    		$$invalidate(3, property = getNextProperty());
+    		$$invalidate(4, selected = []);
+    		setTimeout(() => $$invalidate(7, loading = false), 0);
     	};
 
     	const skipQuestion = () => {
-    		$$invalidate(6, loading = true);
-    		$$invalidate(3, selected = []);
+    		$$invalidate(7, loading = true);
+    		$$invalidate(4, selected = []);
 
-    		$$invalidate(4, knownProperties = {
+    		$$invalidate(5, knownProperties = {
     			...knownProperties,
     			[property]: undefined
     		});
 
-    		$$invalidate(2, property = getNextProperty());
-    		setTimeout(() => $$invalidate(6, loading = false), 0);
+    		$$invalidate(3, property = getNextProperty());
+    		setTimeout(() => $$invalidate(7, loading = false), 0);
     	};
 
     	const retry = () => {
-    		$$invalidate(6, loading = true);
-    		$$invalidate(3, selected = []);
-    		$$invalidate(4, knownProperties = {});
-    		$$invalidate(2, property = properties[0]);
+    		$$invalidate(7, loading = true);
+    		$$invalidate(4, selected = []);
+    		$$invalidate(5, knownProperties = {});
+    		$$invalidate(3, property = properties[0]);
     		$$invalidate(1, filtered = flags);
-    		setTimeout(() => $$invalidate(6, loading = false), 0);
+    		setTimeout(() => $$invalidate(7, loading = false), 0);
     	};
 
-    	const start_handler = () => $$invalidate(5, started = true);
+    	const start_handler = () => $$invalidate(6, started = true);
 
     	function question_selected_binding(value) {
     		selected = value;
-    		$$invalidate(3, selected);
+    		$$invalidate(4, selected);
     	}
 
     	const retry_handler = () => {
     		$$invalidate(1, filtered = flags);
-    		$$invalidate(4, knownProperties = {});
-    		$$invalidate(2, property = properties[0]);
+    		$$invalidate(5, knownProperties = {});
+    		$$invalidate(3, property = properties[0]);
     	};
 
     	$$self.$capture_state = () => {
@@ -4680,44 +4491,33 @@ var app = (function () {
     	$$self.$inject_state = $$props => {
     		if ("flags" in $$props) $$invalidate(0, flags = $$props.flags);
     		if ("filtered" in $$props) $$invalidate(1, filtered = $$props.filtered);
-    		if ("flagImages" in $$props) flagImages = $$props.flagImages;
-    		if ("nbFlagImagesLoaded" in $$props) $$invalidate(12, nbFlagImagesLoaded = $$props.nbFlagImagesLoaded);
-    		if ("property" in $$props) $$invalidate(2, property = $$props.property);
-    		if ("selected" in $$props) $$invalidate(3, selected = $$props.selected);
-    		if ("knownProperties" in $$props) $$invalidate(4, knownProperties = $$props.knownProperties);
-    		if ("started" in $$props) $$invalidate(5, started = $$props.started);
-    		if ("loading" in $$props) $$invalidate(6, loading = $$props.loading);
-    		if ("loaded" in $$props) $$invalidate(7, loaded = $$props.loaded);
+    		if ("loaded" in $$props) $$invalidate(2, loaded = $$props.loaded);
+    		if ("property" in $$props) $$invalidate(3, property = $$props.property);
+    		if ("selected" in $$props) $$invalidate(4, selected = $$props.selected);
+    		if ("knownProperties" in $$props) $$invalidate(5, knownProperties = $$props.knownProperties);
+    		if ("started" in $$props) $$invalidate(6, started = $$props.started);
+    		if ("loading" in $$props) $$invalidate(7, loading = $$props.loading);
     	};
-
-    	let loaded;
 
     	$$self.$$.update = () => {
     		if ($$self.$$.dirty & /*filtered*/ 2) {
     			 console.log(filtered);
-    		}
-
-    		if ($$self.$$.dirty & /*flags, nbFlagImagesLoaded*/ 4097) {
-    			// $: console.log(flagImages, nbFlagImagesLoaded);
-    			 $$invalidate(7, loaded = flags.length > 0 && nbFlagImagesLoaded === flags.length);
     		}
     	};
 
     	return [
     		flags,
     		filtered,
+    		loaded,
     		property,
     		selected,
     		knownProperties,
     		started,
     		loading,
-    		loaded,
     		properties,
     		filterFlags,
     		skipQuestion,
     		retry,
-    		nbFlagImagesLoaded,
-    		flagImages,
     		getNextProperty,
     		start_handler,
     		question_selected_binding,

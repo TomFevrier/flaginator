@@ -3,7 +3,7 @@
 
 	$: flags.sort(() => Math.random() >= 0.5);
 
-	const NB_FLAGS = 30;
+	const NB_FLAGS = 42;
 </script>
 
 <div class='background-wrapper'>
@@ -41,7 +41,7 @@
 					/>
 				{/each}
 			</div>
-			<div class='row'>
+			<!-- <div class='row'>
 				{#each flags.slice(NB_FLAGS * 2, NB_FLAGS * 3) as flag}
 					<img
 						src='assets/flags/{flag.code.toLowerCase()}_xsmall.png'
@@ -56,7 +56,7 @@
 						alt={flag.name}
 					/>
 				{/each}
-			</div>
+			</div> -->
 		</div>
 	{/each}
 </div>
