@@ -2,13 +2,15 @@
 	import { csv } from 'd3-fetch';
 	import { mean } from 'd3-array';
 
-	import Background from './Background.svelte';
-	import Question from './Question.svelte';
-	import Result from './Result.svelte';
-	import Error from './Error.svelte';
+	import Menu from './components/Menu.svelte';
+	import Question from './components/Question.svelte';
+	import Result from './components/Result.svelte';
+	import Error from './components/Error.svelte';
 
-	import options from './options-en';
-	// import options from './options-fr';
+	import optionsFr from './options-en';
+	import optionsEn from './options-en';
+
+	const options = navigator.languages[0] === 'fr-FR' ? optionsFr : optionsEn;
 
 	const properties = [
 		'layout',
@@ -26,12 +28,8 @@
 	let selected = [];
 	let knownProperties = {};
 
+	let started = false;
 	let loading = true;
-
-	let mobile = window.matchMedia('(orientation: portrait)').matches;
-	window.addEventListener('resize', () => {
-		mobile = window.matchMedia('(orientation: portrait)').matches;
-	});
 
 	csv('./flags.csv').then(data => {
 		data.forEach(e => {
@@ -125,12 +123,21 @@
 		setTimeout(() => loading = false, 0);
 	}
 
+	const retry = () => {
+		loading = true;
+		selected = [];
+		knownProperties = {};
+		property = properties[0];
+		filtered = flags;
+		setTimeout(() => loading = false, 0);
+	}
+
 </script>
 
-{#if !mobile}
-	<Background flags={flags} />
-{/if}
-{#if !loading}
+
+{#if !started}
+	<Menu flags={flags} on:start={() => started = true} />
+{:else if started && !loading}
 	{#if property && filtered.length > 1}
 		<Question
 			property={property}
@@ -139,19 +146,16 @@
 			bind:selected={selected}
 			on:submit={filterFlags}
 			on:skip={skipQuestion}
+			on:retry={retry}
 		/>
 	{:else if filtered.length > 0 && filtered.length <= 3}
 		<Result found={filtered} on:retry={() => {
 			filtered = flags;
-			knownProperties = [];
-			property = 'layout';
+			knownProperties = {};
+			property = properties[0];
 		}} />
 	{:else}
-		<Error notFound={filtered.length === 0} on:retry={() => {
-			filtered = flags;
-			knownProperties = [];
-			property = 'layout';
-		}} />
+		<Error notFound={filtered.length === 0} on:retry={retry} />
 	{/if}
 	<!-- {#each flags as flag}
 		<img src='/assets/flags/{flag.code.toLowerCase()}.png' />

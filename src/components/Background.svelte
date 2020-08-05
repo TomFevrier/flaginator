@@ -73,7 +73,7 @@
 	.wrapper {
 		width: 300vw;
 		height: 100%;
-		opacity: 0.5;
+		opacity: 0.2;
 		position: absolute;
 		top: 0;
 		left: 0;

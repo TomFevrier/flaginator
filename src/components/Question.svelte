@@ -2,6 +2,7 @@
 	import { createEventDispatcher } from 'svelte';
 
 	import Card from './Card.svelte';
+	import Button from './Button.svelte';
 
 	export let property;
 	export let propertyOptions;
@@ -32,6 +33,10 @@
 	const skip = () => {
 		dispatch('skip');
 	}
+
+	const retry = () => {
+		dispatch('retry');
+	}
 </script>
 
 <Card>
@@ -43,16 +48,23 @@
 					<div
 						class='option-image'
 						class:selected={selected.includes(option.value)}
-						style='background-color: {option.value}; padding-top: calc(100% * 2/3);'
+						style='
+							background-color: {option.value};
+							padding-top: calc(100% * 2/3);
+						'
 						on:click={() => clickHandler(option.value)}
 					></div>
 				{:else}
 						<div
 							class='option-image'
 							class:selected={selected.includes(option.value)}
+							style='
+								background-image: url(/assets/{property}/{option.value}.png);
+								padding-top: calc(100% * 2/3);
+							'
 							on:click={() => clickHandler(option.value)}
 						>
-							<img src='/assets/{property}/{option.value}.png' alt={option.label} />
+							<!-- <img src='' alt={option.label} /> -->
 						</div>
 						<p>{option.label}</p>
 				{/if}
@@ -60,16 +72,24 @@
 		{/each}
 	</div>
 	<div>
-		<button on:click={skip} class='skip'>
+
+		<Button on:click={skip} secondary>
 			Skip
-		</button>
-		<button on:click={submit} disabled={selected.length == 0}>
+		</Button>
+		<Button on:click={retry} secondary>
+			Retry
+		</Button>
+		<Button on:click={submit} disabled={selected.length == 0}>
 			Next
-		</button>
+		</Button>
 	</div>
 </Card>
 
 <style lang='scss'>
+	h3 {
+		font-size: 1.5rem;
+		font-weight: bold;
+	}
 	.grid {
 		width: 100%;
 		display: grid;
@@ -84,6 +104,7 @@
 
 			.option-image {
 				width: 100%;
+				background-size: cover;
 				cursor: pointer;
 
 				&:hover {
@@ -91,7 +112,7 @@
 				}
 
 				&.selected {
-					outline: 2px solid green;
+					outline: 3px solid darkorange;
 				}
 
 				img {
@@ -102,20 +123,10 @@
 			}
 
 			p {
+				margin: 0.5rem 0 1rem;
 				font-size: 1rem;
 				text-align: center;
 			}
 		}
-	}
-
-	button {
-		margin-top: 2rem;
-		cursor: pointer;
-	}
-
-	button.skip {
-		border: none;
-		background-color: transparent;
-		color: grey;
 	}
 </style>

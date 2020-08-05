@@ -2,6 +2,7 @@
 	import { createEventDispatcher } from 'svelte';
 
 	import Card from './Card.svelte';
+	import Button from './Button.svelte';
 
 	export let notFound;
 
@@ -17,9 +18,9 @@
 	{:else}
 		<h3>I need more information to identify this flag...</h3>
 	{/if}
-	<button on:click={retry}>
-		Try again
-	</button>
+	<Button on:click={retry}>
+		Retry
+	</Button>
 </Card>
 
 <style lang='scss'>

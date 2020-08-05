@@ -14,14 +14,14 @@
 
 <Card>
 	<h3>Is this {found[0].name.toUpperCase()}?</h3>
-	<img src='/assets/flags/{found[0].code.toLowerCase()}.png' />
+	<img src='/assets/flags/{found[0].code.toLowerCase()}.png' alt={found[0].name} />
 	{#if found.length > 1}
 		<div class='alternative-results-wrapper'>
-			<p>Alternative results</p>
+			<p>Alternative flags</p>
 			<div class='alternative-results'>
 				{#each found.slice(1) as result}
 					<div>
-						<img src='/assets/flags/{result.code.toLowerCase()}.png' />
+						<img src='/assets/flags/{result.code.toLowerCase()}.png' alt={result.name} />
 						<p>{result.name}</p>
 					</div>
 				{/each}
