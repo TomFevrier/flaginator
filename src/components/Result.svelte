@@ -17,18 +17,18 @@
 
 <Card>
 	{#if lang === 'fr'}
-		<h3>S'agit-il {found[0].prep}{found[0].nom.toUpperCase()} ?</h3>
+		<h3>S'agit-il {found[0].prep}{found[0].nom.toUpperCase()}&nbsp;?</h3>
 	{:else}
 		<h3>Is this {found[0].name.toUpperCase()}?</h3>
 	{/if}
-	<img src='/assets/flags/{found[0].code.toLowerCase()}.png' alt={found[0].name} />
+	<img src='https://flagcdn.com/w320/{found[0].code.toLowerCase()}.png' alt={found[0].name} />
 	{#if found.length > 1}
 		<div class='alternative-results-wrapper'>
 			<p>{translations[found.length === 1 ? 'alternativeFlag' : 'alternativeFlags']}</p>
 			<div class='alternative-results'>
 				{#each found.slice(1) as result}
 					<div>
-						<img src='/assets/flags/{result.code.toLowerCase()}.png' alt={result.name} />
+						<img src='https://flagcdn.com/w160/{result.code.toLowerCase()}.png' alt={result.name} />
 						<p>{lang === 'fr' ? result.nom : result.name}</p>
 					</div>
 				{/each}

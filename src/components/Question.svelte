@@ -42,7 +42,7 @@
 </script>
 
 <Card>
-	<h3>{propertyOptions.question}</h3>
+	<h3>{@html propertyOptions.question}</h3>
 	<div class='grid'>
 		{#each propertyOptions.options as option}
 			<div class='option'>

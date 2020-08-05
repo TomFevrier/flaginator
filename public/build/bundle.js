@@ -948,7 +948,7 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			img = element("img");
-    			if (img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + "_xsmall.png")) attr_dev(img, "src", img_src_value);
+    			if (img.src !== (img_src_value = "https://flagcdn.com/w80/" + /*flag*/ ctx[4].code.toLowerCase() + ".png")) attr_dev(img, "src", img_src_value);
     			set_style(img, "width", "calc(200vw / " + NB_FLAGS + ")");
     			attr_dev(img, "alt", img_alt_value = /*flag*/ ctx[4].name);
     			attr_dev(img, "class", "svelte-21en8w");
@@ -958,7 +958,7 @@ var app = (function () {
     			insert_dev(target, img, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*flags*/ 1 && img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + "_xsmall.png")) {
+    			if (dirty & /*flags*/ 1 && img.src !== (img_src_value = "https://flagcdn.com/w80/" + /*flag*/ ctx[4].code.toLowerCase() + ".png")) {
     				attr_dev(img, "src", img_src_value);
     			}
 
@@ -991,17 +991,17 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			img = element("img");
-    			if (img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + "_xsmall.png")) attr_dev(img, "src", img_src_value);
+    			if (img.src !== (img_src_value = "https://flagcdn.com/w80/" + /*flag*/ ctx[4].code.toLowerCase() + ".png")) attr_dev(img, "src", img_src_value);
     			set_style(img, "width", "calc(200vw / " + NB_FLAGS + ")");
     			attr_dev(img, "alt", img_alt_value = /*flag*/ ctx[4].name);
     			attr_dev(img, "class", "svelte-21en8w");
-    			add_location(img, file$1, 20, 5, 472);
+    			add_location(img, file$1, 20, 5, 476);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*flags*/ 1 && img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + "_xsmall.png")) {
+    			if (dirty & /*flags*/ 1 && img.src !== (img_src_value = "https://flagcdn.com/w80/" + /*flag*/ ctx[4].code.toLowerCase() + ".png")) {
     				attr_dev(img, "src", img_src_value);
     			}
 
@@ -1034,17 +1034,17 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			img = element("img");
-    			if (img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + "_xsmall.png")) attr_dev(img, "src", img_src_value);
+    			if (img.src !== (img_src_value = "https://flagcdn.com/w80/" + /*flag*/ ctx[4].code.toLowerCase() + ".png")) attr_dev(img, "src", img_src_value);
     			set_style(img, "width", "calc(200vw / " + NB_FLAGS + ")");
     			attr_dev(img, "alt", img_alt_value = /*flag*/ ctx[4].name);
     			attr_dev(img, "class", "svelte-21en8w");
-    			add_location(img, file$1, 29, 5, 720);
+    			add_location(img, file$1, 29, 5, 728);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*flags*/ 1 && img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + "_xsmall.png")) {
+    			if (dirty & /*flags*/ 1 && img.src !== (img_src_value = "https://flagcdn.com/w80/" + /*flag*/ ctx[4].code.toLowerCase() + ".png")) {
     				attr_dev(img, "src", img_src_value);
     			}
 
@@ -1077,17 +1077,17 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			img = element("img");
-    			if (img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + "_xsmall.png")) attr_dev(img, "src", img_src_value);
+    			if (img.src !== (img_src_value = "https://flagcdn.com/w80/" + /*flag*/ ctx[4].code.toLowerCase() + ".png")) attr_dev(img, "src", img_src_value);
     			set_style(img, "width", "calc(200vw / " + NB_FLAGS + ")");
     			attr_dev(img, "alt", img_alt_value = /*flag*/ ctx[4].name);
     			attr_dev(img, "class", "svelte-21en8w");
-    			add_location(img, file$1, 36, 5, 939);
+    			add_location(img, file$1, 36, 5, 951);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*flags*/ 1 && img.src !== (img_src_value = "assets/flags/" + /*flag*/ ctx[4].code.toLowerCase() + "_xsmall.png")) {
+    			if (dirty & /*flags*/ 1 && img.src !== (img_src_value = "https://flagcdn.com/w80/" + /*flag*/ ctx[4].code.toLowerCase() + ".png")) {
     				attr_dev(img, "src", img_src_value);
     			}
 
@@ -1180,7 +1180,7 @@ var app = (function () {
     			attr_dev(div0, "class", "row svelte-21en8w");
     			add_location(div0, file$1, 11, 3, 192);
     			attr_dev(div1, "class", "row svelte-21en8w");
-    			add_location(div1, file$1, 27, 3, 641);
+    			add_location(div1, file$1, 27, 3, 649);
     			attr_dev(div2, "class", "group svelte-21en8w");
     			add_location(div2, file$1, 10, 2, 169);
     		},
@@ -1468,12 +1468,14 @@ var app = (function () {
     	let div;
     	let img;
     	let img_src_value;
+    	let img_alt_value;
 
     	const block = {
     		c: function create() {
     			div = element("div");
     			img = element("img");
-    			if (img.src !== (img_src_value = "assets/flags/" + /*flags*/ ctx[0][/*index*/ ctx[1]].code.toLowerCase() + "_small.png")) attr_dev(img, "src", img_src_value);
+    			if (img.src !== (img_src_value = "https://flagcdn.com/w160/" + /*flags*/ ctx[0][/*index*/ ctx[1]].code.toLowerCase() + ".png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", img_alt_value = /*flags*/ ctx[0][/*index*/ ctx[1]].name);
     			attr_dev(img, "class", "svelte-11zniql");
     			add_location(img, file$2, 13, 2, 213);
     			attr_dev(div, "class", "gif svelte-11zniql");
@@ -1484,8 +1486,12 @@ var app = (function () {
     			append_dev(div, img);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*flags, index*/ 3 && img.src !== (img_src_value = "assets/flags/" + /*flags*/ ctx[0][/*index*/ ctx[1]].code.toLowerCase() + "_small.png")) {
+    			if (dirty & /*flags, index*/ 3 && img.src !== (img_src_value = "https://flagcdn.com/w160/" + /*flags*/ ctx[0][/*index*/ ctx[1]].code.toLowerCase() + ".png")) {
     				attr_dev(img, "src", img_src_value);
+    			}
+
+    			if (dirty & /*flags, index*/ 3 && img_alt_value !== (img_alt_value = /*flags*/ ctx[0][/*index*/ ctx[1]].name)) {
+    				attr_dev(img, "alt", img_alt_value);
     			}
     		},
     		d: function destroy(detaching) {
@@ -1744,7 +1750,7 @@ var app = (function () {
     			if (default_slot) default_slot.c();
     			set_style(button, "margin-top", /*margin*/ ctx[2]);
     			button.disabled = /*disabled*/ ctx[1];
-    			attr_dev(button, "class", "svelte-heyf89");
+    			attr_dev(button, "class", "svelte-13uix7g");
     			toggle_class(button, "secondary", /*secondary*/ ctx[0]);
     			add_location(button, file$4, 6, 0, 110);
     		},
@@ -1906,7 +1912,7 @@ var app = (function () {
     };
 
     const layout = {
-    	question: 'Quel est le type du drapeau ?',
+    	question: 'Quel est le type du drapeau&nbsp;?',
     	multiple: true,
     	options: [
     		{ value: 'plain', label: 'Uni' },
@@ -1922,7 +1928,7 @@ var app = (function () {
     };
 
     const colors = {
-    	question: 'Quelles sont les couleurs principales du drapeau ?',
+    	question: 'Quelles sont les couleurs principales du drapeau&nbsp;?',
     	multiple: true,
     	options: [
     		{ value: 'red' },
@@ -1936,7 +1942,7 @@ var app = (function () {
     };
 
     const figures = {
-    	question: 'Le drapeau contient-il un symbole ?',
+    	question: 'Le drapeau contient-il un symbole&nbsp;?',
     	multiple: true,
     	options: [
     		{ value: 'none', label: 'Aucun' },
@@ -1953,7 +1959,7 @@ var app = (function () {
     };
 
     const nbStars = {
-    	question: 'Combien d\'étoiles contient le drapeau ?',
+    	question: 'Combien d\'étoiles contient le drapeau&nbsp;?',
     	multiple: false,
     	options: [
     		{ value: 1, label: 'Une seule étoile' },
@@ -1963,7 +1969,7 @@ var app = (function () {
     };
 
     const nbBands = {
-    	question: 'Combien de bandes possède le drapeau ?',
+    	question: 'Combien de bandes possède le drapeau&nbsp;?',
     	multiple: false,
     	options: [
     		{ value: 'bandsVertical2', label: '2 bandes' },
@@ -2480,9 +2486,9 @@ var app = (function () {
     			set_style(div, "background-image", "url(/assets/" + /*property*/ ctx[2] + "/" + /*option*/ ctx[11].value + "_small.png)");
     			set_style(div, "padding-top", "calc(100% * 2/3)");
     			toggle_class(div, "selected", /*selected*/ ctx[1].includes(/*option*/ ctx[11].value));
-    			add_location(div, file$6, 59, 6, 1300);
+    			add_location(div, file$6, 59, 6, 1306);
     			attr_dev(p, "class", "option-label svelte-x50hyn");
-    			add_location(p, file$6, 70, 6, 1656);
+    			add_location(p, file$6, 70, 6, 1662);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -2539,7 +2545,7 @@ var app = (function () {
     			set_style(div, "background-color", /*option*/ ctx[11].value);
     			set_style(div, "padding-top", "calc(100% * 2/3)");
     			toggle_class(div, "selected", /*selected*/ ctx[1].includes(/*option*/ ctx[11].value));
-    			add_location(div, file$6, 49, 5, 1031);
+    			add_location(div, file$6, 49, 5, 1037);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -2592,7 +2598,7 @@ var app = (function () {
     			if_block.c();
     			t = space();
     			attr_dev(div, "class", "option svelte-x50hyn");
-    			add_location(div, file$6, 47, 3, 973);
+    			add_location(div, file$6, 47, 3, 979);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -2719,14 +2725,13 @@ var app = (function () {
     // (44:0) <Card>
     function create_default_slot$1(ctx) {
     	let h3;
-    	let t0_value = /*propertyOptions*/ ctx[0].question + "";
+    	let raw_value = /*propertyOptions*/ ctx[0].question + "";
     	let t0;
-    	let t1;
     	let div0;
-    	let t2;
+    	let t1;
     	let div1;
+    	let t2;
     	let t3;
-    	let t4;
     	let current;
     	let each_value = /*propertyOptions*/ ctx[0].options;
     	let each_blocks = [];
@@ -2774,50 +2779,48 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			h3 = element("h3");
-    			t0 = text(t0_value);
-    			t1 = space();
+    			t0 = space();
     			div0 = element("div");
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
     			}
 
-    			t2 = space();
+    			t1 = space();
     			div1 = element("div");
     			create_component(button0.$$.fragment);
-    			t3 = space();
+    			t2 = space();
     			create_component(button1.$$.fragment);
-    			t4 = space();
+    			t3 = space();
     			create_component(button2.$$.fragment);
     			attr_dev(h3, "class", "svelte-x50hyn");
     			add_location(h3, file$6, 44, 1, 870);
     			attr_dev(div0, "class", "grid svelte-x50hyn");
-    			add_location(div0, file$6, 45, 1, 907);
+    			add_location(div0, file$6, 45, 1, 913);
     			attr_dev(div1, "class", "buttons svelte-x50hyn");
-    			add_location(div1, file$6, 75, 1, 1738);
+    			add_location(div1, file$6, 75, 1, 1744);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h3, anchor);
-    			append_dev(h3, t0);
-    			insert_dev(target, t1, anchor);
+    			h3.innerHTML = raw_value;
+    			insert_dev(target, t0, anchor);
     			insert_dev(target, div0, anchor);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].m(div0, null);
     			}
 
-    			insert_dev(target, t2, anchor);
+    			insert_dev(target, t1, anchor);
     			insert_dev(target, div1, anchor);
     			mount_component(button0, div1, null);
-    			append_dev(div1, t3);
+    			append_dev(div1, t2);
     			mount_component(button1, div1, null);
-    			append_dev(div1, t4);
+    			append_dev(div1, t3);
     			mount_component(button2, div1, null);
     			current = true;
     		},
     		p: function update(ctx, dirty) {
-    			if ((!current || dirty & /*propertyOptions*/ 1) && t0_value !== (t0_value = /*propertyOptions*/ ctx[0].question + "")) set_data_dev(t0, t0_value);
-
+    			if ((!current || dirty & /*propertyOptions*/ 1) && raw_value !== (raw_value = /*propertyOptions*/ ctx[0].question + "")) h3.innerHTML = raw_value;
     			if (dirty & /*property, propertyOptions, selected, clickHandler*/ 15) {
     				each_value = /*propertyOptions*/ ctx[0].options;
     				let i;
@@ -2879,10 +2882,10 @@ var app = (function () {
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(h3);
-    			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(t0);
     			if (detaching) detach_dev(div0);
     			destroy_each(each_blocks, detaching);
-    			if (detaching) detach_dev(t2);
+    			if (detaching) detach_dev(t1);
     			if (detaching) detach_dev(div1);
     			destroy_component(button0);
     			destroy_component(button1);
@@ -3132,7 +3135,7 @@ var app = (function () {
     			t0 = text("Is this ");
     			t1 = text(t1_value);
     			t2 = text("?");
-    			add_location(h3, file$7, 21, 2, 419);
+    			add_location(h3, file$7, 21, 2, 424);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h3, anchor);
@@ -3175,7 +3178,7 @@ var app = (function () {
     			t0 = text("S'agit-il ");
     			t1 = text(t1_value);
     			t2 = text(t2_value);
-    			t3 = text(" ?");
+    			t3 = text(" ?");
     			add_location(h3, file$7, 19, 2, 343);
     		},
     		m: function mount(target, anchor) {
@@ -3237,11 +3240,11 @@ var app = (function () {
     			}
 
     			attr_dev(p, "class", "svelte-af04uz");
-    			add_location(p, file$7, 26, 3, 628);
+    			add_location(p, file$7, 26, 3, 644);
     			attr_dev(div0, "class", "alternative-results svelte-af04uz");
-    			add_location(div0, file$7, 27, 3, 714);
+    			add_location(div0, file$7, 27, 3, 730);
     			attr_dev(div1, "class", "alternative-results-wrapper svelte-af04uz");
-    			add_location(div1, file$7, 25, 2, 583);
+    			add_location(div1, file$7, 25, 2, 599);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -3323,14 +3326,14 @@ var app = (function () {
     			p = element("p");
     			t1 = text(t1_value);
     			t2 = space();
-    			if (img.src !== (img_src_value = "/assets/flags/" + /*result*/ ctx[3].code.toLowerCase() + ".png")) attr_dev(img, "src", img_src_value);
+    			if (img.src !== (img_src_value = "https://flagcdn.com/w160/" + /*result*/ ctx[3].code.toLowerCase() + ".png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", img_alt_value = /*result*/ ctx[3].name);
     			attr_dev(img, "class", "svelte-af04uz");
-    			add_location(img, file$7, 30, 6, 802);
+    			add_location(img, file$7, 30, 6, 818);
     			attr_dev(p, "class", "svelte-af04uz");
-    			add_location(p, file$7, 31, 6, 886);
+    			add_location(p, file$7, 31, 6, 913);
     			attr_dev(div, "class", "svelte-af04uz");
-    			add_location(div, file$7, 29, 5, 790);
+    			add_location(div, file$7, 29, 5, 806);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -3341,7 +3344,7 @@ var app = (function () {
     			append_dev(div, t2);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*found*/ 1 && img.src !== (img_src_value = "/assets/flags/" + /*result*/ ctx[3].code.toLowerCase() + ".png")) {
+    			if (dirty & /*found*/ 1 && img.src !== (img_src_value = "https://flagcdn.com/w160/" + /*result*/ ctx[3].code.toLowerCase() + ".png")) {
     				attr_dev(img, "src", img_src_value);
     			}
 
@@ -3436,10 +3439,10 @@ var app = (function () {
     			if (if_block1) if_block1.c();
     			t2 = space();
     			create_component(button.$$.fragment);
-    			if (img.src !== (img_src_value = "/assets/flags/" + /*found*/ ctx[0][0].code.toLowerCase() + ".png")) attr_dev(img, "src", img_src_value);
+    			if (img.src !== (img_src_value = "https://flagcdn.com/w320/" + /*found*/ ctx[0][0].code.toLowerCase() + ".png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", img_alt_value = /*found*/ ctx[0][0].name);
     			attr_dev(img, "class", "svelte-af04uz");
-    			add_location(img, file$7, 23, 1, 475);
+    			add_location(img, file$7, 23, 1, 480);
     		},
     		m: function mount(target, anchor) {
     			if_block0.m(target, anchor);
@@ -3454,7 +3457,7 @@ var app = (function () {
     		p: function update(ctx, dirty) {
     			if_block0.p(ctx, dirty);
 
-    			if (!current || dirty & /*found*/ 1 && img.src !== (img_src_value = "/assets/flags/" + /*found*/ ctx[0][0].code.toLowerCase() + ".png")) {
+    			if (!current || dirty & /*found*/ 1 && img.src !== (img_src_value = "https://flagcdn.com/w320/" + /*found*/ ctx[0][0].code.toLowerCase() + ".png")) {
     				attr_dev(img, "src", img_src_value);
     			}
 

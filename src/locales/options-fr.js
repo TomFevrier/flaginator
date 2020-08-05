@@ -1,5 +1,5 @@
 const layout = {
-	question: 'Quel est le type du drapeau ?',
+	question: 'Quel est le type du drapeau&nbsp;?',
 	multiple: true,
 	options: [
 		{ value: 'plain', label: 'Uni' },
@@ -15,7 +15,7 @@ const layout = {
 };
 
 const colors = {
-	question: 'Quelles sont les couleurs principales du drapeau ?',
+	question: 'Quelles sont les couleurs principales du drapeau&nbsp;?',
 	multiple: true,
 	options: [
 		{ value: 'red' },
@@ -29,7 +29,7 @@ const colors = {
 };
 
 const figures = {
-	question: 'Le drapeau contient-il un symbole ?',
+	question: 'Le drapeau contient-il un symbole&nbsp;?',
 	multiple: true,
 	options: [
 		{ value: 'none', label: 'Aucun' },
@@ -46,7 +46,7 @@ const figures = {
 };
 
 const nbStars = {
-	question: 'Combien d\'étoiles contient le drapeau ?',
+	question: 'Combien d\'étoiles contient le drapeau&nbsp;?',
 	multiple: false,
 	options: [
 		{ value: 1, label: 'Une seule étoile' },
@@ -56,7 +56,7 @@ const nbStars = {
 };
 
 const nbBands = {
-	question: 'Combien de bandes possède le drapeau ?',
+	question: 'Combien de bandes possède le drapeau&nbsp;?',
 	multiple: false,
 	options: [
 		{ value: 'bandsVertical2', label: '2 bandes' },
