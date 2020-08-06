@@ -803,18 +803,18 @@ var app = (function () {
     			div1 = element("div");
     			t1 = space();
     			div2 = element("div");
-    			attr_dev(div0, "class", "bar svelte-s2aeae");
+    			attr_dev(div0, "class", "bar svelte-1859hhg");
     			set_style(div0, "background-color", "darkblue");
     			add_location(div0, file, 6, 2, 111);
-    			attr_dev(div1, "class", "bar svelte-s2aeae");
+    			attr_dev(div1, "class", "bar svelte-1859hhg");
     			set_style(div1, "background-color", "white");
     			add_location(div1, file, 7, 2, 173);
-    			attr_dev(div2, "class", "bar svelte-s2aeae");
+    			attr_dev(div2, "class", "bar svelte-1859hhg");
     			set_style(div2, "background-color", "red");
     			add_location(div2, file, 8, 2, 232);
-    			attr_dev(div3, "class", "french-flag svelte-s2aeae");
+    			attr_dev(div3, "class", "french-flag svelte-1859hhg");
     			add_location(div3, file, 5, 1, 83);
-    			attr_dev(div4, "class", "loading-screen svelte-s2aeae");
+    			attr_dev(div4, "class", "loading-screen svelte-1859hhg");
     			toggle_class(div4, "hidden", /*hidden*/ ctx[0]);
     			add_location(div4, file, 4, 0, 40);
     		},
@@ -3239,11 +3239,11 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr_dev(p, "class", "svelte-af04uz");
+    			attr_dev(p, "class", "svelte-nxukkh");
     			add_location(p, file$7, 26, 3, 644);
-    			attr_dev(div0, "class", "alternative-results svelte-af04uz");
+    			attr_dev(div0, "class", "alternative-results svelte-nxukkh");
     			add_location(div0, file$7, 27, 3, 730);
-    			attr_dev(div1, "class", "alternative-results-wrapper svelte-af04uz");
+    			attr_dev(div1, "class", "alternative-results-wrapper svelte-nxukkh");
     			add_location(div1, file$7, 25, 2, 599);
     		},
     		m: function mount(target, anchor) {
@@ -3328,11 +3328,11 @@ var app = (function () {
     			t2 = space();
     			if (img.src !== (img_src_value = "https://flagcdn.com/w160/" + /*result*/ ctx[3].code.toLowerCase() + ".png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", img_alt_value = /*result*/ ctx[3].name);
-    			attr_dev(img, "class", "svelte-af04uz");
+    			attr_dev(img, "class", "svelte-nxukkh");
     			add_location(img, file$7, 30, 6, 818);
-    			attr_dev(p, "class", "svelte-af04uz");
+    			attr_dev(p, "class", "svelte-nxukkh");
     			add_location(p, file$7, 31, 6, 913);
-    			attr_dev(div, "class", "svelte-af04uz");
+    			attr_dev(div, "class", "svelte-nxukkh");
     			add_location(div, file$7, 29, 5, 806);
     		},
     		m: function mount(target, anchor) {
@@ -3441,7 +3441,7 @@ var app = (function () {
     			create_component(button.$$.fragment);
     			if (img.src !== (img_src_value = "https://flagcdn.com/w320/" + /*found*/ ctx[0][0].code.toLowerCase() + ".png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", img_alt_value = /*found*/ ctx[0][0].name);
-    			attr_dev(img, "class", "svelte-af04uz");
+    			attr_dev(img, "class", "svelte-nxukkh");
     			add_location(img, file$7, 23, 1, 480);
     		},
     		m: function mount(target, anchor) {
@@ -3926,7 +3926,7 @@ var app = (function () {
 
     const { Error: Error_1$1 } = globals;
 
-    // (159:30) 
+    // (169:30) 
     function create_if_block_1$2(ctx) {
     	let current_block_type_index;
     	let if_block;
@@ -3937,7 +3937,7 @@ var app = (function () {
 
     	function select_block_type_1(ctx, dirty) {
     		if (/*property*/ ctx[3] && /*filtered*/ ctx[1].length > 1) return 0;
-    		if (/*filtered*/ ctx[1].length > 0 && /*filtered*/ ctx[1].length <= 3) return 1;
+    		if (/*filtered*/ ctx[1].length > 0 && /*filtered*/ ctx[1].length <= 4) return 1;
     		return 2;
     	}
 
@@ -3998,14 +3998,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1$2.name,
     		type: "if",
-    		source: "(159:30) ",
+    		source: "(169:30) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (156:0) {#if !started}
+    // (166:0) {#if !started}
     function create_if_block$5(ctx) {
     	let t;
     	let current;
@@ -4064,14 +4064,14 @@ var app = (function () {
     		block,
     		id: create_if_block$5.name,
     		type: "if",
-    		source: "(156:0) {#if !started}",
+    		source: "(166:0) {#if !started}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (176:1) {:else}
+    // (186:1) {:else}
     function create_else_block$3(ctx) {
     	let current;
 
@@ -4115,14 +4115,14 @@ var app = (function () {
     		block,
     		id: create_else_block$3.name,
     		type: "else",
-    		source: "(176:1) {:else}",
+    		source: "(186:1) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (170:55) 
+    // (180:55) 
     function create_if_block_3(ctx) {
     	let current;
 
@@ -4164,14 +4164,14 @@ var app = (function () {
     		block,
     		id: create_if_block_3.name,
     		type: "if",
-    		source: "(170:55) ",
+    		source: "(180:55) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (160:1) {#if property && filtered.length > 1}
+    // (170:1) {#if property && filtered.length > 1}
     function create_if_block_2(ctx) {
     	let updating_selected;
     	let current;
@@ -4236,7 +4236,7 @@ var app = (function () {
     		block,
     		id: create_if_block_2.name,
     		type: "if",
-    		source: "(160:1) {#if property && filtered.length > 1}",
+    		source: "(170:1) {#if property && filtered.length > 1}",
     		ctx
     	});
 
@@ -4359,7 +4359,10 @@ var app = (function () {
     	const properties = ["layout", "colors", "figures", "nbStars", "nbBands"];
     	let flags = [];
     	let filtered = [];
+
+    	// $: console.log(filtered)
     	let loaded = false;
+
     	let property = properties[0];
     	let selected = [];
     	let knownProperties = {};
@@ -4378,8 +4381,15 @@ var app = (function () {
     		$$invalidate(0, flags = data);
     		$$invalidate(1, filtered = flags);
     		$$invalidate(7, loading = false);
-    	});
+    	}); // Display ambiguous flags // flags.forEach((flag1, i) => flags.forEach((flag2, j) => { // 	if (j <= i) return // 	if (flag1.nbBars === flag2.nbBars && flag1.nbStars === flag2.nbStars
 
+    	// 		&& flag1.layout.length === flag2.layout.length && flag1.layout.every(e1 => flag2.layout.some(e2 => e1 === e2))
+    	// 		&& flag1.colors.length === flag2.colors.length && flag1.colors.every(e1 => flag2.colors.some(e2 => e1 === e2))
+    	// 		&& flag1.figures.length === flag2.figures.length && flag1.figures.every(e1 => flag2.figures.some(e2 => e1 === e2)))
+    	// 		console.log(flag1.name, flag2.name);
+    	// }));
+    	// Check for mistakes in the CSV file
+    	// console.log(Array.from(new Set(flags.reduce((acc, value) => [...acc, ...value.colors], []))))
     	const getNextProperty = () => {
     		/*
     Compute available properties:
@@ -4393,7 +4403,6 @@ var app = (function () {
     		? e !== "nbBands"
     		: e);
 
-    		console.log(knownProperties, availableProperties);
     		if (availableProperties.length === 0) return;
 
     		// For each available property, compute the average number of filtered flags depending on the option chosen (only one option is considered)
@@ -4515,12 +4524,8 @@ var app = (function () {
     	$$self.$$.update = () => {
     		if ($$self.$$.dirty & /*nbOptionImagesLoaded*/ 4096) {
     			 {
-    				if (optionImages.length === nbOptionImagesLoaded) setTimeout(() => $$invalidate(2, loaded = true), 2000);
+    				if (optionImages.length === nbOptionImagesLoaded) setTimeout(() => $$invalidate(2, loaded = true), 1000);
     			}
-    		}
-
-    		if ($$self.$$.dirty & /*filtered*/ 2) {
-    			 console.log(filtered);
     		}
     	};
 

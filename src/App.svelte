@@ -38,7 +38,7 @@
 	let flags = [];
 
 	let filtered = [];
-	$: console.log(filtered)
+	// $: console.log(filtered)
 
 	let loaded = false;
 
@@ -63,6 +63,17 @@
 		flags = data;
 		filtered = flags;
 		loading = false;
+		// Display ambiguous flags
+		// flags.forEach((flag1, i) => flags.forEach((flag2, j) => {
+		// 	if (j <= i) return
+		// 	if (flag1.nbBars === flag2.nbBars && flag1.nbStars === flag2.nbStars
+		// 		&& flag1.layout.length === flag2.layout.length && flag1.layout.every(e1 => flag2.layout.some(e2 => e1 === e2))
+		// 		&& flag1.colors.length === flag2.colors.length && flag1.colors.every(e1 => flag2.colors.some(e2 => e1 === e2))
+		// 		&& flag1.figures.length === flag2.figures.length && flag1.figures.every(e1 => flag2.figures.some(e2 => e1 === e2)))
+		// 		console.log(flag1.name, flag2.name);
+		// }));
+		// Check for mistakes in the CSV file
+		// console.log(Array.from(new Set(flags.reduce((acc, value) => [...acc, ...value.colors], []))))
 	});
 
 	const getNextProperty = () => {
@@ -76,7 +87,6 @@
 			.filter(e => !Object.keys(knownProperties).includes(e))
 			.filter(e => !knownProperties.figures || !knownProperties.figures.includes('star') ? e !== 'nbStars' : e)
 			.filter(e => !knownProperties.layout || !knownProperties.layout.some(e => e.startsWith('bands')) ? e !== 'nbBands' : e);
-		console.log(knownProperties, availableProperties)
 		if (availableProperties.length === 0) return;
 
 		// For each available property, compute the average number of filtered flags depending on the option chosen (only one option is considered)
@@ -167,7 +177,7 @@
 			on:skip={skipQuestion}
 			on:retry={retry}
 		/>
-	{:else if filtered.length > 0 && filtered.length <= 3}
+	{:else if filtered.length > 0 && filtered.length <= 4}
 		<Result found={filtered} on:retry={() => {
 			filtered = flags;
 			knownProperties = {};
@@ -176,8 +186,9 @@
 	{:else}
 		<Error notFound={filtered.length === 0} on:retry={retry} />
 	{/if}
+	<!-- Test if all flags are correct -->
 	<!-- {#each flags as flag}
-		<img src='/assets/flags/{flag.code.toLowerCase()}.png' />
+		<img src='https://flagcdn.com/w80/{flag.code.toLowerCase()}.png' />
 	{/each} -->
 {/if}
 

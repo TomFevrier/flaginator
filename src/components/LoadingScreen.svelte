@@ -40,11 +40,11 @@
 				}
 
 				&:nth-child(2) {
-					animation-delay: 0.2s;
+					animation-delay: 0.15s;
 				}
 
 				&:nth-child(3) {
-					animation-delay: 0.4s;
+					animation-delay: 0.3s;
 				}
 			}
 

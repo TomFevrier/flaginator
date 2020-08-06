@@ -66,6 +66,7 @@
 				display: flex;
 				flex-direction: column;
 				justify-content: end;
+				align-items: center;
 
 				img {
 					width: 100px;
