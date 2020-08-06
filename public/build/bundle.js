@@ -1457,7 +1457,7 @@ var app = (function () {
 
     const file$2 = "src/components/GIF.svelte";
 
-    // (12:0) {#if flags.length > 0}
+    // (11:0) {#if flags.length > 0}
     function create_if_block(ctx) {
     	let div;
     	let img;
@@ -1471,9 +1471,9 @@ var app = (function () {
     			if (img.src !== (img_src_value = "https://flagcdn.com/w160/" + /*flags*/ ctx[0][/*index*/ ctx[1]].code.toLowerCase() + ".png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", img_alt_value = /*flags*/ ctx[0][/*index*/ ctx[1]].name);
     			attr_dev(img, "class", "svelte-11zniql");
-    			add_location(img, file$2, 13, 2, 198);
+    			add_location(img, file$2, 12, 2, 222);
     			attr_dev(div, "class", "gif svelte-11zniql");
-    			add_location(div, file$2, 12, 1, 178);
+    			add_location(div, file$2, 11, 1, 202);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -1497,7 +1497,7 @@ var app = (function () {
     		block,
     		id: create_if_block.name,
     		type: "if",
-    		source: "(12:0) {#if flags.length > 0}",
+    		source: "(11:0) {#if flags.length > 0}",
     		ctx
     	});
 
@@ -1556,7 +1556,7 @@ var app = (function () {
     function instance$2($$self, $$props, $$invalidate) {
     	let { flags } = $$props;
     	let index = 0;
-    	
+    	const initGIF = () => setInterval(() => $$invalidate(1, index = (index + 1) % flags.length), 500);
     	const writable_props = ["flags"];
 
     	Object.keys($$props).forEach(key => {
@@ -1577,10 +1577,8 @@ var app = (function () {
     	};
 
     	$$self.$$.update = () => {
-    		if ($$self.$$.dirty & /*flags, index*/ 3) {
-    			 {
-    				if (flags.length > 0) setInterval(() => $$invalidate(1, index = (index + 1) % flags.length), 500);
-    			}
+    		if ($$self.$$.dirty & /*flags*/ 1) {
+    			 if (flags.length > 0) initGIF();
     		}
     	};
 

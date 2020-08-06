@@ -3,10 +3,9 @@
 
 	let index = 0;
 
-	$: {
-		if (flags.length > 0)
-			setInterval(() => index = (index + 1) % flags.length, 500);
-	};
+	const initGIF = () => setInterval(() => index = (index + 1) % flags.length, 500);
+
+	$: if (flags.length > 0) initGIF();
 </script>
 
 {#if flags.length > 0}
