@@ -17,7 +17,7 @@
 
 <Card>
 	{#if lang === 'fr'}
-		<h3>S'agit-il {found[0].prep}{found[0].nom.toUpperCase()}&nbsp;?</h3>
+		<h3>S’agit-il {found[0].prep}{found[0].nom.toUpperCase()}&nbsp;?</h3>
 	{:else}
 		<h3>Is this {found[0].name.toUpperCase()}?</h3>
 	{/if}

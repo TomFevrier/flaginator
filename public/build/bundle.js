@@ -1886,7 +1886,7 @@ var app = (function () {
     }
 
     var translationsFr = {
-    	intro: 'Le génie de la vexillologie qui peut identifier n\'importe quel drapeau !',
+    	intro: 'Le génie de la vexillologie qui peut identifier n’importe quel drapeau !',
     	start: 'Commencer',
     	skip: 'Passer',
     	next: 'Suivant',
@@ -1894,8 +1894,8 @@ var app = (function () {
     	alternativeFlag: 'Autre drapeau',
     	alternativeFlags: 'Autres drapeaux',
     	identifyAnother: 'Identifier un autre drapeau',
-    	errorNotFound: 'Je ne connais pas ce drapeau... Êtes-vous certain qu\'il existe ?',
-    	errorImprecise: 'J\'ai besoin de plus d\'informations pour identifier ce drapeau...'
+    	errorNotFound: 'Je ne connais pas ce drapeau... Êtes-vous certain qu’il existe ?',
+    	errorImprecise: 'J’ai besoin de plus d’informations pour identifier ce drapeau...'
     };
 
     var translationsEn = {
@@ -1959,7 +1959,7 @@ var app = (function () {
     };
 
     const nbStars = {
-    	question: 'Combien d\'étoiles contient le drapeau&nbsp;?',
+    	question: 'Combien d’étoiles contient le drapeau&nbsp;?',
     	multiple: false,
     	options: [
     		{ value: 1, label: 'Une seule étoile' },
@@ -2027,7 +2027,7 @@ var app = (function () {
     		{ value: 'emblem', label: 'Emblem' },
     		{ value: 'sun', label: 'Sun (or disk)' },
     		{ value: 'crescent', label: 'Crescent' },
-    		{ value: 'bird', label: 'Bird (i.e. eagle)' },
+    		{ value: 'bird', label: 'Bird/eagle' },
     		{ value: 'weapon', label: 'Weapon' },
     		{ value: 'cross', label: 'Cross' },
     		{ value: 'nature', label: 'Leaf/tree' },
@@ -3173,7 +3173,7 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			h3 = element("h3");
-    			t0 = text("S'agit-il ");
+    			t0 = text("S’agit-il ");
     			t1 = text(t1_value);
     			t2 = text(t2_value);
     			t3 = text(" ?");

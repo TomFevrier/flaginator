@@ -37,7 +37,7 @@ const figures = {
 		{ value: 'emblem', label: 'Emblem' },
 		{ value: 'sun', label: 'Sun (or disk)' },
 		{ value: 'crescent', label: 'Crescent' },
-		{ value: 'bird', label: 'Bird (i.e. eagle)' },
+		{ value: 'bird', label: 'Bird/eagle' },
 		{ value: 'weapon', label: 'Weapon' },
 		{ value: 'cross', label: 'Cross' },
 		{ value: 'nature', label: 'Leaf/tree' },

@@ -46,7 +46,7 @@ const figures = {
 };
 
 const nbStars = {
-	question: 'Combien d\'étoiles contient le drapeau&nbsp;?',
+	question: 'Combien d’étoiles contient le drapeau&nbsp;?',
 	multiple: false,
 	options: [
 		{ value: 1, label: 'Une seule étoile' },
