@@ -24,7 +24,7 @@
 	<img src='https://flagcdn.com/w320/{found[0].code.toLowerCase()}.png' alt={found[0].name} />
 	{#if found.length > 1}
 		<div class='alternative-results-wrapper'>
-			<p>{translations[found.length === 1 ? 'alternativeFlag' : 'alternativeFlags']}</p>
+			<p>{translations[found.length === 2 ? 'alternativeFlag' : 'alternativeFlags']}</p>
 			<div class='alternative-results'>
 				{#each found.slice(1) as result}
 					<div>

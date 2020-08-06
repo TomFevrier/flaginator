@@ -3213,7 +3213,7 @@ var app = (function () {
     	let div1;
     	let p;
 
-    	let t0_value = translations[/*found*/ ctx[0].length === 1
+    	let t0_value = translations[/*found*/ ctx[0].length === 2
     	? "alternativeFlag"
     	: "alternativeFlags"] + "";
 
@@ -3258,7 +3258,7 @@ var app = (function () {
     			}
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*found*/ 1 && t0_value !== (t0_value = translations[/*found*/ ctx[0].length === 1
+    			if (dirty & /*found*/ 1 && t0_value !== (t0_value = translations[/*found*/ ctx[0].length === 2
     			? "alternativeFlag"
     			: "alternativeFlags"] + "")) set_data_dev(t0, t0_value);
 
