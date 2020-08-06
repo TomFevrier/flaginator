@@ -7,6 +7,6 @@ export default {
 	alternativeFlag: 'Alternative flag',
 	alternativeFlags: 'Alternative flags',
 	identifyAnother: 'Identify another flag',
-	errorNotFound: 'I don\'t know this flag... Are you sure it exists?',
+	errorNotFound: 'I don\'t know this flag (yet)...<br />Are you sure it exists?',
 	errorImprecise: 'I need more information to identify this flag...'
 }

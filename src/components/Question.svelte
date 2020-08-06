@@ -98,7 +98,9 @@
 	h3 {
 		font-size: 1.5rem;
 		font-weight: bold;
+		text-align: center;
 	}
+
 	.grid {
 		width: 100%;
 		display: grid;

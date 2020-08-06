@@ -26,7 +26,7 @@
 {/if}
 <Card>
 	<h3>flaginator</h3>
-	<h4>{translations.intro}</h4>
+	<h4>{@html translations.intro}</h4>
 	{#if mobile}
 		<GIF {flags} />
 	{/if}
@@ -53,5 +53,6 @@
 	h4 {
 		text-align: center;
 		font-size: 1.2rem;
+		max-width: 25rem;
 	}
 </style>

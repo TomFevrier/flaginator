@@ -1886,7 +1886,7 @@ var app = (function () {
     }
 
     var translationsFr = {
-    	intro: 'Le génie de la vexillologie qui peut identifier n’importe quel drapeau !',
+    	intro: 'Le génie de la vexillologie qui peut identifier n’importe quel drapeau&nbsp;!',
     	start: 'Commencer',
     	skip: 'Passer',
     	next: 'Suivant',
@@ -1894,7 +1894,7 @@ var app = (function () {
     	alternativeFlag: 'Autre drapeau',
     	alternativeFlags: 'Autres drapeaux',
     	identifyAnother: 'Identifier un autre drapeau',
-    	errorNotFound: 'Je ne connais pas ce drapeau... Êtes-vous certain qu’il existe ?',
+    	errorNotFound: 'Je ne connais pas (encore) ce drapeau...<br />Êtes-vous certain qu’il existe&nbsp;?',
     	errorImprecise: 'J’ai besoin de plus d’informations pour identifier ce drapeau...'
     };
 
@@ -1907,7 +1907,7 @@ var app = (function () {
     	alternativeFlag: 'Alternative flag',
     	alternativeFlags: 'Alternative flags',
     	identifyAnother: 'Identify another flag',
-    	errorNotFound: 'I don\'t know this flag... Are you sure it exists?',
+    	errorNotFound: 'I don\'t know this flag (yet)...<br />Are you sure it exists?',
     	errorImprecise: 'I need more information to identify this flag...'
     };
 
@@ -2200,8 +2200,9 @@ var app = (function () {
     	let h3;
     	let t1;
     	let h4;
+    	let raw_value = translations.intro + "";
+    	let t2;
     	let t3;
-    	let t4;
     	let current;
     	let if_block = /*mobile*/ ctx[1] && create_if_block$1(ctx);
 
@@ -2221,23 +2222,23 @@ var app = (function () {
     			h3.textContent = "flaginator";
     			t1 = space();
     			h4 = element("h4");
-    			h4.textContent = `${translations.intro}`;
-    			t3 = space();
+    			t2 = space();
     			if (if_block) if_block.c();
-    			t4 = space();
+    			t3 = space();
     			create_component(button.$$.fragment);
-    			attr_dev(h3, "class", "svelte-4tjy7n");
+    			attr_dev(h3, "class", "svelte-13e22ci");
     			add_location(h3, file$5, 27, 1, 621);
-    			attr_dev(h4, "class", "svelte-4tjy7n");
+    			attr_dev(h4, "class", "svelte-13e22ci");
     			add_location(h4, file$5, 28, 1, 642);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h3, anchor);
     			insert_dev(target, t1, anchor);
     			insert_dev(target, h4, anchor);
-    			insert_dev(target, t3, anchor);
+    			h4.innerHTML = raw_value;
+    			insert_dev(target, t2, anchor);
     			if (if_block) if_block.m(target, anchor);
-    			insert_dev(target, t4, anchor);
+    			insert_dev(target, t3, anchor);
     			mount_component(button, target, anchor);
     			current = true;
     		},
@@ -2250,7 +2251,7 @@ var app = (function () {
     					if_block = create_if_block$1(ctx);
     					if_block.c();
     					transition_in(if_block, 1);
-    					if_block.m(t4.parentNode, t4);
+    					if_block.m(t3.parentNode, t3);
     				}
     			} else if (if_block) {
     				group_outros();
@@ -2285,9 +2286,9 @@ var app = (function () {
     			if (detaching) detach_dev(h3);
     			if (detaching) detach_dev(t1);
     			if (detaching) detach_dev(h4);
-    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(t2);
     			if (if_block) if_block.d(detaching);
-    			if (detaching) detach_dev(t4);
+    			if (detaching) detach_dev(t3);
     			destroy_component(button, detaching);
     		}
     	};
@@ -2482,11 +2483,11 @@ var app = (function () {
     			t0 = space();
     			p = element("p");
     			t1 = text(t1_value);
-    			attr_dev(div, "class", "option-image svelte-6w1jep");
+    			attr_dev(div, "class", "option-image svelte-1twwndy");
     			set_style(div, "background-image", "url(/assets/" + /*property*/ ctx[2] + "/" + /*option*/ ctx[11].value + "_small.png)");
     			toggle_class(div, "selected", /*selected*/ ctx[1].includes(/*option*/ ctx[11].value));
     			add_location(div, file$6, 56, 6, 1253);
-    			attr_dev(p, "class", "option-label svelte-6w1jep");
+    			attr_dev(p, "class", "option-label svelte-1twwndy");
     			add_location(p, file$6, 64, 6, 1553);
     		},
     		m: function mount(target, anchor) {
@@ -2540,7 +2541,7 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			div = element("div");
-    			attr_dev(div, "class", "option-image svelte-6w1jep");
+    			attr_dev(div, "class", "option-image svelte-1twwndy");
     			set_style(div, "background-color", /*option*/ ctx[11].value);
     			toggle_class(div, "selected", /*selected*/ ctx[1].includes(/*option*/ ctx[11].value));
     			add_location(div, file$6, 49, 5, 1037);
@@ -2595,7 +2596,7 @@ var app = (function () {
     			div = element("div");
     			if_block.c();
     			t = space();
-    			attr_dev(div, "class", "option svelte-6w1jep");
+    			attr_dev(div, "class", "option svelte-1twwndy");
     			add_location(div, file$6, 47, 3, 979);
     		},
     		m: function mount(target, anchor) {
@@ -2791,11 +2792,11 @@ var app = (function () {
     			create_component(button1.$$.fragment);
     			t3 = space();
     			create_component(button2.$$.fragment);
-    			attr_dev(h3, "class", "svelte-6w1jep");
+    			attr_dev(h3, "class", "svelte-1twwndy");
     			add_location(h3, file$6, 44, 1, 870);
-    			attr_dev(div0, "class", "grid svelte-6w1jep");
+    			attr_dev(div0, "class", "grid svelte-1twwndy");
     			add_location(div0, file$6, 45, 1, 913);
-    			attr_dev(div1, "class", "buttons svelte-6w1jep");
+    			attr_dev(div1, "class", "buttons svelte-1twwndy");
     			add_location(div1, file$6, 69, 1, 1635);
     		},
     		m: function mount(target, anchor) {
@@ -3637,15 +3638,17 @@ var app = (function () {
     // (20:1) {:else}
     function create_else_block$2(ctx) {
     	let h3;
+    	let raw_value = translations.errorImprecise + "";
 
     	const block = {
     		c: function create() {
     			h3 = element("h3");
-    			h3.textContent = `${translations.errorImprecise}`;
-    			add_location(h3, file$8, 20, 2, 384);
+    			attr_dev(h3, "class", "svelte-ti3zl3");
+    			add_location(h3, file$8, 20, 2, 390);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h3, anchor);
+    			h3.innerHTML = raw_value;
     		},
     		p: noop,
     		d: function destroy(detaching) {
@@ -3667,15 +3670,17 @@ var app = (function () {
     // (18:1) {#if notFound}
     function create_if_block$4(ctx) {
     	let h3;
+    	let raw_value = translations.errorNotFound + "";
 
     	const block = {
     		c: function create() {
     			h3 = element("h3");
-    			h3.textContent = `${translations.errorNotFound}`;
+    			attr_dev(h3, "class", "svelte-ti3zl3");
     			add_location(h3, file$8, 18, 2, 335);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h3, anchor);
+    			h3.innerHTML = raw_value;
     		},
     		p: noop,
     		d: function destroy(detaching) {
@@ -3934,8 +3939,8 @@ var app = (function () {
     	const if_blocks = [];
 
     	function select_block_type_1(ctx, dirty) {
-    		if (/*property*/ ctx[3] && /*filtered*/ ctx[1].length > 1) return 0;
-    		if (/*filtered*/ ctx[1].length > 0 && /*filtered*/ ctx[1].length <= 4) return 1;
+    		if (/*property*/ ctx[3] && /*filtered*/ ctx[2].length > 1) return 0;
+    		if (/*filtered*/ ctx[2].length > 0 && /*filtered*/ ctx[2].length <= 4) return 1;
     		return 2;
     	}
 
@@ -4009,14 +4014,14 @@ var app = (function () {
     	let current;
 
     	const menu = new Menu({
-    			props: { flags: /*flags*/ ctx[0] },
+    			props: { flags: /*flags*/ ctx[1] },
     			$$inline: true
     		});
 
     	menu.$on("start", /*start_handler*/ ctx[15]);
 
     	const loadingscreen = new LoadingScreen({
-    			props: { hidden: /*loaded*/ ctx[2] },
+    			props: { hidden: /*loaded*/ ctx[0] },
     			$$inline: true
     		});
 
@@ -4034,10 +4039,10 @@ var app = (function () {
     		},
     		p: function update(ctx, dirty) {
     			const menu_changes = {};
-    			if (dirty & /*flags*/ 1) menu_changes.flags = /*flags*/ ctx[0];
+    			if (dirty & /*flags*/ 2) menu_changes.flags = /*flags*/ ctx[1];
     			menu.$set(menu_changes);
     			const loadingscreen_changes = {};
-    			if (dirty & /*loaded*/ 4) loadingscreen_changes.hidden = /*loaded*/ ctx[2];
+    			if (dirty & /*loaded*/ 1) loadingscreen_changes.hidden = /*loaded*/ ctx[0];
     			loadingscreen.$set(loadingscreen_changes);
     		},
     		i: function intro(local) {
@@ -4075,7 +4080,7 @@ var app = (function () {
 
     	const error = new Error$1({
     			props: {
-    				notFound: /*filtered*/ ctx[1].length === 0
+    				notFound: /*filtered*/ ctx[2].length === 0
     			},
     			$$inline: true
     		});
@@ -4092,7 +4097,7 @@ var app = (function () {
     		},
     		p: function update(ctx, dirty) {
     			const error_changes = {};
-    			if (dirty & /*filtered*/ 2) error_changes.notFound = /*filtered*/ ctx[1].length === 0;
+    			if (dirty & /*filtered*/ 4) error_changes.notFound = /*filtered*/ ctx[2].length === 0;
     			error.$set(error_changes);
     		},
     		i: function intro(local) {
@@ -4125,7 +4130,7 @@ var app = (function () {
     	let current;
 
     	const result = new Result({
-    			props: { found: /*filtered*/ ctx[1] },
+    			props: { found: /*filtered*/ ctx[2] },
     			$$inline: true
     		});
 
@@ -4141,7 +4146,7 @@ var app = (function () {
     		},
     		p: function update(ctx, dirty) {
     			const result_changes = {};
-    			if (dirty & /*filtered*/ 2) result_changes.found = /*filtered*/ ctx[1];
+    			if (dirty & /*filtered*/ 4) result_changes.found = /*filtered*/ ctx[2];
     			result.$set(result_changes);
     		},
     		i: function intro(local) {
@@ -4181,7 +4186,7 @@ var app = (function () {
     	let question_props = {
     		property: /*property*/ ctx[3],
     		propertyOptions: options[/*property*/ ctx[3]],
-    		filtered: /*filtered*/ ctx[1]
+    		filtered: /*filtered*/ ctx[2]
     	};
 
     	if (/*selected*/ ctx[4] !== void 0) {
@@ -4206,7 +4211,7 @@ var app = (function () {
     			const question_changes = {};
     			if (dirty & /*property*/ 8) question_changes.property = /*property*/ ctx[3];
     			if (dirty & /*property*/ 8) question_changes.propertyOptions = options[/*property*/ ctx[3]];
-    			if (dirty & /*filtered*/ 2) question_changes.filtered = /*filtered*/ ctx[1];
+    			if (dirty & /*filtered*/ 4) question_changes.filtered = /*filtered*/ ctx[2];
 
     			if (!updating_selected && dirty & /*selected*/ 16) {
     				updating_selected = true;
@@ -4341,6 +4346,7 @@ var app = (function () {
     function instance$9($$self, $$props, $$invalidate) {
     	let optionImages = [];
     	let nbOptionImagesLoaded = 0;
+    	let loaded = false;
 
     	Object.entries(options).forEach(([property, value]) => {
     		if (property === "colors") return;
@@ -4359,9 +4365,8 @@ var app = (function () {
     	let filtered = [];
 
     	// $: console.log(filtered)
-    	let loaded = false;
-
     	let property = properties[0];
+
     	let selected = [];
     	let knownProperties = {};
     	let started = false;
@@ -4376,9 +4381,10 @@ var app = (function () {
     			e.figures = e.figures.split(",").map(d => d === "" ? "none" : d);
     		});
 
-    		$$invalidate(0, flags = data);
-    		$$invalidate(1, filtered = flags);
+    		$$invalidate(1, flags = data);
+    		$$invalidate(2, filtered = flags);
     		$$invalidate(7, loading = false);
+    		setTimeout(() => $$invalidate(0, loaded = true), 3000);
     	}); // Display ambiguous flags // flags.forEach((flag1, i) => flags.forEach((flag2, j) => { // 	if (j <= i) return // 	if (flag1.nbBars === flag2.nbBars && flag1.nbStars === flag2.nbStars
 
     	// 		&& flag1.layout.length === flag2.layout.length && flag1.layout.every(e1 => flag2.layout.some(e2 => e1 === e2))
@@ -4448,10 +4454,10 @@ var app = (function () {
     		$$invalidate(7, loading = true);
 
     		if (options[property].multiple) {
-    			$$invalidate(1, filtered = filtered.filter(e => selected.reduce((acc, value) => acc && e[property].some(e => e.includes(value)), true)));
+    			$$invalidate(2, filtered = filtered.filter(e => selected.reduce((acc, value) => acc && e[property].some(e => e.includes(value)), true)));
     			$$invalidate(5, knownProperties = { ...knownProperties, [property]: selected });
     		} else {
-    			$$invalidate(1, filtered = filtered.filter(e => {
+    			$$invalidate(2, filtered = filtered.filter(e => {
     				if (property === "nbBands") return e.layout.includes(selected[0]);
     				return e[property] === selected[0];
     			}));
@@ -4485,7 +4491,7 @@ var app = (function () {
     		$$invalidate(4, selected = []);
     		$$invalidate(5, knownProperties = {});
     		$$invalidate(3, property = properties[0]);
-    		$$invalidate(1, filtered = flags);
+    		$$invalidate(2, filtered = flags);
     		setTimeout(() => $$invalidate(7, loading = false), 0);
     	};
 
@@ -4497,7 +4503,7 @@ var app = (function () {
     	}
 
     	const retry_handler = () => {
-    		$$invalidate(1, filtered = flags);
+    		$$invalidate(2, filtered = flags);
     		$$invalidate(5, knownProperties = {});
     		$$invalidate(3, property = properties[0]);
     	};
@@ -4509,9 +4515,9 @@ var app = (function () {
     	$$self.$inject_state = $$props => {
     		if ("optionImages" in $$props) $$invalidate(13, optionImages = $$props.optionImages);
     		if ("nbOptionImagesLoaded" in $$props) $$invalidate(12, nbOptionImagesLoaded = $$props.nbOptionImagesLoaded);
-    		if ("flags" in $$props) $$invalidate(0, flags = $$props.flags);
-    		if ("filtered" in $$props) $$invalidate(1, filtered = $$props.filtered);
-    		if ("loaded" in $$props) $$invalidate(2, loaded = $$props.loaded);
+    		if ("loaded" in $$props) $$invalidate(0, loaded = $$props.loaded);
+    		if ("flags" in $$props) $$invalidate(1, flags = $$props.flags);
+    		if ("filtered" in $$props) $$invalidate(2, filtered = $$props.filtered);
     		if ("property" in $$props) $$invalidate(3, property = $$props.property);
     		if ("selected" in $$props) $$invalidate(4, selected = $$props.selected);
     		if ("knownProperties" in $$props) $$invalidate(5, knownProperties = $$props.knownProperties);
@@ -4522,15 +4528,15 @@ var app = (function () {
     	$$self.$$.update = () => {
     		if ($$self.$$.dirty & /*nbOptionImagesLoaded*/ 4096) {
     			 {
-    				if (optionImages.length === nbOptionImagesLoaded) setTimeout(() => $$invalidate(2, loaded = true), 1000);
+    				if (optionImages.length === nbOptionImagesLoaded) setTimeout(() => $$invalidate(0, loaded = true), 1000);
     			}
     		}
     	};
 
     	return [
+    		loaded,
     		flags,
     		filtered,
-    		loaded,
     		property,
     		selected,
     		knownProperties,

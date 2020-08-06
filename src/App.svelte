@@ -13,6 +13,7 @@
 	// Preload images for options
 	let optionImages = [];
 	let nbOptionImagesLoaded = 0;
+	let loaded = false;
 	Object.entries(options).forEach(([property, value]) => {
 		if (property === 'colors') return;
 		value.options.forEach(option => {
@@ -40,8 +41,6 @@
 	let filtered = [];
 	// $: console.log(filtered)
 
-	let loaded = false;
-
 	let property = properties[0];
 	let selected = [];
 	let knownProperties = {};
@@ -63,6 +62,7 @@
 		flags = data;
 		filtered = flags;
 		loading = false;
+		setTimeout(() => loaded = true, 3000);
 		// Display ambiguous flags
 		// flags.forEach((flag1, i) => flags.forEach((flag2, j) => {
 		// 	if (j <= i) return
