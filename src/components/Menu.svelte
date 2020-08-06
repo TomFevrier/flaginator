@@ -8,7 +8,9 @@
 
 	import { translations } from '../locales/locale';
 
-	export let flags;
+	export let flags = [];
+
+	$: flags.sort(() => Math.random() >= 0.5);
 
 	let mobile = window.matchMedia('(orientation: portrait)').matches;
 	window.addEventListener('resize', () => {
@@ -39,7 +41,7 @@
 	@font-face {
 		font-family: 'Minangkabau';
 		src: url('../assets/Minangkabau.woff') format('woff');
-		font-display: fallback;
+		font-display: block;
 	}
 
 	h3 {

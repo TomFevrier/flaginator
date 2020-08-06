@@ -1,12 +1,12 @@
 <script>
-	export let flags = [];
-
-	$: flags.sort(() => Math.random() >= 0.5);
+	export let flags;
 
 	let index = 0;
 
-	setInterval(() => index = (index + 1) % flags.length, 500);
-
+	$: {
+		if (flags.length > 0)
+			setInterval(() => index = (index + 1) % flags.length, 500);
+	};
 </script>
 
 {#if flags.length > 0}
@@ -27,6 +27,4 @@
 			height: 100%;
 		}
 	}
-
-
 </style>

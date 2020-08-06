@@ -939,7 +939,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (13:4) {#each flags.slice(0, NB_FLAGS) as flag}
+    // (11:4) {#each flags.slice(0, NB_FLAGS) as flag}
     function create_each_block_4(ctx) {
     	let img;
     	let img_src_value;
@@ -952,7 +952,7 @@ var app = (function () {
     			set_style(img, "width", "calc(200vw / " + NB_FLAGS + ")");
     			attr_dev(img, "alt", img_alt_value = /*flag*/ ctx[4].name);
     			attr_dev(img, "class", "svelte-zlqdhy");
-    			add_location(img, file$1, 13, 5, 265);
+    			add_location(img, file$1, 11, 5, 215);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -975,14 +975,14 @@ var app = (function () {
     		block,
     		id: create_each_block_4.name,
     		type: "each",
-    		source: "(13:4) {#each flags.slice(0, NB_FLAGS) as flag}",
+    		source: "(11:4) {#each flags.slice(0, NB_FLAGS) as flag}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (20:4) {#each flags.slice(0, NB_FLAGS * 0.5) as flag}
+    // (18:4) {#each flags.slice(0, NB_FLAGS * 0.5) as flag}
     function create_each_block_3(ctx) {
     	let img;
     	let img_src_value;
@@ -995,7 +995,7 @@ var app = (function () {
     			set_style(img, "width", "calc(200vw / " + NB_FLAGS + ")");
     			attr_dev(img, "alt", img_alt_value = /*flag*/ ctx[4].name);
     			attr_dev(img, "class", "svelte-zlqdhy");
-    			add_location(img, file$1, 20, 5, 481);
+    			add_location(img, file$1, 18, 5, 431);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -1018,14 +1018,14 @@ var app = (function () {
     		block,
     		id: create_each_block_3.name,
     		type: "each",
-    		source: "(20:4) {#each flags.slice(0, NB_FLAGS * 0.5) as flag}",
+    		source: "(18:4) {#each flags.slice(0, NB_FLAGS * 0.5) as flag}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (29:4) {#each flags.slice(NB_FLAGS, NB_FLAGS * 2) as flag}
+    // (27:4) {#each flags.slice(NB_FLAGS, NB_FLAGS * 2) as flag}
     function create_each_block_2(ctx) {
     	let img;
     	let img_src_value;
@@ -1038,7 +1038,7 @@ var app = (function () {
     			set_style(img, "width", "calc(200vw / " + NB_FLAGS + ")");
     			attr_dev(img, "alt", img_alt_value = /*flag*/ ctx[4].name);
     			attr_dev(img, "class", "svelte-zlqdhy");
-    			add_location(img, file$1, 29, 5, 733);
+    			add_location(img, file$1, 27, 5, 683);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -1061,14 +1061,14 @@ var app = (function () {
     		block,
     		id: create_each_block_2.name,
     		type: "each",
-    		source: "(29:4) {#each flags.slice(NB_FLAGS, NB_FLAGS * 2) as flag}",
+    		source: "(27:4) {#each flags.slice(NB_FLAGS, NB_FLAGS * 2) as flag}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (36:4) {#each flags.slice(NB_FLAGS, NB_FLAGS * 1.5) as flag}
+    // (34:4) {#each flags.slice(NB_FLAGS, NB_FLAGS * 1.5) as flag}
     function create_each_block_1(ctx) {
     	let img;
     	let img_src_value;
@@ -1081,7 +1081,7 @@ var app = (function () {
     			set_style(img, "width", "calc(200vw / " + NB_FLAGS + ")");
     			attr_dev(img, "alt", img_alt_value = /*flag*/ ctx[4].name);
     			attr_dev(img, "class", "svelte-zlqdhy");
-    			add_location(img, file$1, 36, 5, 956);
+    			add_location(img, file$1, 34, 5, 906);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -1104,14 +1104,14 @@ var app = (function () {
     		block,
     		id: create_each_block_1.name,
     		type: "each",
-    		source: "(36:4) {#each flags.slice(NB_FLAGS, NB_FLAGS * 1.5) as flag}",
+    		source: "(34:4) {#each flags.slice(NB_FLAGS, NB_FLAGS * 1.5) as flag}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (10:1) {#each new Array(2) as _}
+    // (8:1) {#each new Array(2) as _}
     function create_each_block(ctx) {
     	let div2;
     	let div0;
@@ -1178,11 +1178,11 @@ var app = (function () {
 
     			t3 = space();
     			attr_dev(div0, "class", "row svelte-zlqdhy");
-    			add_location(div0, file$1, 11, 3, 197);
+    			add_location(div0, file$1, 9, 3, 147);
     			attr_dev(div1, "class", "row svelte-zlqdhy");
-    			add_location(div1, file$1, 27, 3, 654);
+    			add_location(div1, file$1, 25, 3, 604);
     			attr_dev(div2, "class", "group svelte-zlqdhy");
-    			add_location(div2, file$1, 10, 2, 174);
+    			add_location(div2, file$1, 8, 2, 124);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div2, anchor);
@@ -1319,7 +1319,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(10:1) {#each new Array(2) as _}",
+    		source: "(8:1) {#each new Array(2) as _}",
     		ctx
     	});
 
@@ -1344,7 +1344,7 @@ var app = (function () {
     			}
 
     			attr_dev(div, "class", "background-wrapper svelte-zlqdhy");
-    			add_location(div, file$1, 8, 0, 112);
+    			add_location(div, file$1, 6, 0, 62);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -1402,7 +1402,7 @@ var app = (function () {
     const NB_FLAGS = 42;
 
     function instance$1($$self, $$props, $$invalidate) {
-    	let { flags = [] } = $$props;
+    	let { flags } = $$props;
     	const writable_props = ["flags"];
 
     	Object.keys($$props).forEach(key => {
@@ -1421,12 +1421,6 @@ var app = (function () {
     		if ("flags" in $$props) $$invalidate(0, flags = $$props.flags);
     	};
 
-    	$$self.$$.update = () => {
-    		if ($$self.$$.dirty & /*flags*/ 1) {
-    			 flags.sort(() => Math.random() >= 0.5);
-    		}
-    	};
-
     	return [flags];
     }
 
@@ -1441,6 +1435,13 @@ var app = (function () {
     			options,
     			id: create_fragment$1.name
     		});
+
+    		const { ctx } = this.$$;
+    		const props = options.props || {};
+
+    		if (/*flags*/ ctx[0] === undefined && !("flags" in props)) {
+    			console.warn("<Background> was created without expected prop 'flags'");
+    		}
     	}
 
     	get flags() {
@@ -1470,9 +1471,9 @@ var app = (function () {
     			if (img.src !== (img_src_value = "https://flagcdn.com/w160/" + /*flags*/ ctx[0][/*index*/ ctx[1]].code.toLowerCase() + ".png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", img_alt_value = /*flags*/ ctx[0][/*index*/ ctx[1]].name);
     			attr_dev(img, "class", "svelte-11zniql");
-    			add_location(img, file$2, 13, 2, 213);
+    			add_location(img, file$2, 13, 2, 198);
     			attr_dev(div, "class", "gif svelte-11zniql");
-    			add_location(div, file$2, 12, 1, 193);
+    			add_location(div, file$2, 12, 1, 178);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -1553,9 +1554,9 @@ var app = (function () {
     }
 
     function instance$2($$self, $$props, $$invalidate) {
-    	let { flags = [] } = $$props;
+    	let { flags } = $$props;
     	let index = 0;
-    	setInterval(() => $$invalidate(1, index = (index + 1) % flags.length), 500);
+    	
     	const writable_props = ["flags"];
 
     	Object.keys($$props).forEach(key => {
@@ -1576,8 +1577,10 @@ var app = (function () {
     	};
 
     	$$self.$$.update = () => {
-    		if ($$self.$$.dirty & /*flags*/ 1) {
-    			 flags.sort(() => Math.random() >= 0.5);
+    		if ($$self.$$.dirty & /*flags, index*/ 3) {
+    			 {
+    				if (flags.length > 0) setInterval(() => $$invalidate(1, index = (index + 1) % flags.length), 500);
+    			}
     		}
     	};
 
@@ -1595,6 +1598,13 @@ var app = (function () {
     			options,
     			id: create_fragment$2.name
     		});
+
+    		const { ctx } = this.$$;
+    		const props = options.props || {};
+
+    		if (/*flags*/ ctx[0] === undefined && !("flags" in props)) {
+    			console.warn("<GIF> was created without expected prop 'flags'");
+    		}
     	}
 
     	get flags() {
@@ -2065,7 +2075,7 @@ var app = (function () {
     /* src/components/Menu.svelte generated by Svelte v3.17.2 */
     const file$5 = "src/components/Menu.svelte";
 
-    // (24:0) {#if !mobile}
+    // (26:0) {#if !mobile}
     function create_if_block_1(ctx) {
     	let current;
 
@@ -2105,14 +2115,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1.name,
     		type: "if",
-    		source: "(24:0) {#if !mobile}",
+    		source: "(26:0) {#if !mobile}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (30:1) {#if mobile}
+    // (32:1) {#if mobile}
     function create_if_block$1(ctx) {
     	let current;
 
@@ -2152,14 +2162,14 @@ var app = (function () {
     		block,
     		id: create_if_block$1.name,
     		type: "if",
-    		source: "(30:1) {#if mobile}",
+    		source: "(32:1) {#if mobile}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (33:1) <Button on:click={start}>
+    // (35:1) <Button on:click={start}>
     function create_default_slot_1(ctx) {
     	let t_value = translations.start + "";
     	let t;
@@ -2181,14 +2191,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_1.name,
     		type: "slot",
-    		source: "(33:1) <Button on:click={start}>",
+    		source: "(35:1) <Button on:click={start}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (27:0) <Card>
+    // (29:0) <Card>
     function create_default_slot(ctx) {
     	let h3;
     	let t1;
@@ -2219,10 +2229,10 @@ var app = (function () {
     			if (if_block) if_block.c();
     			t3 = space();
     			create_component(button.$$.fragment);
-    			attr_dev(h3, "class", "svelte-13e22ci");
-    			add_location(h3, file$5, 27, 1, 621);
-    			attr_dev(h4, "class", "svelte-13e22ci");
-    			add_location(h4, file$5, 28, 1, 642);
+    			attr_dev(h3, "class", "svelte-1xsbid5");
+    			add_location(h3, file$5, 29, 1, 671);
+    			attr_dev(h4, "class", "svelte-1xsbid5");
+    			add_location(h4, file$5, 30, 1, 692);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h3, anchor);
@@ -2290,7 +2300,7 @@ var app = (function () {
     		block,
     		id: create_default_slot.name,
     		type: "slot",
-    		source: "(27:0) <Card>",
+    		source: "(29:0) <Card>",
     		ctx
     	});
 
@@ -2384,7 +2394,7 @@ var app = (function () {
     }
 
     function instance$5($$self, $$props, $$invalidate) {
-    	let { flags } = $$props;
+    	let { flags = [] } = $$props;
     	let mobile = window.matchMedia("(orientation: portrait)").matches;
 
     	window.addEventListener("resize", () => {
@@ -2416,6 +2426,12 @@ var app = (function () {
     		if ("mobile" in $$props) $$invalidate(1, mobile = $$props.mobile);
     	};
 
+    	$$self.$$.update = () => {
+    		if ($$self.$$.dirty & /*flags*/ 1) {
+    			 flags.sort(() => Math.random() >= 0.5);
+    		}
+    	};
+
     	return [flags, mobile, start];
     }
 
@@ -2430,13 +2446,6 @@ var app = (function () {
     			options,
     			id: create_fragment$5.name
     		});
-
-    		const { ctx } = this.$$;
-    		const props = options.props || {};
-
-    		if (/*flags*/ ctx[0] === undefined && !("flags" in props)) {
-    			console.warn("<Menu> was created without expected prop 'flags'");
-    		}
     	}
 
     	get flags() {

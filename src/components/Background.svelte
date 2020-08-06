@@ -1,7 +1,5 @@
 <script>
-	export let flags = [];
-
-	$: flags.sort(() => Math.random() >= 0.5);
+	export let flags;
 
 	const NB_FLAGS = 42;
 </script>
@@ -89,6 +87,4 @@
 			}
 		}
 	}
-
-
 </style>
