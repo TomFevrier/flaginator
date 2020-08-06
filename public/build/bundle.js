@@ -952,7 +952,7 @@ var app = (function () {
     			set_style(img, "width", "calc(200vw / " + NB_FLAGS + ")");
     			attr_dev(img, "alt", img_alt_value = /*flag*/ ctx[4].name);
     			attr_dev(img, "class", "svelte-zlqdhy");
-    			add_location(img, file$1, 13, 5, 260);
+    			add_location(img, file$1, 13, 5, 265);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -995,7 +995,7 @@ var app = (function () {
     			set_style(img, "width", "calc(200vw / " + NB_FLAGS + ")");
     			attr_dev(img, "alt", img_alt_value = /*flag*/ ctx[4].name);
     			attr_dev(img, "class", "svelte-zlqdhy");
-    			add_location(img, file$1, 20, 5, 476);
+    			add_location(img, file$1, 20, 5, 481);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -1038,7 +1038,7 @@ var app = (function () {
     			set_style(img, "width", "calc(200vw / " + NB_FLAGS + ")");
     			attr_dev(img, "alt", img_alt_value = /*flag*/ ctx[4].name);
     			attr_dev(img, "class", "svelte-zlqdhy");
-    			add_location(img, file$1, 29, 5, 728);
+    			add_location(img, file$1, 29, 5, 733);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -1081,7 +1081,7 @@ var app = (function () {
     			set_style(img, "width", "calc(200vw / " + NB_FLAGS + ")");
     			attr_dev(img, "alt", img_alt_value = /*flag*/ ctx[4].name);
     			attr_dev(img, "class", "svelte-zlqdhy");
-    			add_location(img, file$1, 36, 5, 951);
+    			add_location(img, file$1, 36, 5, 956);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -1178,11 +1178,11 @@ var app = (function () {
 
     			t3 = space();
     			attr_dev(div0, "class", "row svelte-zlqdhy");
-    			add_location(div0, file$1, 11, 3, 192);
+    			add_location(div0, file$1, 11, 3, 197);
     			attr_dev(div1, "class", "row svelte-zlqdhy");
-    			add_location(div1, file$1, 27, 3, 649);
+    			add_location(div1, file$1, 27, 3, 654);
     			attr_dev(div2, "class", "group svelte-zlqdhy");
-    			add_location(div2, file$1, 10, 2, 169);
+    			add_location(div2, file$1, 10, 2, 174);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div2, anchor);
@@ -1344,7 +1344,7 @@ var app = (function () {
     			}
 
     			attr_dev(div, "class", "background-wrapper svelte-zlqdhy");
-    			add_location(div, file$1, 8, 0, 107);
+    			add_location(div, file$1, 8, 0, 112);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -1402,7 +1402,7 @@ var app = (function () {
     const NB_FLAGS = 42;
 
     function instance$1($$self, $$props, $$invalidate) {
-    	let { flags } = $$props;
+    	let { flags = [] } = $$props;
     	const writable_props = ["flags"];
 
     	Object.keys($$props).forEach(key => {
@@ -1441,13 +1441,6 @@ var app = (function () {
     			options,
     			id: create_fragment$1.name
     		});
-
-    		const { ctx } = this.$$;
-    		const props = options.props || {};
-
-    		if (/*flags*/ ctx[0] === undefined && !("flags" in props)) {
-    			console.warn("<Background> was created without expected prop 'flags'");
-    		}
     	}
 
     	get flags() {

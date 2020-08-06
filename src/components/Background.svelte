@@ -1,5 +1,5 @@
 <script>
-	export let flags;
+	export let flags = [];
 
 	$: flags.sort(() => Math.random() >= 0.5);
 
