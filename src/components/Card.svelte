@@ -37,7 +37,7 @@
 			transform: none;
 			min-height: auto;
 			border: none;
-			background-color: snow;
+			background-color: #dfd9d5;
 			padding: 1rem;
 
 			&:before {

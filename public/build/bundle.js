@@ -1647,7 +1647,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			if (default_slot) default_slot.c();
-    			attr_dev(div, "class", "card svelte-1crj9x0");
+    			attr_dev(div, "class", "card svelte-yu00p6");
     			add_location(div, file$3, 4, 0, 68);
     		},
     		l: function claim(nodes) {
@@ -2463,7 +2463,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (59:4) {:else}
+    // (56:4) {:else}
     function create_else_block(ctx) {
     	let div;
     	let t0;
@@ -2482,13 +2482,12 @@ var app = (function () {
     			t0 = space();
     			p = element("p");
     			t1 = text(t1_value);
-    			attr_dev(div, "class", "option-image svelte-1x5toz5");
+    			attr_dev(div, "class", "option-image svelte-6w1jep");
     			set_style(div, "background-image", "url(/assets/" + /*property*/ ctx[2] + "/" + /*option*/ ctx[11].value + "_small.png)");
-    			set_style(div, "padding-top", "calc(100% * 2/3)");
     			toggle_class(div, "selected", /*selected*/ ctx[1].includes(/*option*/ ctx[11].value));
-    			add_location(div, file$6, 59, 6, 1306);
-    			attr_dev(p, "class", "option-label svelte-1x5toz5");
-    			add_location(p, file$6, 70, 6, 1662);
+    			add_location(div, file$6, 56, 6, 1253);
+    			attr_dev(p, "class", "option-label svelte-6w1jep");
+    			add_location(p, file$6, 64, 6, 1553);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -2522,7 +2521,7 @@ var app = (function () {
     		block,
     		id: create_else_block.name,
     		type: "else",
-    		source: "(59:4) {:else}",
+    		source: "(56:4) {:else}",
     		ctx
     	});
 
@@ -2541,9 +2540,8 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			div = element("div");
-    			attr_dev(div, "class", "option-image svelte-1x5toz5");
+    			attr_dev(div, "class", "option-image svelte-6w1jep");
     			set_style(div, "background-color", /*option*/ ctx[11].value);
-    			set_style(div, "padding-top", "calc(100% * 2/3)");
     			toggle_class(div, "selected", /*selected*/ ctx[1].includes(/*option*/ ctx[11].value));
     			add_location(div, file$6, 49, 5, 1037);
     		},
@@ -2597,7 +2595,7 @@ var app = (function () {
     			div = element("div");
     			if_block.c();
     			t = space();
-    			attr_dev(div, "class", "option svelte-1x5toz5");
+    			attr_dev(div, "class", "option svelte-6w1jep");
     			add_location(div, file$6, 47, 3, 979);
     		},
     		m: function mount(target, anchor) {
@@ -2635,7 +2633,7 @@ var app = (function () {
     	return block;
     }
 
-    // (77:2) <Button    secondary    margin='0.5rem'    on:click={skip}   >
+    // (71:2) <Button    secondary    margin='0.5rem'    on:click={skip}   >
     function create_default_slot_3(ctx) {
     	let t_value = translations.skip + "";
     	let t;
@@ -2657,14 +2655,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_3.name,
     		type: "slot",
-    		source: "(77:2) <Button    secondary    margin='0.5rem'    on:click={skip}   >",
+    		source: "(71:2) <Button    secondary    margin='0.5rem'    on:click={skip}   >",
     		ctx
     	});
 
     	return block;
     }
 
-    // (84:2) <Button    secondary    margin='0.5rem'    on:click={retry}   >
+    // (78:2) <Button    secondary    margin='0.5rem'    on:click={retry}   >
     function create_default_slot_2(ctx) {
     	let t_value = translations.retry + "";
     	let t;
@@ -2686,14 +2684,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_2.name,
     		type: "slot",
-    		source: "(84:2) <Button    secondary    margin='0.5rem'    on:click={retry}   >",
+    		source: "(78:2) <Button    secondary    margin='0.5rem'    on:click={retry}   >",
     		ctx
     	});
 
     	return block;
     }
 
-    // (91:2) <Button    disabled={selected.length == 0}    margin='0.5rem'    on:click={submit}   >
+    // (85:2) <Button    disabled={selected.length == 0}    margin='0.5rem'    on:click={submit}   >
     function create_default_slot_1$1(ctx) {
     	let t_value = translations.next + "";
     	let t;
@@ -2715,7 +2713,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_1$1.name,
     		type: "slot",
-    		source: "(91:2) <Button    disabled={selected.length == 0}    margin='0.5rem'    on:click={submit}   >",
+    		source: "(85:2) <Button    disabled={selected.length == 0}    margin='0.5rem'    on:click={submit}   >",
     		ctx
     	});
 
@@ -2793,12 +2791,12 @@ var app = (function () {
     			create_component(button1.$$.fragment);
     			t3 = space();
     			create_component(button2.$$.fragment);
-    			attr_dev(h3, "class", "svelte-1x5toz5");
+    			attr_dev(h3, "class", "svelte-6w1jep");
     			add_location(h3, file$6, 44, 1, 870);
-    			attr_dev(div0, "class", "grid svelte-1x5toz5");
+    			attr_dev(div0, "class", "grid svelte-6w1jep");
     			add_location(div0, file$6, 45, 1, 913);
-    			attr_dev(div1, "class", "buttons svelte-1x5toz5");
-    			add_location(div1, file$6, 75, 1, 1744);
+    			attr_dev(div1, "class", "buttons svelte-6w1jep");
+    			add_location(div1, file$6, 69, 1, 1635);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h3, anchor);

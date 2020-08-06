@@ -50,20 +50,14 @@
 					<div
 						class='option-image'
 						class:selected={selected.includes(option.value)}
-						style='
-							background-color: {option.value};
-							padding-top: calc(100% * 2/3);
-						'
+						style='background-color: {option.value};'
 						on:click={() => clickHandler(option.value)}
 					></div>
 				{:else}
 						<div
 							class='option-image'
 							class:selected={selected.includes(option.value)}
-							style='
-								background-image: url(/assets/{property}/{option.value}_small.png);
-								padding-top: calc(100% * 2/3);
-							'
+							style='background-image: url(/assets/{property}/{option.value}_small.png);'
 							on:click={() => clickHandler(option.value)}
 						>
 							<!-- <img src='' alt={option.label} /> -->
@@ -120,6 +114,7 @@
 			.option-image {
 				width: 100%;
 				background-size: cover;
+				padding-top: 67%;
 				cursor: pointer;
 
 				&:hover {
