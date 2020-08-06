@@ -41,22 +41,6 @@
 					/>
 				{/each}
 			</div>
-			<!-- <div class='row'>
-				{#each flags.slice(NB_FLAGS * 2, NB_FLAGS * 3) as flag}
-					<img
-						src='assets/flags/{flag.code.toLowerCase()}_xsmall.png'
-						style='width: calc(200vw / {NB_FLAGS});'
-						alt={flag.name}
-					/>
-				{/each}
-				{#each flags.slice(NB_FLAGS * 2, NB_FLAGS * 2.5) as flag}
-					<img
-						src='assets/flags/{flag.code.toLowerCase()}_xsmall.png'
-						style='width: calc(200vw / {NB_FLAGS});'
-						alt={flag.name}
-					/>
-				{/each}
-			</div> -->
 		</div>
 	{/each}
 </div>
@@ -65,7 +49,7 @@
 	.background-wrapper {
 		width: 300vw;
 		height: 100%;
-		opacity: 0.2;
+		opacity: 0.4;
 		position: absolute;
 		top: 0;
 		left: 0;

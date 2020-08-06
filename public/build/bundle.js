@@ -951,7 +951,7 @@ var app = (function () {
     			if (img.src !== (img_src_value = "https://flagcdn.com/w80/" + /*flag*/ ctx[4].code.toLowerCase() + ".png")) attr_dev(img, "src", img_src_value);
     			set_style(img, "width", "calc(200vw / " + NB_FLAGS + ")");
     			attr_dev(img, "alt", img_alt_value = /*flag*/ ctx[4].name);
-    			attr_dev(img, "class", "svelte-21en8w");
+    			attr_dev(img, "class", "svelte-zlqdhy");
     			add_location(img, file$1, 13, 5, 260);
     		},
     		m: function mount(target, anchor) {
@@ -994,7 +994,7 @@ var app = (function () {
     			if (img.src !== (img_src_value = "https://flagcdn.com/w80/" + /*flag*/ ctx[4].code.toLowerCase() + ".png")) attr_dev(img, "src", img_src_value);
     			set_style(img, "width", "calc(200vw / " + NB_FLAGS + ")");
     			attr_dev(img, "alt", img_alt_value = /*flag*/ ctx[4].name);
-    			attr_dev(img, "class", "svelte-21en8w");
+    			attr_dev(img, "class", "svelte-zlqdhy");
     			add_location(img, file$1, 20, 5, 476);
     		},
     		m: function mount(target, anchor) {
@@ -1037,7 +1037,7 @@ var app = (function () {
     			if (img.src !== (img_src_value = "https://flagcdn.com/w80/" + /*flag*/ ctx[4].code.toLowerCase() + ".png")) attr_dev(img, "src", img_src_value);
     			set_style(img, "width", "calc(200vw / " + NB_FLAGS + ")");
     			attr_dev(img, "alt", img_alt_value = /*flag*/ ctx[4].name);
-    			attr_dev(img, "class", "svelte-21en8w");
+    			attr_dev(img, "class", "svelte-zlqdhy");
     			add_location(img, file$1, 29, 5, 728);
     		},
     		m: function mount(target, anchor) {
@@ -1080,7 +1080,7 @@ var app = (function () {
     			if (img.src !== (img_src_value = "https://flagcdn.com/w80/" + /*flag*/ ctx[4].code.toLowerCase() + ".png")) attr_dev(img, "src", img_src_value);
     			set_style(img, "width", "calc(200vw / " + NB_FLAGS + ")");
     			attr_dev(img, "alt", img_alt_value = /*flag*/ ctx[4].name);
-    			attr_dev(img, "class", "svelte-21en8w");
+    			attr_dev(img, "class", "svelte-zlqdhy");
     			add_location(img, file$1, 36, 5, 951);
     		},
     		m: function mount(target, anchor) {
@@ -1177,11 +1177,11 @@ var app = (function () {
     			}
 
     			t3 = space();
-    			attr_dev(div0, "class", "row svelte-21en8w");
+    			attr_dev(div0, "class", "row svelte-zlqdhy");
     			add_location(div0, file$1, 11, 3, 192);
-    			attr_dev(div1, "class", "row svelte-21en8w");
+    			attr_dev(div1, "class", "row svelte-zlqdhy");
     			add_location(div1, file$1, 27, 3, 649);
-    			attr_dev(div2, "class", "group svelte-21en8w");
+    			attr_dev(div2, "class", "group svelte-zlqdhy");
     			add_location(div2, file$1, 10, 2, 169);
     		},
     		m: function mount(target, anchor) {
@@ -1343,7 +1343,7 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr_dev(div, "class", "background-wrapper svelte-21en8w");
+    			attr_dev(div, "class", "background-wrapper svelte-zlqdhy");
     			add_location(div, file$1, 8, 0, 107);
     		},
     		l: function claim(nodes) {
@@ -1647,7 +1647,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			if (default_slot) default_slot.c();
-    			attr_dev(div, "class", "card svelte-10mq8y8");
+    			attr_dev(div, "class", "card svelte-1crj9x0");
     			add_location(div, file$3, 4, 0, 68);
     		},
     		l: function claim(nodes) {
@@ -2482,12 +2482,12 @@ var app = (function () {
     			t0 = space();
     			p = element("p");
     			t1 = text(t1_value);
-    			attr_dev(div, "class", "option-image svelte-x50hyn");
+    			attr_dev(div, "class", "option-image svelte-1x5toz5");
     			set_style(div, "background-image", "url(/assets/" + /*property*/ ctx[2] + "/" + /*option*/ ctx[11].value + "_small.png)");
     			set_style(div, "padding-top", "calc(100% * 2/3)");
     			toggle_class(div, "selected", /*selected*/ ctx[1].includes(/*option*/ ctx[11].value));
     			add_location(div, file$6, 59, 6, 1306);
-    			attr_dev(p, "class", "option-label svelte-x50hyn");
+    			attr_dev(p, "class", "option-label svelte-1x5toz5");
     			add_location(p, file$6, 70, 6, 1662);
     		},
     		m: function mount(target, anchor) {
@@ -2541,7 +2541,7 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			div = element("div");
-    			attr_dev(div, "class", "option-image svelte-x50hyn");
+    			attr_dev(div, "class", "option-image svelte-1x5toz5");
     			set_style(div, "background-color", /*option*/ ctx[11].value);
     			set_style(div, "padding-top", "calc(100% * 2/3)");
     			toggle_class(div, "selected", /*selected*/ ctx[1].includes(/*option*/ ctx[11].value));
@@ -2597,7 +2597,7 @@ var app = (function () {
     			div = element("div");
     			if_block.c();
     			t = space();
-    			attr_dev(div, "class", "option svelte-x50hyn");
+    			attr_dev(div, "class", "option svelte-1x5toz5");
     			add_location(div, file$6, 47, 3, 979);
     		},
     		m: function mount(target, anchor) {
@@ -2793,11 +2793,11 @@ var app = (function () {
     			create_component(button1.$$.fragment);
     			t3 = space();
     			create_component(button2.$$.fragment);
-    			attr_dev(h3, "class", "svelte-x50hyn");
+    			attr_dev(h3, "class", "svelte-1x5toz5");
     			add_location(h3, file$6, 44, 1, 870);
-    			attr_dev(div0, "class", "grid svelte-x50hyn");
+    			attr_dev(div0, "class", "grid svelte-1x5toz5");
     			add_location(div0, file$6, 45, 1, 913);
-    			attr_dev(div1, "class", "buttons svelte-x50hyn");
+    			attr_dev(div1, "class", "buttons svelte-1x5toz5");
     			add_location(div1, file$6, 75, 1, 1744);
     		},
     		m: function mount(target, anchor) {
