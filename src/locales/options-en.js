@@ -59,11 +59,11 @@ const nbBands = {
 	question: 'How many bands has the flag?',
 	multiple: false,
 	options: [
-		{ value: 'bandsVertical2', label: '2 bands' },
-		{ value: 'bandsVertical3', label: '3 bands' },
-		{ value: 'bandsVertical4', label: '4 bands or more' },
 		{ value: 'bandsHorizontal2', label: '2 bands' },
 		{ value: 'bandsHorizontal3', label: '3 bands' },
+		{ value: 'bandsHorizontal4', label: '4 bands or more' },
+		{ value: 'bandsVertical2', label: '2 bands' },
+		{ value: 'bandsVertical3', label: '3 bands' },
 	]
 };
 

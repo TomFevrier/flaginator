@@ -59,11 +59,11 @@ const nbBands = {
 	question: 'Combien de bandes possède le drapeau&nbsp;?',
 	multiple: false,
 	options: [
-		{ value: 'bandsVertical2', label: '2 bandes' },
-		{ value: 'bandsVertical3', label: '3 bandes' },
-		{ value: 'bandsVertical4', label: '4 bandes ou plus' },
 		{ value: 'bandsHorizontal2', label: '2 bandes' },
 		{ value: 'bandsHorizontal3', label: '3 bandes' },
+		{ value: 'bandsHorizontal4', label: '4 bandes ou plus' },
+		{ value: 'bandsVertical2', label: '2 bandes' },
+		{ value: 'bandsVertical3', label: '3 bandes' },
 	]
 };
 
