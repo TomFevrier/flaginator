@@ -7,76 +7,80 @@
 	import { lang, translations } from '../locales/locale';
 
 	export let found;
+	export let knownProperties;
+
+	const getAbsoluteDifference = (flag) => {
+		return Object.keys(knownProperties)
+			.reduce((acc, property) => {
+				return Array.isArray(knownProperties[property])
+					? acc + flag[property].length - knownProperties[property].length
+					: acc
+			}, 0);
+	}
+
+	$: found.sort((a, b) => getAbsoluteDifference(a) - getAbsoluteDifference(b));
+
+	let loading = false;
+	let index = 0;
 
 	const dispatch = createEventDispatcher();
 	const retry = () => {
 		dispatch('retry');
 	}
 
+	const showNext = () => {
+		loading = true;
+		index++;
+		setTimeout(() => loading = false, 0);
+	}
+
 </script>
 
-<Card>
-	{#if lang === 'fr'}
-		<h3>S’agit-il {found[0].prep}{found[0].nom.toUpperCase()}&nbsp;?</h3>
-	{:else}
-		<h3>Is this {found[0].name.toUpperCase()}?</h3>
-	{/if}
-	<img src='https://flagcdn.com/w320/{found[0].code.toLowerCase()}.png' alt={found[0].name} />
-	{#if found.length > 1}
-		<div class='alternative-results-wrapper'>
-			<p>{translations[found.length === 2 ? 'alternativeFlag' : 'alternativeFlags']}</p>
-			<div class='alternative-results'>
-				{#each found.slice(1) as result}
-					<div>
-						<img src='https://flagcdn.com/w160/{result.code.toLowerCase()}.png' alt={result.name} />
-						<p>{lang === 'fr' ? result.nom : result.name}</p>
-					</div>
-				{/each}
-			</div>
+{#if !loading}
+	<Card>
+		{#if lang === 'fr'}
+			<h3>S’agit-il {found[index].prep}{found[index].nom.toUpperCase()}&nbsp;?</h3>
+		{:else}
+			<h3>Is this {found[index].name.toUpperCase()}?</h3>
+		{/if}
+		<img src='https://flagcdn.com/w320/{found[index].code.toLowerCase()}.png' alt={found[index].name} />
+		<div class='buttons'>
+			{#if index < found.length - 1}
+				<Button
+					secondary
+					margin='0.5rem'
+					on:click={showNext}
+				>
+					{translations.notCorrect}
+				</Button>
+			{/if}
+			<Button
+				margin='0.5rem'
+				on:click={retry}
+			>
+				{translations.identifyAnother}
+			</Button>
 		</div>
-	{/if}
-	<Button on:click={retry}>
-		{translations.identifyAnother}
-	</Button>
-</Card>
+	</Card>
+{/if}
 
 <style lang='scss'>
+	@import './global.scss';
+
 	img {
 		display: block;
 		margin: 0 auto;
 		width: 200px;
 	}
 
-	.alternative-results-wrapper {
-
+	.buttons {
 		margin-top: 2rem;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
 
-		p {
-			text-align: center;
-			font-weight: 800;
-			margin: 0;
-		}
-
-		.alternative-results {
-			display: flex;
-			justify-content: center;
-			width: 100%;
-
-			div {
-				display: flex;
-				flex-direction: column;
-				justify-content: end;
-				align-items: center;
-
-				img {
-					width: 100px;
-					margin: 0.5rem 1rem;
-				}
-
-				p {
-					font-weight: normal;
-				}
-			}
+		@include md {
+			flex-direction: column-reverse;
 		}
 	}
 </style>

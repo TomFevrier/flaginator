@@ -39,7 +39,6 @@
 	let flags = [];
 
 	let filtered = [];
-	// $: console.log(filtered)
 
 	let property = properties[0];
 	let selected = [];
@@ -159,7 +158,6 @@
 		filtered = flags;
 		setTimeout(() => loading = false, 0);
 	}
-
 </script>
 
 
@@ -169,20 +167,25 @@
 {:else if started && !loading}
 	{#if property && filtered.length > 1}
 		<Question
-			property={property}
+			{property}
 			propertyOptions={options[property]}
-			filtered={filtered}
+			{filtered}
+			{knownProperties}
 			bind:selected={selected}
 			on:submit={filterFlags}
 			on:skip={skipQuestion}
 			on:retry={retry}
 		/>
-	{:else if filtered.length > 0 && filtered.length <= 4}
-		<Result found={filtered} on:retry={() => {
-			filtered = flags;
-			knownProperties = {};
-			property = properties[0];
-		}} />
+	{:else if filtered.length > 0 && filtered.length <= 7}
+		<Result
+			found={filtered}
+			{knownProperties}
+			on:retry={() => {
+				filtered = flags;
+				knownProperties = {};
+				property = properties[0];
+			}}
+		/>
 	{:else}
 		<Error notFound={filtered.length === 0} on:retry={retry} />
 	{/if}

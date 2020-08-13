@@ -4,8 +4,7 @@ export default {
 	skip: 'Passer',
 	next: 'Suivant',
 	retry: 'Recommencer',
-	alternativeFlag: 'Autre drapeau',
-	alternativeFlags: 'Autres drapeaux',
+	notCorrect: 'Ce n’est pas celui là',
 	identifyAnother: 'Identifier un autre drapeau',
 	errorNotFound: 'Je ne connais pas (encore) ce drapeau...<br />Êtes-vous certain qu’il existe&nbsp;?',
 	errorImprecise: 'J’ai besoin de plus d’informations pour identifier ce drapeau...'

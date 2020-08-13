@@ -8,11 +8,14 @@
 
 	export let property;
 	export let propertyOptions;
+	export let knownProperties;
 	export let filtered;
 	export let selected;
 
 	if (property === 'nbBands') {
-		propertyOptions.options = propertyOptions.options.filter(option => filtered.some(e => option.value.startsWith(e.layout)));
+		propertyOptions.options = propertyOptions.options.filter(option => {
+			return knownProperties.layout.some(e => option.value.startsWith(e));
+		});
 	}
 
 	const clickHandler = (value) => {
@@ -60,7 +63,6 @@
 							style='background-image: url(/assets/{property}/{option.value}_small.png);'
 							on:click={() => clickHandler(option.value)}
 						>
-							<!-- <img src='' alt={option.label} /> -->
 						</div>
 						<p class='option-label'>{option.label}</p>
 				{/if}
